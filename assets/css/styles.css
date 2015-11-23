@@ -7,4 +7,110 @@ and open the template in the editor.
     Created on : Nov 23, 2015, 9:03:03 AM
     Author     : developer
 */
+body a {
+  text-decoration: none;
+}
+body #header {
+  width: 100%;
+  height: 186px;
+}
+body #header #header-info {
+  height: 34px;
+  background-color: #0B4A81;
+  padding-top: 12px;
+  width: 100%;
+}
+body #header #header-info p {
+  font-family: OpenSansSemiBold;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+body #header #header-info p span {
+  color: #3F89BB;
+}
+body #header #header-info a {
+  font-family: OpenSansRegular;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+body #header #header-info a i {
+  color: #3F89BB;
+  size: 13px;
+}
+body #header #header-info a:hover {
+  color: #3F89BB;
+}
+body #header #header-info form.search {
+  width: 100%;
+  /* Ширина поля с кнопкой */
+  height: 44px;
+  border: 1px solid #072E4C;
+  /* Параметры рамки */
+  background-color: #072E4C;
+  margin-top: -12px;
+}
+body #header #header-info form.search input[type="text"] {
+  border: none;
+  /* Убираем рамку */
+  outline: none;
+  /* Убираем свечение в Chrome и Safari */
+  -webkit-appearance: none;
+  /* Убираем рамку в Chrome и Safari */
+  padding-left: 9px;
+  padding-right: 4px;
+  background-color: #072E4C;
+  margin-top: 12px;
+}
+body #header #header-info form.search button {
+  background-color: #072E4C;
+  color: #FFFFFF;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+body #header #header-elements {
+  width: 100%;
+  height: 140px;
+}
+body #header #header-elements .logo {
+  display: block;
+  width: 155px;
+  height: 69px;
+  background: url("../img/logo.png") no-repeat;
+  margin-top: 29px;
+}
+body #header #header-elements .top_menu {
+  width: 100%;
+}
+body #header #header-elements .top_menu ul {
+  margin-top: 30px;
+  margin-bottom: 39px;
+  font-size: 14px;
+  font-family: OpenSansBold;
+}
+body #header #header-elements .top_menu ul li {
+  display: inline-block;
+  margin-left: 0;
+  width: 210px;
+  margin-bottom: 10px;
+}
+body #header #header-elements .top_menu ul li a {
+  color: #000000;
+}
+body #header #header-elements .top_menu ul li a:hover {
+  color: #0B4A81;
+}
+body #site #banner {
+  width: 100%;
+  height: 481px;
+  background-color: greenyellow;
+}
+body #site #banner_about_company {
+  width: 100%;
+  height: 405px;
+  background-color: red;
+}
+body #footer {
+  width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */
