@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24.11.2015, 10:31:02
+    Author     : aysulu
+*/
+#top-menu {
+  width: 100%;
+}
+#top-menu ul {
+  margin-top: 37px;
+  font-size: 14px;
+  font-family: OpenSansBold;
+}
+#top-menu ul li {
+  display: inline-block;
+  margin-left: 0;
+  width: 150px;
+  margin-bottom: 10px;
+}
+#top-menu ul li a {
+  color: #000000;
+}
+#top-menu ul li a:hover {
+  color: #0B4A81;
+}
+#footer-menu {
+  width: 100%;
+}
+#footer-menu ul {
+  margin-top: 37px;
+  font-size: 13px;
+  font-family: OpenSansRegular;
+}
+#footer-menu ul li {
+  display: inline-block;
+  margin-left: 0;
+  width: 120px;
+  margin-bottom: 10px;
+}
+#footer-menu ul li a {
+  color: #000000;
+}
+#footer-menu ul li a:hover {
+  color: #007AC2;
+}
+/*# sourceMappingURL=menu.css.map */

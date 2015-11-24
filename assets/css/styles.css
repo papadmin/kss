@@ -10,6 +10,9 @@ and open the template in the editor.
 body a {
   text-decoration: none;
 }
+body .al-right {
+  text-align: right;
+}
 body #header {
   width: 100%;
   height: 186px;
@@ -40,65 +43,42 @@ body #header #header-info a i {
 body #header #header-info a:hover {
   color: #3F89BB;
 }
-body #header #header-info form.search {
-  width: 100%;
-  /* Ширина поля с кнопкой */
-  height: 44px;
-  border: 1px solid #072E4C;
-  /* Параметры рамки */
-  background-color: #072E4C;
-  margin-top: -12px;
-}
-body #header #header-info form.search input[type="text"] {
-  border: none;
-  /* Убираем рамку */
-  outline: none;
-  /* Убираем свечение в Chrome и Safari */
-  -webkit-appearance: none;
-  /* Убираем рамку в Chrome и Safari */
-  padding-left: 9px;
-  padding-right: 4px;
-  background-color: #072E4C;
-  margin-top: 12px;
-}
-body #header #header-info form.search button {
-  background-color: #072E4C;
-  color: #FFFFFF;
-  display: inline-block;
-  border: none;
-  cursor: pointer;
-}
 body #header #header-elements {
   width: 100%;
   height: 140px;
 }
-body #header #header-elements .logo {
+body #header #header-elements a.logo {
   display: block;
   width: 155px;
   height: 69px;
   background: url("../img/logo.png") no-repeat;
   margin-top: 29px;
 }
-body #header #header-elements .top_menu {
-  width: 100%;
+body #header #header-elements a.request {
+  display: block;
+  background-color: #EAEAEA;
+  height: 122px;
+  padding-top: 18px;
+  text-align: center;
 }
-body #header #header-elements .top_menu ul {
-  margin-top: 30px;
-  margin-bottom: 39px;
-  font-size: 14px;
+body #header #header-elements a.request .request-round {
+  width: 40px;
+  padding-top: 10px;
+  height: 30px;
+  color: #FFFFFF;
+  border-radius: 50%;
+  background-color: #007AC2;
+  margin: 0 auto 16px;
+}
+body #header #header-elements a.request span {
   font-family: OpenSansBold;
-}
-body #header #header-elements .top_menu ul li {
-  display: inline-block;
-  margin-left: 0;
-  width: 210px;
-  margin-bottom: 10px;
-}
-body #header #header-elements .top_menu ul li a {
+  font-size: 14px;
   color: #000000;
 }
-body #header #header-elements .top_menu ul li a:hover {
-  color: #0B4A81;
+body #header #header-elements a.request p {
+  font-family: OpenSansRegular;
+  font-size: 12px;
+  color: #989797;
 }
 body #site #banner {
   width: 100%;
@@ -112,5 +92,123 @@ body #site #banner_about_company {
 }
 body #footer {
   width: 100%;
+  height: 126px;
+}
+body #footer p {
+  font-family: OpenSansRegular;
+  font-size: 13px;
+  color: #000000;
+  display: inline-block;
+  margin-top: 37px;
+}
+body #footer p a {
+  color: #000000;
+}
+body #footer p a:hover {
+  color: #007AC2;
+}
+body #footer p i {
+  color: #BFBFBF;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24.11.2015, 10:31:02
+    Author     : aysulu
+*/
+#top-menu {
+  width: 100%;
+}
+#top-menu ul {
+  margin-top: 37px;
+  font-size: 14px;
+  font-family: OpenSansBold;
+}
+#top-menu ul li {
+  display: inline-block;
+  margin-left: 0;
+  width: 150px;
+  margin-bottom: 10px;
+}
+#top-menu ul li a {
+  color: #000000;
+}
+#top-menu ul li a:hover {
+  color: #0B4A81;
+}
+#footer-menu {
+  width: 100%;
+}
+#footer-menu ul {
+  margin-top: 37px;
+  font-size: 13px;
+  font-family: OpenSansRegular;
+}
+#footer-menu ul li {
+  display: inline-block;
+  margin-left: 0;
+  width: 120px;
+  margin-bottom: 10px;
+}
+#footer-menu ul li a {
+  color: #000000;
+}
+#footer-menu ul li a:hover {
+  color: #007AC2;
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24.11.2015, 10:31:31
+    Author     : aysulu
+*/
+form.search {
+  height: 44px;
+  border: 1px solid #072E4C;
+  /* Параметры рамки */
+  background-color: #072E4C;
+  margin-top: -12px;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+form.search input[type="text"] {
+  border: none;
+  /* Убираем рамку */
+  outline: none;
+  /* Убираем свечение в Chrome и Safari */
+  -webkit-appearance: none;
+  /* Убираем рамку в Chrome и Safari */
+  color: #ffffff;
+  padding-left: 9px;
+  padding-right: 4px;
+  background-color: #072E4C;
+  margin-top: 14px;
+}
+form.search input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+form.search input::-moz-placeholder {
+  color: #ffffff;
+}
+form.search input:-moz-placeholder {
+  color: #ffffff;
+}
+form.search input:-ms-input-placeholder {
+  color: #ffffff;
+}
+form.search button {
+  background-color: #072E4C;
+  color: #FFFFFF;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

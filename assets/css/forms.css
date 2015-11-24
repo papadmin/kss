@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24.11.2015, 10:31:31
+    Author     : aysulu
+*/
+form.search {
+  height: 44px;
+  border: 1px solid #072E4C;
+  /* Параметры рамки */
+  background-color: #072E4C;
+  margin-top: -12px;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+form.search input[type="text"] {
+  border: none;
+  /* Убираем рамку */
+  outline: none;
+  /* Убираем свечение в Chrome и Safari */
+  -webkit-appearance: none;
+  /* Убираем рамку в Chrome и Safari */
+  color: #ffffff;
+  padding-left: 9px;
+  padding-right: 4px;
+  background-color: #072E4C;
+  margin-top: 14px;
+}
+form.search input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+form.search input::-moz-placeholder {
+  color: #ffffff;
+}
+form.search input:-moz-placeholder {
+  color: #ffffff;
+}
+form.search input:-ms-input-placeholder {
+  color: #ffffff;
+}
+form.search button {
+  background-color: #072E4C;
+  color: #FFFFFF;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=forms.css.map */
