@@ -11,7 +11,7 @@ and open the template in the editor.
 
 body{
     a{text-decoration:none;}
-    
+
     .al-right {
         text-align: right;
     }
@@ -130,10 +130,117 @@ body{
         #banner{
             width: 100%;
             height: 481px;
-            background-color: greenyellow;
+            background-color: #f0f0f0;
         }
-        .site_info{}
-        .site_news{}
+        #site_info{
+            width:100%;
+            height:380px;
+
+            .stuff{
+                display: inline-block;
+                width:233px;
+                height:190px;
+                background: url("../img/external.png") ;
+                display: inline-block;
+                border-left:1px solid #F0F0F0;
+                border-bottom:1px solid #F0F0F0;
+                margin-right: -3px;
+
+                &:nth-child(4n+4) {
+                    border-right: 1px solid #F0F0F0;
+                }
+
+                p{
+                    font-family:OpenSansRegular;
+                    font-size:13px;
+                    text-align: center;
+                    margin-top: 128px;
+                    color:#000000;
+                }
+                &:hover{
+
+                    background: url("../img/internal.png") ;
+
+                    p {
+                        color: #ffffff;
+                    }
+
+
+                }
+
+            }
+
+
+
+
+        }
+        #site_news{
+            width: 100%;
+            height: 404px;
+            background-color: #EAEAEA;
+            // background: url("../img/branch.png") no-repeat;
+            // background: url("../img/building.png") no-repeat;
+
+
+            span{
+                color:#000000;
+                font-family:OpenSansBold;
+                font-size:15px;
+                text-align:center;
+
+                &.news-company{
+                    margin-top: 50px;
+                }
+                &.technology{
+                    margin-top: 88px;
+                }
+
+            }
+
+            a{
+                color:#007AC2;
+                font-family:OpenSansRegular;
+                font-size:14px;
+
+                i{
+                    color: #BFBFBF;
+                    font-size:16px;
+                }
+
+                &:hover{
+
+                    color:#000000;
+
+                }
+
+
+
+            }
+
+            p{
+                color:#000000;
+                font-family:OpenSansRegular;
+
+                &.date-news{
+                    font-size:13px;
+                    color:#A4A3A3;
+                }
+                &.content-news{
+                    font-size:14px;
+                }
+                &.technology-text{
+                    font-size:14px;
+                    color:#989797;
+                }
+            }
+
+        }
+
+
+
+
+
+
         #banner_about_company{
             width: 100%;
             height: 405px;
@@ -144,30 +251,27 @@ body{
     #footer{
         width: 100%; 
         height: 126px;
-
-        p {
+        .footer-info{
+            display: inline-block;
+            text-align: left;
+            margin-top: 37px;
             font-family: OpenSansRegular;
             font-size:13px;
             color:#000000;
-            display: inline-block;
-            margin-top: 37px;
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
 
             a{
-                
                 color:#000000;
-
 
                 &:hover{
 
-
                     color: #007AC2;
 
-
-
                 }
-
-
-
 
             }
 
@@ -179,6 +283,34 @@ body{
             }
 
         }
+
+        /*        p {
+                    font-family: OpenSansRegular;
+                    font-size:13px;
+                    color:#000000;
+                    display: inline-block;
+                    margin-top: 37px;
+        
+                    a{
+                        
+                        color:#000000;
+        
+                        &:hover{
+        
+                            color: #007AC2;
+        
+                        }
+        
+                    }
+        
+                    i{
+        
+                        color:#BFBFBF;
+                        font-size: 15px;
+                        margin-bottom: 14px;
+                    }
+        
+                }*/
 
 
 

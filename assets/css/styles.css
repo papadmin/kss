@@ -83,7 +83,80 @@ body #header #header-elements a.request p {
 body #site #banner {
   width: 100%;
   height: 481px;
-  background-color: greenyellow;
+  background-color: #f0f0f0;
+}
+body #site #site_info {
+  width: 100%;
+  height: 380px;
+}
+body #site #site_info .stuff {
+  width: 233px;
+  height: 190px;
+  background: url("../img/external.png");
+  display: inline-block;
+  border-left: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+  margin-right: -3px;
+}
+body #site #site_info .stuff:nth-child(4n+4) {
+  border-right: 1px solid #F0F0F0;
+}
+body #site #site_info .stuff p {
+  font-family: OpenSansRegular;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 128px;
+  color: #000000;
+}
+body #site #site_info .stuff:hover {
+  background: url("../img/internal.png");
+}
+body #site #site_info .stuff:hover p {
+  color: #ffffff;
+}
+body #site #site_news {
+  width: 100%;
+  height: 404px;
+  background-color: #EAEAEA;
+}
+body #site #site_news span {
+  color: #000000;
+  font-family: OpenSansBold;
+  font-size: 15px;
+  text-align: center;
+}
+body #site #site_news span.news-company {
+  margin-top: 50px;
+}
+body #site #site_news span.technology {
+  margin-top: 88px;
+}
+body #site #site_news a {
+  color: #007AC2;
+  font-family: OpenSansRegular;
+  font-size: 14px;
+}
+body #site #site_news a i {
+  color: #BFBFBF;
+  font-size: 16px;
+}
+body #site #site_news a:hover {
+  color: #000000;
+}
+body #site #site_news p {
+  color: #000000;
+  font-family: OpenSansRegular;
+}
+body #site #site_news p.date-news {
+  font-size: 13px;
+  color: #A4A3A3;
+}
+body #site #site_news p.content-news {
+  font-size: 14px;
+}
+body #site #site_news p.technology-text {
+  font-size: 14px;
+  color: #989797;
 }
 body #site #banner_about_company {
   width: 100%;
@@ -93,21 +166,53 @@ body #site #banner_about_company {
 body #footer {
   width: 100%;
   height: 126px;
+  /*        p {
+                    font-family: OpenSansRegular;
+                    font-size:13px;
+                    color:#000000;
+                    display: inline-block;
+                    margin-top: 37px;
+        
+                    a{
+                        
+                        color:#000000;
+        
+                        &:hover{
+        
+                            color: #007AC2;
+        
+                        }
+        
+                    }
+        
+                    i{
+        
+                        color:#BFBFBF;
+                        font-size: 15px;
+                        margin-bottom: 14px;
+                    }
+        
+                }*/
 }
-body #footer p {
+body #footer .footer-info {
+  display: inline-block;
+  text-align: left;
+  margin-top: 37px;
   font-family: OpenSansRegular;
   font-size: 13px;
   color: #000000;
-  display: inline-block;
-  margin-top: 37px;
+  margin-right: 30px;
 }
-body #footer p a {
+body #footer .footer-info:last-child {
+  margin-right: 0;
+}
+body #footer .footer-info a {
   color: #000000;
 }
-body #footer p a:hover {
+body #footer .footer-info a:hover {
   color: #007AC2;
 }
-body #footer p i {
+body #footer .footer-info i {
   color: #BFBFBF;
   font-size: 15px;
   margin-bottom: 14px;
