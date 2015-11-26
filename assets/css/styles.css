@@ -13,6 +13,15 @@ body a {
 body .al-right {
   text-align: right;
 }
+body .al-left {
+  text-align: left;
+}
+body .fl-right {
+  float: right;
+}
+body .fl-left {
+  float: left;
+}
 body #header {
   width: 100%;
   height: 186px;
@@ -51,7 +60,7 @@ body #header #header-elements a.logo {
   display: block;
   width: 155px;
   height: 69px;
-  background: url("../img/logo.png") no-repeat;
+  background: url("/assets/img/design/logo.png") no-repeat;
   margin-top: 29px;
 }
 body #header #header-elements a.request {
@@ -85,114 +94,114 @@ body #site #banner {
   height: 481px;
   background-color: #f0f0f0;
 }
-body #site #site_info {
+body #site #site-info {
   width: 100%;
-  height: 380px;
 }
-body #site #site_info .stuff {
+body #site #site-info .stuff {
   width: 233px;
   height: 190px;
-  background: url("../img/external.png");
+  background: url("/assets/img/design/external.png");
   display: inline-block;
   border-left: 1px solid #F0F0F0;
   border-bottom: 1px solid #F0F0F0;
   margin-right: -3px;
 }
-body #site #site_info .stuff:nth-child(4n+4) {
+body #site #site-info .stuff:nth-child(4n+4) {
   border-right: 1px solid #F0F0F0;
 }
-body #site #site_info .stuff p {
+body #site #site-info .stuff p {
   font-family: OpenSansRegular;
   font-size: 13px;
   text-align: center;
   margin-top: 128px;
   color: #000000;
 }
-body #site #site_info .stuff:hover {
-  background: url("../img/internal.png");
+body #site #site-info .stuff:hover {
+  background: url("/assets/img/design/internal.png");
 }
-body #site #site_info .stuff:hover p {
+body #site #site-info .stuff:hover p {
   color: #ffffff;
 }
-body #site #site_news {
+body #site #site-news {
   width: 100%;
-  height: 404px;
+  margin-top: -1px;
   background-color: #EAEAEA;
+  padding-top: 51px;
+  padding-bottom: 50px;
 }
-body #site #site_news span {
+body #site #site-news span {
   color: #000000;
   font-family: OpenSansBold;
   font-size: 15px;
   text-align: center;
 }
-body #site #site_news span.news-company {
-  margin-top: 50px;
-}
-body #site #site_news span.technology {
-  margin-top: 88px;
-}
-body #site #site_news a {
+body #site a {
   color: #007AC2;
   font-family: OpenSansRegular;
   font-size: 14px;
 }
-body #site #site_news a i {
+body #site a i {
   color: #BFBFBF;
   font-size: 16px;
 }
-body #site #site_news a:hover {
+body #site a:hover {
   color: #000000;
 }
-body #site #site_news p {
+body #site a.new-link {
+  display: block;
+  width: 224px;
+}
+body #site a img {
+  width: 224px ;
+  height: 152px;
+  margin-bottom: 25px;
+}
+body #site p {
   color: #000000;
   font-family: OpenSansRegular;
+  margin-bottom: 19px;
 }
-body #site #site_news p.date-news {
+body #site p.date-news {
   font-size: 13px;
   color: #A4A3A3;
 }
-body #site #site_news p.content-news {
+body #site p.content-news {
   font-size: 14px;
 }
-body #site #site_news p.technology-text {
+body #site p.technology-text {
+  margin-top: 27px;
   font-size: 14px;
   color: #989797;
 }
-body #site #banner_about_company {
+body #site p.news-company {
+  margin-top: -5px;
+  margin-bottom: 30px;
+  color: #000000;
+  font-family: OpenSansBold;
+  font-size: 15px;
+  line-height: 18px;
+}
+body #site p.technology {
+  margin-bottom: 30px;
+  color: #000000;
+  font-family: OpenSansBold;
+  font-size: 15px;
+  line-height: 18px;
+}
+body #site .technology-block-right {
+  width: 190px;
+  background-color: #FFFFFF;
+  padding: 42px 30px 42px 30px;
+  float: right;
+}
+body #site #slider-bottom {
   width: 100%;
-  height: 405px;
-  background-color: red;
+  height: 510px;
+  background: url("/assets/img/temp/slider_bottom.png") repeat-x;
 }
 body #footer {
   width: 100%;
   height: 126px;
-  /*        p {
-                    font-family: OpenSansRegular;
-                    font-size:13px;
-                    color:#000000;
-                    display: inline-block;
-                    margin-top: 37px;
-        
-                    a{
-                        
-                        color:#000000;
-        
-                        &:hover{
-        
-                            color: #007AC2;
-        
-                        }
-        
-                    }
-        
-                    i{
-        
-                        color:#BFBFBF;
-                        font-size: 15px;
-                        margin-bottom: 14px;
-                    }
-        
-                }*/
 }
 body #footer .footer-info {
   display: inline-block;

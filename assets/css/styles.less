@@ -16,6 +16,18 @@ body{
         text-align: right;
     }
 
+    .al-left {
+        text-align: left;
+    }
+
+    .fl-right {
+        float: right;
+    }
+
+    .fl-left {
+        float: left;
+    }
+
 
 
     #header{
@@ -71,7 +83,7 @@ body{
                     display: block;
                     width: 155px;
                     height: 69px;
-                    background: url("../img/logo.png")  no-repeat;
+                    background: url("/assets/img/design/logo.png")  no-repeat;
                     margin-top: 29px;
 
 
@@ -132,15 +144,15 @@ body{
             height: 481px;
             background-color: #f0f0f0;
         }
-        #site_info{
+        #site-info{
             width:100%;
-            height:380px;
+
 
             .stuff{
                 display: inline-block;
                 width:233px;
                 height:190px;
-                background: url("../img/external.png") ;
+                background: url("/assets/img/design/external.png") ;
                 display: inline-block;
                 border-left:1px solid #F0F0F0;
                 border-bottom:1px solid #F0F0F0;
@@ -159,7 +171,7 @@ body{
                 }
                 &:hover{
 
-                    background: url("../img/internal.png") ;
+                    background: url("/assets/img/design/internal.png") ;
 
                     p {
                         color: #ffffff;
@@ -174,13 +186,12 @@ body{
 
 
         }
-        #site_news{
+        #site-news{
             width: 100%;
-            height: 404px;
+            margin-top: -1px;
             background-color: #EAEAEA;
-            // background: url("../img/branch.png") no-repeat;
-            // background: url("../img/building.png") no-repeat;
-
+            padding-top:51px;
+            padding-bottom:50px;
 
             span{
                 color:#000000;
@@ -188,52 +199,102 @@ body{
                 font-size:15px;
                 text-align:center;
 
-                &.news-company{
-                    margin-top: 50px;
-                }
-                &.technology{
-                    margin-top: 88px;
-                }
-
-            }
-
-            a{
-                color:#007AC2;
-                font-family:OpenSansRegular;
-                font-size:14px;
-
-                i{
-                    color: #BFBFBF;
-                    font-size:16px;
-                }
-
-                &:hover{
-
-                    color:#000000;
-
-                }
-
 
 
             }
 
-            p{
+
+        }
+
+        a{
+            color:#007AC2;
+            font-family:OpenSansRegular;
+            font-size:14px;
+
+
+
+
+            i{
+
+                color: #BFBFBF;
+                font-size:16px;
+            }
+
+            &:hover{
+
                 color:#000000;
-                font-family:OpenSansRegular;
 
-                &.date-news{
-                    font-size:13px;
-                    color:#A4A3A3;
-                }
-                &.content-news{
-                    font-size:14px;
-                }
-                &.technology-text{
-                    font-size:14px;
-                    color:#989797;
-                }
             }
 
+
+            &.new-link{
+                display: block;
+                width:224px;
+
+
+
+            }
+
+            img{
+                width:224px ;
+                height:152px;
+                margin-bottom: 25px;
+
+            }
+
+        }
+
+        p{
+
+            color:#000000;
+            font-family:OpenSansRegular;
+            margin-bottom: 19px;
+            //padding-top:20px;
+
+            &.date-news{
+                font-size:13px;
+                color:#A4A3A3;
+            }
+            &.content-news{
+                font-size:14px;
+            }
+            &.technology-text{
+                margin-top: 27px;
+                font-size:14px;
+                color:#989797;
+            }
+
+            &.news-company{
+                margin-top: -5px;
+                margin-bottom: 30px;
+                color:#000000;
+                font-family:OpenSansBold;
+                font-size:15px;
+                line-height: 18px;
+            }
+
+
+            &.technology{
+                //margin-top: 88px;
+                margin-bottom: 30px;
+                color:#000000;
+                font-family:OpenSansBold;
+                font-size:15px;
+                line-height: 18px;
+
+            }
+
+        }
+
+
+
+        .technology-block-right{
+            width:190px;
+
+            background-color: #FFFFFF;
+            padding:42px 30px 42px 30px;
+
+            float: right;
         }
 
 
@@ -241,10 +302,10 @@ body{
 
 
 
-        #banner_about_company{
+        #slider-bottom{
             width: 100%;
-            height: 405px;
-            background-color:red;
+            height: 510px;
+            background: url("/assets/img/temp/slider_bottom.png") repeat-x ;
         }
 
     }
@@ -283,39 +344,6 @@ body{
             }
 
         }
-
-        /*        p {
-                    font-family: OpenSansRegular;
-                    font-size:13px;
-                    color:#000000;
-                    display: inline-block;
-                    margin-top: 37px;
-        
-                    a{
-                        
-                        color:#000000;
-        
-                        &:hover{
-        
-                            color: #007AC2;
-        
-                        }
-        
-                    }
-        
-                    i{
-        
-                        color:#BFBFBF;
-                        font-size: 15px;
-                        margin-bottom: 14px;
-                    }
-        
-                }*/
-
-
-
-
-
 
 
 
