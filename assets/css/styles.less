@@ -10,6 +10,9 @@ and open the template in the editor.
 
 
 body{
+
+
+    color:#000000;
     a{text-decoration:none;}
 
     .al-right {
@@ -67,6 +70,41 @@ body{
             a:hover{
                 color:#3F89BB;
             }
+
+
+            .i-site-map{
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                position: relative;
+                top: 2px;
+                background: url("/assets/img/design/i-site-map.png") no-repeat;
+            }
+            .i-contact{
+                display: inline-block;
+                width: 16px;
+                height: 11px;
+                position: relative;
+                top: 2px;
+                background: url("/assets/img/design/i-contact.png") no-repeat;
+            }
+            .i-job{
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                position: relative;
+                top: 2px;
+                background: url("/assets/img/design/i-job.png") no-repeat;
+            }
+            .i-search{
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                position: relative;
+                top: 2px;
+                background: url("/assets/img/design/i-search.png") no-repeat;
+            }
+
 
 
         }
@@ -128,6 +166,14 @@ body{
                 }
 
             }
+            .i-mail-send{
+                display: inline-block;
+                width: 16px;
+                height: 15px;
+                position: relative;
+                top: 2px;
+                background: url("/assets/img/design/i-mail-send.png") no-repeat;
+            }
 
 
 
@@ -148,35 +194,42 @@ body{
             width:100%;
 
 
-            .stuff{
-                display: inline-block;
-                width:233px;
-                height:190px;
-                background: url("/assets/img/design/external.png") ;
-                display: inline-block;
-                border-left:1px solid #F0F0F0;
-                border-bottom:1px solid #F0F0F0;
-                margin-right: -3px;
+            a {
 
-                &:nth-child(4n+4) {
-                    border-right: 1px solid #F0F0F0;
-                }
+                &.stuff{
+                    display: inline-block;
+                    width:233px;
+                    height:190px;
+                    background: url("/assets/img/design/external.png") ;
+                    display: inline-block;
+                    border-left:1px solid #F0F0F0;
+                    border-bottom:1px solid #F0F0F0;
+                    margin-right: -3px;
 
-                p{
-                    font-family:OpenSansRegular;
-                    font-size:13px;
-                    text-align: center;
-                    margin-top: 128px;
-                    color:#000000;
-                }
-                &:hover{
-
-                    background: url("/assets/img/design/internal.png") ;
-
-                    p {
-                        color: #ffffff;
+                    &:nth-child(4n+4) {
+                        border-right: 1px solid #F0F0F0;
                     }
 
+
+
+                    p{
+                        font-family:OpenSansRegular;
+                        font-size:13px;
+                        text-align: center;
+                        margin-top: 128px;
+                        color:#000000;
+                    }
+
+                    &:hover{
+
+                        background: url("/assets/img/design/internal.png") ;
+
+                        p {
+                            color: #ffffff;
+                        }
+
+
+                    }
 
                 }
 
@@ -201,6 +254,22 @@ body{
 
 
 
+            }
+            .i-calendar{
+                display: inline-block;
+                width: 15px;
+                height: 16px;
+                position: relative;
+                top: 2px;
+                background: url("/assets/img/design/i-calendar.png") no-repeat;
+            }
+            .i-download-file{
+                display: inline-block;
+                width: 13px;
+                height: 16px;
+                position: relative;
+                top: 2px;
+                background: url("/assets/img/design/i-download-file.png") no-repeat;
             }
 
 
@@ -307,6 +376,66 @@ body{
             height: 510px;
             background: url("/assets/img/temp/slider_bottom.png") repeat-x ;
         }
+
+        //inner
+        &.basis{
+            background-color: #F6F6F6;
+            width: 100%;
+            padding-top:38px;
+
+            h1{
+                font-family: OpenSansRegular;
+                font-size:38px;
+                font-weight: normal;
+
+
+            }
+
+            .breadcrumbs {
+
+
+
+
+                a {
+                    color: #007AC2;
+                    font-family: OpenSansRegular;
+                    font-size: 13px;
+
+                    &.active{
+                        color: #989797; 
+                    }
+
+                }
+
+                span {
+                    color: #989797;
+                    padding: 0  7px 0 7px;
+
+                }
+            }
+
+            .prints{
+                font-family: OpenSansRegular;
+
+                font-weight: normal;
+                float:right;
+
+                a{
+                    font-size:11px;
+                    color: #989797;
+                }
+                .i-prints{
+                    display: inline-block;
+                    width: 16px;
+                    height: 14px;
+                    position: relative;
+                    top: 3px;
+                    background: url("/assets/img/design/i-prints.png") no-repeat;
+                }
+            }
+
+        }
+        //inner end
 
     }
     #footer{
