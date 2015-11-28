@@ -11,6 +11,11 @@
 
             
 }
+
+.coin-slider button {
+    margin-top: 100px;
+    margin-left: 100px;
+}
 .coin-slider a{ text-decoration: none; outline: none; border: none; }
 
 .cs-buttons { font-size: 0px; padding: 10px; float: left; }
