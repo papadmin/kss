@@ -104,6 +104,8 @@ body #header #header-elements a.request {
   height: 122px;
   padding-top: 18px;
   text-align: center;
+  width: 235px;
+  margin-left: -15px;
 }
 body #header #header-elements a.request .request-round {
   width: 40px;
@@ -388,6 +390,8 @@ form.search {
   /* Параметры рамки */
   background-color: #072E4C;
   margin-top: -12px;
+  width: 233px;
+  margin-left: -15px;
   /* Firefox 19+ */
   /* Firefox 18- */
 }
