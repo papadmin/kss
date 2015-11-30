@@ -299,6 +299,27 @@ body #site.basis .prints .i-prints {
   top: 3px;
   background: url("/assets/img/design/i-prints.png") no-repeat;
 }
+body #site.basis .content {
+  background-color: #ffffff;
+  margin: 40px 0 50px 0;
+}
+body #site.basis .content .content-area {
+  padding: 40px 30px;
+}
+body #site.basis .content .content-blocks {
+  width: 235px;
+  margin-left: -15px;
+  background-color: #EAEAEA;
+  height: 100%;
+}
+body #site.basis .content .content-blocks p.phblocks {
+  background-color: #0B4A81;
+  font-size: 14px;
+  font-family: OpenSansBold;
+  color: #ffffff;
+  padding: 16px 0;
+  text-align: center;
+}
 body #footer {
   width: 100%;
   height: 126px;
@@ -426,5 +447,109 @@ form.search button {
   display: inline-block;
   border: none;
   cursor: pointer;
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 30, 2015, 9:06:55 AM
+    Author     : developer
+*/
+.tabs {
+  margin-bottom: 16px;
+  margin-left: -10px;
+}
+.tabs .istab {
+  display: inline-block;
+  padding: 6px 10px;
+  margin-right: 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: RobotoBold;
+}
+.tabs .istab a {
+  color: #000000;
+  border-bottom: 1px dotted #000000;
+}
+.tabs .istab.link-active {
+  background-color: #000000;
+  position: relative;
+}
+.tabs .istab.link-active:after {
+  content: '';
+  position: absolute;
+  /* Абсолютное позиционирование */
+  left: 50%;
+  margin-left: -10px;
+  bottom: -20px;
+  /* Положение треугольника */
+  border: 10px solid transparent;
+  /* Прозрачные границы */
+  border-top: 10px solid #000000;
+  /* Добавляем треугольник */
+}
+.tabs .istab.link-active a {
+  color: #ffffff;
+}
+.tabs .istab.link-hover {
+  background-color: #000000;
+}
+.tabs .istab.link-hover a {
+  color: #ffffff;
+}
+.tabs a {
+  color: #5c5252;
+  text-decoration: none;
+}
+.tabs .tab {
+  padding: 34px 0 30px 10px;
+  display: none;
+}
+.tabs .tab.tab-active {
+  display: block;
+}
+.tabs .tab h3 {
+  font-family: RobotoBold;
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+.tabs .tab p {
+  font-family: RobotoLight;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+.tabs .tab p.ph3 {
+  font-family: RobotoBold;
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+.tabs .tab ul {
+  margin: 0 0 30px 40px;
+  font-family: RobotoLight;
+  font-size: 15px;
+}
+.tabs .tab ul li {
+  margin-bottom: 12px;
+  background: url('/assets/img/design/list-round.png') no-repeat;
+  background-position-y: 9px;
+  padding-left: 14px;
+}
+.tabs .tab table {
+  font-family: RobotoLight;
+  font-size: 15px;
+  margin-left: -20px;
+}
+.tabs .tab table tr:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+.tabs .tab table tr td {
+  padding: 14px 20px;
+  width: 50%;
+}
+.tabs .tab table tr td:first-child {
+  color: #BCBCBC;
+  width: 40%;
 }
 /*# sourceMappingURL=styles.css.map */

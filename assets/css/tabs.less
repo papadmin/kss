@@ -1,0 +1,170 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 30, 2015, 9:06:55 AM
+    Author     : developer
+*/
+
+
+.tabs {
+
+    margin-bottom: 16px;
+    margin-left: -10px;
+
+    .istab {
+
+        display: inline-block;
+        padding: 6px 10px;
+        margin-right: 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: RobotoBold;
+
+
+
+        a  {
+            color: #000000;
+            border-bottom: 1px dotted #000000;
+        }
+
+        &.link-active {
+
+            background-color: #000000;
+            position: relative;
+
+            &:after {
+                content: ''; 
+                position: absolute; /* Абсолютное позиционирование */
+                left: 50%;
+                margin-left: -10px;
+                bottom: -20px; /* Положение треугольника */
+                border: 10px solid transparent; /* Прозрачные границы */
+                border-top: 10px solid #000000; /* Добавляем треугольник */
+            }
+
+            a  {
+                color: #ffffff;
+            }
+        }
+
+        &.link-hover {
+
+            background-color: #000000;
+
+            a  {
+                color: #ffffff;
+            }
+        }
+
+    }
+
+
+    a {
+
+        color:#5c5252;
+        text-decoration: none;
+
+
+
+
+        &:hover {
+
+        }
+
+
+    }
+
+    .tab {
+
+
+        padding: 34px 0 30px 10px;
+
+        display: none;
+        //overflow: auto;
+
+
+
+        &.tab-active {
+            display: block;
+        }
+
+        h3 {
+            font-family: RobotoBold;
+            font-size: 17px;
+            margin-bottom: 18px;
+        }
+
+
+        p {
+
+
+            &.ph3 {
+                font-family: RobotoBold;
+                font-size: 17px;
+                margin-bottom: 18px;
+            }
+
+            font-family: RobotoLight;
+            font-size: 15px;
+            margin-bottom: 14px;
+
+        }
+        
+        ul {
+
+                margin: 0 0 30px 40px;
+                font-family: RobotoLight;
+                font-size: 15px;
+
+                li {
+                    margin-bottom: 12px;
+                    background: url('/assets/img/design/list-round.png') no-repeat;
+                    background-position-y: 9px;
+                    padding-left: 14px;
+
+                }
+
+            }
+
+        table {
+
+            font-family: RobotoLight;
+            font-size: 15px;
+            margin-left: -20px;
+
+
+            tr {
+
+
+                &:nth-child(odd) {
+                    background-color: #F5F5F5;
+                }
+
+                td {
+
+                    padding: 14px 20px;
+                    width: 50%;
+
+                    &:first-child {
+                        color: #BCBCBC;
+                        //padding-left: 20px;
+                        width: 40%;
+                    }
+
+
+
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+}
+
