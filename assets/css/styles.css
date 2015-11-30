@@ -92,7 +92,7 @@ body #header #header-elements {
   height: 140px;
 }
 body #header #header-elements a.logo {
-  display: block;
+  display: inline-block;
   width: 155px;
   height: 69px;
   background: url("/assets/img/design/logo.png") no-repeat;
@@ -109,8 +109,7 @@ body #header #header-elements a.request {
 }
 body #header #header-elements a.request .request-round {
   width: 40px;
-  padding-top: 10px;
-  height: 30px;
+  height: 40px;
   color: #FFFFFF;
   border-radius: 50%;
   background-color: #007AC2;
@@ -126,12 +125,18 @@ body #header #header-elements a.request p {
   font-size: 12px;
   color: #989797;
 }
+body #header #header-elements .separator-header {
+  display: inline-block;
+  height: 61px;
+  padding-right: 26px;
+  border-right: 1px solid #E2E2E2;
+}
 body #header #header-elements .i-mail-send {
   display: inline-block;
   width: 16px;
   height: 15px;
   position: relative;
-  top: 2px;
+  top: 9px;
   background: url("/assets/img/design/i-mail-send.png") no-repeat;
 }
 body #site #banner {
@@ -300,11 +305,53 @@ body #site.basis .prints .i-prints {
   background: url("/assets/img/design/i-prints.png") no-repeat;
 }
 body #site.basis .content {
-  background-color: #ffffff;
   margin: 40px 0 50px 0;
 }
 body #site.basis .content .content-area {
-  padding: 40px 30px;
+  padding: 40px 0 40px 0;
+  background-color: #ffffff;
+  width: 706px;
+}
+body #site.basis .content .content-area a.area-stuff {
+  width: 234px;
+  height: 190px;
+  background: url("/assets/img/design/external.png");
+  display: inline-block;
+  border-right: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+  margin-right: -3px;
+}
+body #site.basis .content .content-area a.area-stuff:nth-child(2) {
+  border-top: 1px solid #F0F0F0;
+}
+body #site.basis .content .content-area a.area-stuff:nth-child(3) {
+  border-top: 1px solid #F0F0F0;
+}
+body #site.basis .content .content-area a.area-stuff:nth-child(4) {
+  border-top: 1px solid #F0F0F0;
+}
+body #site.basis .content .content-area a.area-stuff p {
+  font-family: OpenSansRegular;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 128px;
+  color: #000000;
+}
+body #site.basis .content .content-area a.area-stuff:hover {
+  background: url("/assets/img/design/internal.png");
+}
+body #site.basis .content .content-area a.area-stuff:hover p {
+  color: #ffffff;
+}
+body #site.basis .content .content-area p {
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 37px;
+  margin-right: 37px;
+  margin-left: 27px;
+  margin-bottom: 48px;
+  color: #000000;
 }
 body #site.basis .content .content-blocks {
   width: 235px;
@@ -428,18 +475,19 @@ form.search input[type="text"] {
   padding-right: 4px;
   background-color: #072E4C;
   margin-top: 14px;
+  float: left;
 }
 form.search input::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #3F89BB;
 }
 form.search input::-moz-placeholder {
-  color: #ffffff;
+  color: #3F89BB;
 }
 form.search input:-moz-placeholder {
-  color: #ffffff;
+  color: #3F89BB;
 }
 form.search input:-ms-input-placeholder {
-  color: #ffffff;
+  color: #3F89BB;
 }
 form.search button {
   background-color: #072E4C;
@@ -447,6 +495,18 @@ form.search button {
   display: inline-block;
   border: none;
   cursor: pointer;
+  float: left;
+  margin-top: 11px;
+}
+form.search .separator-search {
+  display: inline-block;
+  height: 28px;
+  width: 1px;
+  background-color: #0B4A81;
+  margin-top: 7px;
+  margin-right: 7px;
+  margin-left: 5px;
+  float: left;
 }
 /*
 To change this license header, choose License Headers in Project Properties.

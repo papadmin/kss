@@ -30,18 +30,19 @@ form.search input[type="text"] {
   padding-right: 4px;
   background-color: #072E4C;
   margin-top: 14px;
+  float: left;
 }
 form.search input::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #3F89BB;
 }
 form.search input::-moz-placeholder {
-  color: #ffffff;
+  color: #3F89BB;
 }
 form.search input:-moz-placeholder {
-  color: #ffffff;
+  color: #3F89BB;
 }
 form.search input:-ms-input-placeholder {
-  color: #ffffff;
+  color: #3F89BB;
 }
 form.search button {
   background-color: #072E4C;
@@ -49,5 +50,17 @@ form.search button {
   display: inline-block;
   border: none;
   cursor: pointer;
+  float: left;
+  margin-top: 11px;
+}
+form.search .separator-search {
+  display: inline-block;
+  height: 28px;
+  width: 1px;
+  background-color: #0B4A81;
+  margin-top: 7px;
+  margin-right: 7px;
+  margin-left: 5px;
+  float: left;
 }
 /*# sourceMappingURL=forms.css.map */

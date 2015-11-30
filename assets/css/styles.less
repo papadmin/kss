@@ -103,6 +103,7 @@ body{
                 position: relative;
                 top: 2px;
                 background: url("/assets/img/design/i-search.png") no-repeat;
+
             }
 
 
@@ -118,15 +119,15 @@ body{
 
                 &.logo{
 
-                    display: block;
+                    display: inline-block;
                     width: 155px;
                     height: 69px;
                     background: url("/assets/img/design/logo.png")  no-repeat;
                     margin-top: 29px;
 
 
-
                 }
+
 
                 &.request{
                     display: block;
@@ -145,8 +146,8 @@ body{
 
                     .request-round{
                         width:40px;
-                        padding-top: 10px;
-                        height: 30px;
+
+                        height: 40px;
                         color:#FFFFFF;
                         border-radius:50%;
                         background-color: #007AC2;
@@ -171,12 +172,21 @@ body{
                 }
 
             }
+
+            .separator-header{
+                display: inline-block;
+                height: 61px;        
+                padding-right: 26px;
+                border-right: 1px solid #E2E2E2;
+
+            }
+
             .i-mail-send{
                 display: inline-block;
                 width: 16px;
                 height: 15px;
                 position: relative;
-                top: 2px;
+                top: 9px;
                 background: url("/assets/img/design/i-mail-send.png") no-repeat;
             }
 
@@ -240,10 +250,27 @@ body{
 
             }
 
+            //inner
 
 
+
+
+
+
+
+
+
+
+
+
+
+            //inner end
 
         }
+
+
+
+
         #site-news{
             width: 100%;
             margin-top: -1px;
@@ -440,12 +467,78 @@ body{
 
 
             .content {
-                background-color: #ffffff;
+                
                 margin: 40px 0 50px 0;
+                
 
 
                 .content-area {
-                    padding: 40px 30px;
+                    padding: 40px 0 40px 0;
+                    background-color: #ffffff;
+                    width: 706px;
+                
+                    
+                    //padding: 40px 0;
+
+                    a{
+                        &.area-stuff{
+                            display: inline-block;
+                            width:234px;
+                            height:190px;
+                            background: url("/assets/img/design/external.png") ;
+                            display: inline-block;
+                            border-right:1px solid #F0F0F0;
+                            border-bottom:1px solid #F0F0F0;
+                            //border-top:1px solid #F0F0F0;
+                            margin-right: -3px;
+
+                            &:nth-child(3n+3) {
+                                //border-right: 1px solid #F0F0F0;
+                            }
+                            
+                            &:nth-child(2) {
+                                border-top:1px solid #F0F0F0;
+                            }
+                            &:nth-child(3) {
+                                border-top:1px solid #F0F0F0;
+                            }
+                            &:nth-child(4) {
+                                border-top:1px solid #F0F0F0;
+                            }
+                            
+
+                            p{
+                                font-family:OpenSansRegular;
+                                font-size:13px;
+                                text-align: center;
+                                margin-top: 128px;
+                                color:#000000;
+                            }
+
+                            &:hover{
+
+                                background: url("/assets/img/design/internal.png") ;
+
+                                p {
+                                    color: #ffffff;
+                                }
+
+
+                            }
+
+                        }
+                    }
+                    p{
+                        font-family:OpenSansRegular;
+                        font-size:14px;
+                        text-align: center;
+                        margin-top: 37px;
+                        margin-right: 37px;
+                        margin-left: 27px;
+                        margin-bottom: 48px;
+                        color:#000000;
+                    }
+
                 }
 
                 .content-blocks {
