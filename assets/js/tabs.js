@@ -24,7 +24,9 @@ $(document).ready(function ( ) {
             event.preventDefault();
             var tabId = 'd-' + $(this).attr('id');
             $('.istab').removeClass('link-active');
+            $('.tabs .istab a').attr('status', 0);
             $(this).parent('.istab').addClass('link-active');
+            $(this).attr('status', 1);
 
             $('.tab').removeClass('tab-active');
             $('.tab').each(function () {

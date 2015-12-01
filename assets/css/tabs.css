@@ -7,47 +7,31 @@ and open the template in the editor.
     Created on : Nov 30, 2015, 9:06:55 AM
     Author     : developer
 */
-.tabs {
-  margin-bottom: 16px;
-  margin-left: -10px;
-}
 .tabs .istab {
   display: inline-block;
-  padding: 6px 10px;
-  margin-right: 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: RobotoBold;
+  padding: 0 0 26px 0;
+  margin-right: 36px;
+  border-bottom: 1px solid transparent;
 }
 .tabs .istab a {
-  color: #000000;
+  color: #000000 !important;
+  font-size: 14px !important;
+  font-family: OpenSansBold !important;
   border-bottom: 1px dotted #000000;
 }
 .tabs .istab.link-active {
-  background-color: #000000;
-  position: relative;
-}
-.tabs .istab.link-active:after {
-  content: '';
-  position: absolute;
-  /* Абсолютное позиционирование */
-  left: 50%;
-  margin-left: -10px;
-  bottom: -20px;
-  /* Положение треугольника */
-  border: 10px solid transparent;
-  /* Прозрачные границы */
-  border-top: 10px solid #000000;
-  /* Добавляем треугольник */
+  border-bottom: 1px solid #3F89BB;
 }
 .tabs .istab.link-active a {
-  color: #ffffff;
+  color: #747B7B !important;
+  border-bottom: none;
 }
 .tabs .istab.link-hover {
-  background-color: #000000;
+  border-bottom: 1px solid #3F89BB;
 }
 .tabs .istab.link-hover a {
-  color: #ffffff;
+  color: #747B7B !important;
+  border-bottom: none;
 }
 .tabs a {
   color: #5c5252;
@@ -55,6 +39,7 @@ and open the template in the editor.
 }
 .tabs .tab {
   padding: 34px 0 30px 10px;
+  border-top: 1px solid #E2E2E2;
   display: none;
 }
 .tabs .tab.tab-active {

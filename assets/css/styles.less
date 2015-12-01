@@ -212,17 +212,24 @@ body{
             a {
 
                 &.stuff{
-                    display: inline-block;
+                    display: block;
+                    float: left;
                     width:233px;
                     height:190px;
                     background: url("/assets/img/design/external.png") ;
                     display: inline-block;
-                    border-left:1px solid #F0F0F0;
+                    //border-left:1px solid #F0F0F0;
+                    border-right: 1px solid #F0F0F0;
+                    border-left: 1px solid #F0F0F0;
                     border-bottom:1px solid #F0F0F0;
-                    margin-right: -3px;
+                    //margin-right: -3px;
 
-                    &:nth-child(4n+4) {
-                        border-right: 1px solid #F0F0F0;
+                    &:nth-child(1) {
+                        border-left: 1px solid #F0F0F0;
+                    }
+                    
+                    &:nth-child(5) {
+                        border-left: 1px solid #F0F0F0;
                     }
 
 
@@ -476,13 +483,19 @@ body{
                     padding: 40px 0 40px 0;
                     background-color: #ffffff;
                     width: 706px;
+                    
+                    &.area-full {
+                        width: 880px;
+                        padding: 40px 30px;
+                    }
                 
                     
                     //padding: 40px 0;
 
                     a{
                         &.area-stuff{
-                            display: inline-block;
+                            display: block;
+                            float: left;
                             width:234px;
                             height:190px;
                             background: url("/assets/img/design/external.png") ;
@@ -490,7 +503,7 @@ body{
                             border-right:1px solid #F0F0F0;
                             border-bottom:1px solid #F0F0F0;
                             //border-top:1px solid #F0F0F0;
-                            margin-right: -3px;
+                            //margin-right: -3px;
 
                             &:nth-child(3n+3) {
                                 //border-right: 1px solid #F0F0F0;

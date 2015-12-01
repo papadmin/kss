@@ -148,16 +148,21 @@ body #site #site-info {
   width: 100%;
 }
 body #site #site-info a.stuff {
+  display: block;
+  float: left;
   width: 233px;
   height: 190px;
   background: url("/assets/img/design/external.png");
   display: inline-block;
+  border-right: 1px solid #F0F0F0;
   border-left: 1px solid #F0F0F0;
   border-bottom: 1px solid #F0F0F0;
-  margin-right: -3px;
 }
-body #site #site-info a.stuff:nth-child(4n+4) {
-  border-right: 1px solid #F0F0F0;
+body #site #site-info a.stuff:nth-child(1) {
+  border-left: 1px solid #F0F0F0;
+}
+body #site #site-info a.stuff:nth-child(5) {
+  border-left: 1px solid #F0F0F0;
 }
 body #site #site-info a.stuff p {
   font-family: OpenSansRegular;
@@ -312,14 +317,19 @@ body #site.basis .content .content-area {
   background-color: #ffffff;
   width: 706px;
 }
+body #site.basis .content .content-area.area-full {
+  width: 880px;
+  padding: 40px 30px;
+}
 body #site.basis .content .content-area a.area-stuff {
+  display: block;
+  float: left;
   width: 234px;
   height: 190px;
   background: url("/assets/img/design/external.png");
   display: inline-block;
   border-right: 1px solid #F0F0F0;
   border-bottom: 1px solid #F0F0F0;
-  margin-right: -3px;
 }
 body #site.basis .content .content-area a.area-stuff:nth-child(2) {
   border-top: 1px solid #F0F0F0;
@@ -476,6 +486,7 @@ form.search input[type="text"] {
   background-color: #072E4C;
   margin-top: 14px;
   float: left;
+  width: 173px;
 }
 form.search input::-webkit-input-placeholder {
   color: #3F89BB;
@@ -517,47 +528,31 @@ and open the template in the editor.
     Created on : Nov 30, 2015, 9:06:55 AM
     Author     : developer
 */
-.tabs {
-  margin-bottom: 16px;
-  margin-left: -10px;
-}
 .tabs .istab {
   display: inline-block;
-  padding: 6px 10px;
-  margin-right: 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: RobotoBold;
+  padding: 0 0 26px 0;
+  margin-right: 36px;
+  border-bottom: 1px solid transparent;
 }
 .tabs .istab a {
-  color: #000000;
+  color: #000000 !important;
+  font-size: 14px !important;
+  font-family: OpenSansBold !important;
   border-bottom: 1px dotted #000000;
 }
 .tabs .istab.link-active {
-  background-color: #000000;
-  position: relative;
-}
-.tabs .istab.link-active:after {
-  content: '';
-  position: absolute;
-  /* Абсолютное позиционирование */
-  left: 50%;
-  margin-left: -10px;
-  bottom: -20px;
-  /* Положение треугольника */
-  border: 10px solid transparent;
-  /* Прозрачные границы */
-  border-top: 10px solid #000000;
-  /* Добавляем треугольник */
+  border-bottom: 1px solid #3F89BB;
 }
 .tabs .istab.link-active a {
-  color: #ffffff;
+  color: #747B7B !important;
+  border-bottom: none;
 }
 .tabs .istab.link-hover {
-  background-color: #000000;
+  border-bottom: 1px solid #3F89BB;
 }
 .tabs .istab.link-hover a {
-  color: #ffffff;
+  color: #747B7B !important;
+  border-bottom: none;
 }
 .tabs a {
   color: #5c5252;
@@ -565,6 +560,7 @@ and open the template in the editor.
 }
 .tabs .tab {
   padding: 34px 0 30px 10px;
+  border-top: 1px solid #E2E2E2;
   display: none;
 }
 .tabs .tab.tab-active {

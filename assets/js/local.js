@@ -22,11 +22,31 @@ $(document).ready(function ( ) {
             $(this).children('.request-round').css('background-color', '#007AC2');
         });
     }
+    
+    
+     if ($('.content-blocks').length > 0) {
+         
+         
 
-   
+
+            var alphaHeight = $('.content-blocks').height();
+
+            var omegaHeight = $('.content-area').height();
+
+            if (alphaHeight > omegaHeight) {
+                $('.content-area').height(alphaHeight - 80);
+            }
+            else {
+                $('.content-blocks').height(omegaHeight);
+            }
 
 
+      
+         
+     }
 
-});
+
+    
+  });
 
 

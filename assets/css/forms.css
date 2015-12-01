@@ -31,6 +31,7 @@ form.search input[type="text"] {
   background-color: #072E4C;
   margin-top: 14px;
   float: left;
+  width: 173px;
 }
 form.search input::-webkit-input-placeholder {
   color: #3F89BB;
