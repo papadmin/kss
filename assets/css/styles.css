@@ -321,6 +321,9 @@ body #site.basis .content .content-area.area-full {
   width: 880px;
   padding: 40px 30px;
 }
+body #site.basis .content .content-area.area-no-padding {
+  padding-top: 0;
+}
 body #site.basis .content .content-area a.area-stuff {
   display: block;
   float: left;
@@ -353,15 +356,39 @@ body #site.basis .content .content-area a.area-stuff:hover {
 body #site.basis .content .content-area a.area-stuff:hover p {
   color: #ffffff;
 }
+body #site.basis .content .content-area a.subcategory-stuff {
+  display: block;
+  float: left;
+  width: 233px;
+  height: 240px;
+  display: inline-block;
+  border-right: 1px solid #F0F0F0;
+  border-left: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+}
+body #site.basis .content .content-area a.subcategory-stuff:nth-child(1) {
+  border-left: 1px solid #F0F0F0;
+}
+body #site.basis .content .content-area a.subcategory-stuff:nth-child(5) {
+  border-left: 1px solid #F0F0F0;
+}
+body #site.basis .content .content-area a.subcategory-stuff p {
+  font-family: OpenSansRegular;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 128px;
+  color: #000000;
+}
 body #site.basis .content .content-area p {
   font-family: OpenSansRegular;
   font-size: 14px;
-  text-align: center;
-  margin-top: 37px;
   margin-right: 37px;
   margin-left: 27px;
   margin-bottom: 48px;
   color: #000000;
+}
+body #site.basis .content .content-area .tabs-wrapper {
+  padding: 60px 30px 40px 30px;
 }
 body #site.basis .content .content-blocks {
   width: 235px;
@@ -375,7 +402,67 @@ body #site.basis .content .content-blocks p.phblocks {
   font-family: OpenSansBold;
   color: #ffffff;
   padding: 16px 0;
+  margin-bottom: 0;
   text-align: center;
+}
+body #site.basis .content .content-blocks .dir-block {
+  border-bottom: 1px solid #ffffff;
+  padding: 30px 0;
+  width: 195px;
+  margin-left: 20px;
+}
+body #site.basis .content .content-blocks .dir-block:last-child {
+  border-bottom: none;
+}
+body #site.basis .content .content-blocks .dir-block p {
+  font-family: OpenSansRegular;
+  font-size: 13px;
+}
+body #site.basis .content .content-blocks .dir-block p.ph2bloks {
+  font-family: OpenSansBold;
+  font-size: 15px;
+}
+body #site.basis .content .content-blocks .dir-block p.date-dir-block {
+  color: #989797;
+}
+body #site.basis .content .content-blocks .dir-block i {
+  color: #007AC2;
+  font-size: 16px;
+}
+body #site.basis .content .content-blocks .dir-block i.fa-angle-right {
+  position: relative;
+  top: 2px;
+  margin-left: 5px;
+}
+body #site.basis .content .content-blocks .dir-block a {
+  font-family: OpenSansRegular;
+  font-size: 12px;
+}
+body #site.basis .content .content-blocks .dir-block a.icons-dir-block {
+  float: left;
+}
+body #site.basis .content .content-blocks .dir-block a.icons-dir-block .i-call {
+  display: block;
+  width: 18px;
+  height: 20px;
+  position: relative;
+  top: 2px;
+  margin-right: 8px;
+  background: url("/assets/img/design/i-call.png") no-repeat;
+}
+body #site.basis .content .content-blocks .dir-block a.back-call-dir-block {
+  border-bottom: 1px #007AC2 dotted;
+  color: #007AC2;
+  font-family: OpenSansRegular;
+  font-size: 12px;
+  display: block;
+  float: left;
+  line-height: 12px;
+  margin-top: 3px;
+}
+body #site.basis .content .content-blocks .dir-block a.dir-block-produstion img {
+  width: 195px ;
+  height: 140px;
 }
 body #footer {
   width: 100%;
