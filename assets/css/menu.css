@@ -47,4 +47,73 @@ and open the template in the editor.
 #footer-menu ul li a:hover {
   color: #007AC2;
 }
+#directories ul li {
+  font-family: RobotoBold;
+  font-size: 16px;
+  border-bottom: 1px solid #BFBFBF;
+}
+#directories ul li.level_1 a {
+  text-transform: uppercase;
+}
+#directories ul li.level_2 a {
+  text-transform: none;
+}
+#directories ul li.level_3 a {
+  text-transform: none;
+}
+#directories ul li:last-child {
+  border-bottom: none;
+}
+#directories ul li a {
+  color: #000000;
+  line-height: 50px;
+}
+#directories ul li a:hover {
+  color: #979797;
+}
+#directories ul li a.active {
+  color: #E73F44;
+}
+#directories ul li ul {
+  display: none;
+  background-color: #F5F5F5;
+  border-top: 1px solid #BFBFBF;
+  border-bottom: 1px solid #BFBFBF;
+  margin-top: -50px;
+  padding-top: 50px;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+#directories ul li ul li {
+  font-family: RobotoRegular;
+  font-size: 15px;
+  border-bottom: none;
+}
+#directories ul li ul li a {
+  line-height: 30px;
+}
+#directories ul li ul li a:hover {
+  color: #979797;
+}
+#directories ul li ul li a.active {
+  color: #E73F44;
+}
+#directories ul li ul li ul {
+  border-top: none;
+  border-bottom: none;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: 20px;
+  padding-bottom: 0;
+}
+#directories ul li ul li ul li {
+  font-size: 13px;
+}
+#directories ul li ul li ul li a:hover {
+  color: #979797;
+}
+#directories ul li ul li ul li a.active {
+  color: #E73F44;
+}
 /*# sourceMappingURL=menu.css.map */
