@@ -48,40 +48,55 @@ and open the template in the editor.
   color: #007AC2;
 }
 #directories ul li {
-  font-family: RobotoBold;
-  font-size: 16px;
-  border-bottom: 1px solid #BFBFBF;
+  /*&.level_2 {
+
+                a {
+                    text-transform: none;
+                }
+
+            }
+
+            &.level_3 {
+
+                a {
+                    text-transform: none;
+                }
+
+            }*/
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  border-bottom: 1px solid #E2E2E2;
 }
 #directories ul li.level_1 a {
   text-transform: uppercase;
-}
-#directories ul li.level_2 a {
-  text-transform: none;
-}
-#directories ul li.level_3 a {
-  text-transform: none;
 }
 #directories ul li:last-child {
   border-bottom: none;
 }
 #directories ul li a {
   color: #000000;
-  line-height: 50px;
+  line-height: 60px;
+  display: block;
+  padding: 0 30px;
+  /*&:hover {
+                    color: #979797;
+                }
+
+                &.active {
+                    color: #E73F44;
+                }*/
 }
-#directories ul li a:hover {
-  color: #979797;
-}
-#directories ul li a.active {
-  color: #E73F44;
+#directories ul li a i {
+  float: right;
+  font-size: 24px;
+  position: relative;
+  top: 18px;
 }
 #directories ul li ul {
   display: none;
-  background-color: #F5F5F5;
-  border-top: 1px solid #BFBFBF;
-  border-bottom: 1px solid #BFBFBF;
-  margin-top: -50px;
+  border-top: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
   padding-top: 50px;
-  margin-left: -20px;
   padding-left: 20px;
   padding-bottom: 20px;
 }
