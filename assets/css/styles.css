@@ -678,10 +678,16 @@ and open the template in the editor.
 #directories ul li ul li .pic-directory p.xls {
   color: #3FBB45 !important;
   text-align: center;
+  margin-top: 27px !important;
+  font-size: 12px !important;
+  font-family: OpenSansRegular !important;
 }
 #directories ul li ul li .pic-directory p.pdf {
   color: #DA5353 !important;
   text-align: center;
+  margin-top: 27px !important;
+  font-size: 12px !important;
+  font-family: OpenSansRegular !important;
 }
 #directories ul li ul li .block-directory {
   font-family: OpenSansRegular;
