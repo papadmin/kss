@@ -36,7 +36,7 @@
     padding: 10px; 
     float: left;  
     top: -464px; 
-    left: 855px !important;
+    left: 820px !important;
     margin-left: 0 !important;
     width: 200px;
     z-index: 1002;
@@ -81,4 +81,4 @@
 
 
 .cs-prev, 
-.cs-next { background-color: transparent; color: transparent; padding: 0px 10px; }
+.cs-next { background-color: transparent; color: transparent !important; padding: 0px 10px; }
