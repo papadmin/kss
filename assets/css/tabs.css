@@ -41,6 +41,39 @@ and open the template in the editor.
   padding: 34px 0 30px 10px;
   border-top: 1px solid #E2E2E2;
   display: none;
+  /*        table {
+        
+                    font-family: RobotoLight;
+                    font-size: 15px;
+                    margin-left: -20px;
+        
+        
+                    tr {
+        
+        
+                        &:nth-child(odd) {
+                            background-color: #F5F5F5;
+                        }
+        
+                        td {
+        
+                            padding: 14px 20px;
+                            width: 50%;
+        
+                            &:first-child {
+                                color: #BCBCBC;
+                                //padding-left: 20px;
+                                width: 40%;
+                            }
+        
+        
+        
+                        }
+        
+                    }
+        
+        
+                }*/
 }
 .tabs .tab.tab-active {
   display: block;
@@ -71,20 +104,25 @@ and open the template in the editor.
   background-position-y: 9px;
   padding-left: 14px;
 }
-.tabs .tab table {
-  font-family: RobotoLight;
-  font-size: 15px;
-  margin-left: -20px;
+.tabs .tab table.intab {
+  font-family: OpenSansRegular;
+  font-size: 13px;
+  margin-bottom: 30px;
+  width: 100%;
 }
-.tabs .tab table tr:nth-child(odd) {
-  background-color: #F5F5F5;
+.tabs .tab table.intab tr {
+  border-bottom: 1px solid #E2E2E2;
 }
-.tabs .tab table tr td {
+.tabs .tab table.intab tr:last-child {
+  border-bottom: none !important;
+}
+.tabs .tab table.intab tr td {
   padding: 14px 20px;
-  width: 50%;
+  width: 47%;
 }
-.tabs .tab table tr td:first-child {
-  color: #BCBCBC;
+.tabs .tab table.intab tr td:first-child {
+  color: #989797;
   width: 40%;
+  padding-left: 0;
 }
 /*# sourceMappingURL=tabs.css.map */

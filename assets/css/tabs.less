@@ -125,39 +125,71 @@ and open the template in the editor.
 
         }
 
-        table {
+        table{
+            
 
-            font-family: RobotoLight;
-            font-size: 15px;
-            margin-left: -20px;
+            &.intab {
+                font-family:OpenSansRegular;
+                font-size:13px;
+                margin-bottom:30px;
+                width:100%;
 
+                tr{
+                    border-bottom:1px solid #E2E2E2;
 
-            tr {
-
-
-                &:nth-child(odd) {
-                    background-color: #F5F5F5;
-                }
-
-                td {
-
-                    padding: 14px 20px;
-                    width: 50%;
-
-                    &:first-child {
-                        color: #BCBCBC;
-                        //padding-left: 20px;
-                        width: 40%;
+                    &:last-child{
+                        border-bottom: none !important;
                     }
+                    td{
+                        padding: 14px 20px;
+                        width: 47%;
 
-
-
+                        &:first-child {
+                            color: #989797;
+                            width: 40%;
+                            padding-left: 0;
+                        }
+                    }
                 }
 
             }
 
 
         }
+
+        /*        table {
+        
+                    font-family: RobotoLight;
+                    font-size: 15px;
+                    margin-left: -20px;
+        
+        
+                    tr {
+        
+        
+                        &:nth-child(odd) {
+                            background-color: #F5F5F5;
+                        }
+        
+                        td {
+        
+                            padding: 14px 20px;
+                            width: 50%;
+        
+                            &:first-child {
+                                color: #BCBCBC;
+                                //padding-left: 20px;
+                                width: 40%;
+                            }
+        
+        
+        
+                        }
+        
+                    }
+        
+        
+                }*/
 
 
     }

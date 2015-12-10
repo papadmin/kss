@@ -450,6 +450,27 @@ body #site.basis .content .content-area .tab-active img {
   height: 377px;
   margin-bottom: 30px;
 }
+body #site.basis .content .content-area.area-product {
+  padding-top: 0;
+}
+body #site.basis .content .content-area .banner-product {
+  display: block;
+  width: 355px;
+  height: 356px;
+  background-color: #E2E2E2;
+  float: left;
+}
+body #site.basis .content .content-area .drawing-product {
+  display: block;
+  width: 350px;
+  height: 355px;
+  border-bottom: 1px solid #E2E2E2;
+  background: url("/assets/img/temp/drawing.png") no-repeat;
+  float: left;
+}
+body #site.basis .content .content-area table.intab tr {
+  border-bottom: 1px solid #E2E2E2;
+}
 body #site.basis .content .content-blocks {
   width: 235px;
   margin-left: -15px;
@@ -457,6 +478,15 @@ body #site.basis .content .content-blocks {
   height: 100%;
 }
 body #site.basis .content .content-blocks p.phblocks {
+  background-color: #0B4A81;
+  font-size: 14px;
+  font-family: OpenSansBold;
+  color: #ffffff;
+  padding: 16px 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+body #site.basis .content .content-blocks p.production-object {
   background-color: #0B4A81;
   font-size: 14px;
   font-family: OpenSansBold;
@@ -840,6 +870,39 @@ and open the template in the editor.
   padding: 34px 0 30px 10px;
   border-top: 1px solid #E2E2E2;
   display: none;
+  /*        table {
+        
+                    font-family: RobotoLight;
+                    font-size: 15px;
+                    margin-left: -20px;
+        
+        
+                    tr {
+        
+        
+                        &:nth-child(odd) {
+                            background-color: #F5F5F5;
+                        }
+        
+                        td {
+        
+                            padding: 14px 20px;
+                            width: 50%;
+        
+                            &:first-child {
+                                color: #BCBCBC;
+                                //padding-left: 20px;
+                                width: 40%;
+                            }
+        
+        
+        
+                        }
+        
+                    }
+        
+        
+                }*/
 }
 .tabs .tab.tab-active {
   display: block;
@@ -870,20 +933,25 @@ and open the template in the editor.
   background-position-y: 9px;
   padding-left: 14px;
 }
-.tabs .tab table {
-  font-family: RobotoLight;
-  font-size: 15px;
-  margin-left: -20px;
+.tabs .tab table.intab {
+  font-family: OpenSansRegular;
+  font-size: 13px;
+  margin-bottom: 30px;
+  width: 100%;
 }
-.tabs .tab table tr:nth-child(odd) {
-  background-color: #F5F5F5;
+.tabs .tab table.intab tr {
+  border-bottom: 1px solid #E2E2E2;
 }
-.tabs .tab table tr td {
+.tabs .tab table.intab tr:last-child {
+  border-bottom: none !important;
+}
+.tabs .tab table.intab tr td {
   padding: 14px 20px;
-  width: 50%;
+  width: 47%;
 }
-.tabs .tab table tr td:first-child {
-  color: #BCBCBC;
+.tabs .tab table.intab tr td:first-child {
+  color: #989797;
   width: 40%;
+  padding-left: 0;
 }
 /*# sourceMappingURL=styles.css.map */
