@@ -486,15 +486,6 @@ body #site.basis .content .content-blocks p.phblocks {
   margin-bottom: 0;
   text-align: center;
 }
-body #site.basis .content .content-blocks p.production-object {
-  background-color: #0B4A81;
-  font-size: 14px;
-  font-family: OpenSansBold;
-  color: #ffffff;
-  padding: 16px 0;
-  margin-bottom: 0;
-  text-align: center;
-}
 body #site.basis .content .content-blocks .dir-block {
   border-bottom: 1px solid #ffffff;
   padding: 30px 0;
@@ -512,8 +503,60 @@ body #site.basis .content .content-blocks .dir-block p.ph2bloks {
   font-family: OpenSansBold;
   font-size: 15px;
 }
+body #site.basis .content .content-blocks .dir-block p.ph2bloks .i-catalog {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  float: left;
+  top: 2px;
+  margin-right: 8px;
+  background: url("/assets/img/design/i-catalog.png") no-repeat;
+}
 body #site.basis .content .content-blocks .dir-block p.date-dir-block {
   color: #989797;
+}
+body #site.basis .content .content-blocks .dir-block p.production-object {
+  font-size: 14px;
+  font-family: OpenSansBold;
+  color: #000000;
+  padding: 16px 0;
+  margin-bottom: 0;
+}
+body #site.basis .content .content-blocks .dir-block p.production-object .i-objects {
+  display: block;
+  width: 15px;
+  height: 16px;
+  position: relative;
+  float: left;
+  top: 2px;
+  margin-right: 8px;
+  background: url("/assets/img/design/i-objects.png") no-repeat;
+}
+body #site.basis .content .content-blocks .dir-block p.directory {
+  font-size: 14px;
+  font-family: OpenSansBold;
+  color: #000000;
+  padding: 16px 0;
+  margin-bottom: 0;
+}
+body #site.basis .content .content-blocks .dir-block p.directory .i-directory {
+  display: block;
+  width: 13px;
+  height: 16px;
+  position: relative;
+  float: left;
+  top: 2px;
+  margin-right: 8px;
+  background: url("/assets/img/design/i-directory.png") no-repeat;
+}
+body #site.basis .content .content-blocks .dir-block p.directory-price img {
+  width: 195px !important;
+  height: 140px !important;
+}
+body #site.basis .content .content-blocks .dir-block p.color-catalog img {
+  width: 195px !important;
+  height: 140px !important;
 }
 body #site.basis .content .content-blocks .dir-block i {
   color: #007AC2;
