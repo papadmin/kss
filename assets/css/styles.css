@@ -30,17 +30,17 @@ body #header {
   height: 186px;
 }
 body #header #header-info {
-  height: 34px;
+  height: 37px;
   background-color: #0B4A81;
-  padding-top: 12px;
+  padding-top: 10px;
   width: 100%;
 }
-body #header #header-info p {
-  font-family: OpenSansSemiBold;
+body #header #header-info p.phone-logo {
+  font-family: OpenSansRegular;
   font-size: 14px;
   color: #FFFFFF;
 }
-body #header #header-info p span {
+body #header #header-info p.phone-logo span {
   color: #3F89BB;
 }
 body #header #header-info a {
@@ -68,7 +68,7 @@ body #header #header-info .i-contact {
   width: 16px;
   height: 11px;
   position: relative;
-  top: 2px;
+  top: 1px;
   background: url("/assets/img/design/i-contact.png") no-repeat;
 }
 body #header #header-info .i-job {
@@ -128,7 +128,7 @@ body #header #header-elements a.request p {
 body #header #header-elements .separator-header {
   display: inline-block;
   height: 61px;
-  padding-right: 26px;
+  padding-right: 40px;
   border-right: 1px solid #E2E2E2;
 }
 body #header #header-elements .i-mail-send {
@@ -222,6 +222,9 @@ body #site a.new-link {
   display: block;
   width: 224px;
 }
+body #site a.new-link img {
+  margin-bottom: 23px;
+}
 body #site a img {
   width: 224px ;
   height: 152px;
@@ -235,6 +238,7 @@ body #site p {
 body #site p.date-news {
   font-size: 13px;
   color: #A4A3A3;
+  margin-bottom: 8px !important;
 }
 body #site p.content-news {
   font-size: 14px;
@@ -281,7 +285,7 @@ body #site.basis h1 {
   font-weight: normal;
 }
 body #site.basis .breadcrumbs a {
-  color: #007AC2;
+  color: #000000;
   font-family: OpenSansRegular;
   font-size: 13px;
 }
@@ -477,61 +481,114 @@ body #site.basis .content .content-blocks {
   background-color: #EAEAEA;
   height: 100%;
 }
-body #site.basis .content .content-blocks p.phblocks {
+body #site.basis .content .content-blocks a.phblocks {
+  display: block;
+  width: 235px;
+  height: 22px;
+  position: fixed;
+  text-align: center;
+  z-index: 1010;
   background-color: #0B4A81;
   font-size: 14px;
   font-family: OpenSansBold;
   color: #ffffff;
   padding: 16px 0;
   margin-bottom: 0;
-  text-align: center;
 }
-body #site.basis .content .content-blocks p.production-object {
-  background-color: #0B4A81;
-  font-size: 14px;
-  font-family: OpenSansBold;
-  color: #ffffff;
-  padding: 16px 0;
-  margin-bottom: 0;
-  text-align: center;
+body #site.basis .content .content-blocks .dir-blocks {
+  padding-top: 54px;
 }
-body #site.basis .content .content-blocks .dir-block {
+body #site.basis .content .content-blocks .dir-blocks .dir-block {
   border-bottom: 1px solid #ffffff;
   padding: 30px 0;
   width: 195px;
   margin-left: 20px;
 }
-body #site.basis .content .content-blocks .dir-block:last-child {
+body #site.basis .content .content-blocks .dir-blocks .dir-block:last-child {
   border-bottom: none;
 }
-body #site.basis .content .content-blocks .dir-block p {
+body #site.basis .content .content-blocks .dir-blocks .dir-block p {
   font-family: OpenSansRegular;
   font-size: 13px;
 }
-body #site.basis .content .content-blocks .dir-block p.ph2bloks {
+body #site.basis .content .content-blocks .dir-blocks .dir-block p.ph2bloks {
   font-family: OpenSansBold;
   font-size: 15px;
 }
-body #site.basis .content .content-blocks .dir-block p.date-dir-block {
+body #site.basis .content .content-blocks .dir-blocks .dir-block p.ph2bloks .i-catalog {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  float: left;
+  top: 2px;
+  margin-right: 8px;
+  background: url("/assets/img/design/i-catalog.png") no-repeat;
+}
+body #site.basis .content .content-blocks .dir-blocks .dir-block p.date-dir-block {
   color: #989797;
 }
-body #site.basis .content .content-blocks .dir-block i {
+body #site.basis .content .content-blocks .dir-blocks .dir-block p.production-object {
+  font-size: 14px;
+  font-family: OpenSansBold;
+  color: #000000;
+  padding: 16px 0;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+body #site.basis .content .content-blocks .dir-blocks .dir-block p.production-object .i-objects {
+  display: block;
+  width: 15px;
+  height: 16px;
+  position: relative;
+  float: left;
+  top: 2px;
+  margin-right: 8px;
+  background: url("/assets/img/design/i-objects.png") no-repeat;
+}
+body #site.basis .content .content-blocks .dir-blocks .dir-block p.directory {
+  font-size: 14px;
+  font-family: OpenSansBold;
+  color: #000000;
+  padding: 16px 0;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+body #site.basis .content .content-blocks .dir-blocks .dir-block p.directory .i-directory {
+  display: block;
+  width: 13px;
+  height: 16px;
+  position: relative;
+  float: left;
+  top: 2px;
+  margin-right: 8px;
+  background: url("/assets/img/design/i-directory.png") no-repeat;
+}
+body #site.basis .content .content-blocks .dir-blocks .dir-block p.directory-price img {
+  width: 195px !important;
+  height: 140px !important;
+}
+body #site.basis .content .content-blocks .dir-blocks .dir-block p.color-catalog img {
+  width: 195px !important;
+  height: 140px !important;
+}
+body #site.basis .content .content-blocks .dir-blocks .dir-block i {
   color: #007AC2;
   font-size: 16px;
 }
-body #site.basis .content .content-blocks .dir-block i.fa-angle-right {
+body #site.basis .content .content-blocks .dir-blocks .dir-block i.fa-angle-right {
   position: relative;
   top: 2px;
   margin-left: 5px;
 }
-body #site.basis .content .content-blocks .dir-block a {
+body #site.basis .content .content-blocks .dir-blocks .dir-block a {
   font-family: OpenSansRegular;
   font-size: 12px;
 }
-body #site.basis .content .content-blocks .dir-block a.icons-dir-block {
+body #site.basis .content .content-blocks .dir-blocks .dir-block a.icons-dir-block {
   float: left;
 }
-body #site.basis .content .content-blocks .dir-block a.icons-dir-block .i-call {
+body #site.basis .content .content-blocks .dir-blocks .dir-block a.icons-dir-block .i-call {
   display: block;
   width: 18px;
   height: 20px;
@@ -540,7 +597,7 @@ body #site.basis .content .content-blocks .dir-block a.icons-dir-block .i-call {
   margin-right: 8px;
   background: url("/assets/img/design/i-call.png") no-repeat;
 }
-body #site.basis .content .content-blocks .dir-block a.back-call-dir-block {
+body #site.basis .content .content-blocks .dir-blocks .dir-block a.back-call-dir-block {
   border-bottom: 1px #007AC2 dotted;
   color: #007AC2;
   font-family: OpenSansRegular;
@@ -550,7 +607,11 @@ body #site.basis .content .content-blocks .dir-block a.back-call-dir-block {
   line-height: 12px;
   margin-top: 3px;
 }
-body #site.basis .content .content-blocks .dir-block a.dir-block-produstion img {
+body #site.basis .content .content-blocks .dir-blocks .dir-block a.dir-block-produstion img {
+  width: 195px ;
+  height: 140px;
+}
+body #site.basis .content .content-blocks .dir-blocks .dir-block a.comments-block img {
   width: 195px ;
   height: 140px;
 }
@@ -590,6 +651,11 @@ and open the template in the editor.
     Created on : 24.11.2015, 10:31:02
     Author     : aysulu
 */
+#menu-decortop ul li {
+  display: block;
+  float: left;
+  width: 150px;
+}
 #top-menu {
   width: 100%;
 }
@@ -601,7 +667,7 @@ and open the template in the editor.
 #top-menu ul li {
   display: inline-block;
   margin-left: 0;
-  width: 150px;
+  width: 146px;
   margin-bottom: 10px;
 }
 #top-menu ul li a {
@@ -771,7 +837,7 @@ and open the template in the editor.
     Author     : aysulu
 */
 form.search {
-  height: 44px;
+  height: 47px;
   border: 1px solid #072E4C;
   /* Параметры рамки */
   background-color: #072E4C;
@@ -792,7 +858,7 @@ form.search input[type="text"] {
   padding-left: 9px;
   padding-right: 4px;
   background-color: #072E4C;
-  margin-top: 14px;
+  margin-top: 17px;
   float: left;
   width: 173px;
 }
@@ -815,14 +881,14 @@ form.search button {
   border: none;
   cursor: pointer;
   float: left;
-  margin-top: 11px;
+  margin-top: 14px;
 }
 form.search .separator-search {
   display: inline-block;
   height: 28px;
   width: 1px;
   background-color: #0B4A81;
-  margin-top: 7px;
+  margin-top: 10px;
   margin-right: 7px;
   margin-left: 5px;
   float: left;
@@ -840,7 +906,7 @@ and open the template in the editor.
   display: inline-block;
   padding: 0 0 26px 0;
   margin-right: 36px;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 .tabs .istab a {
   color: #000000 !important;
@@ -849,14 +915,14 @@ and open the template in the editor.
   border-bottom: 1px dotted #000000;
 }
 .tabs .istab.link-active {
-  border-bottom: 1px solid #3F89BB;
+  border-bottom: 2px solid #3F89BB;
 }
 .tabs .istab.link-active a {
   color: #747B7B !important;
   border-bottom: none;
 }
 .tabs .istab.link-hover {
-  border-bottom: 1px solid #3F89BB;
+  border-bottom: 2px solid #3F89BB;
 }
 .tabs .istab.link-hover a {
   color: #747B7B !important;
@@ -868,7 +934,8 @@ and open the template in the editor.
 }
 .tabs .tab {
   padding: 34px 0 30px 10px;
-  border-top: 1px solid #E2E2E2;
+  border-top: 2px solid #E2E2E2;
+  margin-top: -2px;
   display: none;
   /*        table {
         

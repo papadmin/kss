@@ -7,6 +7,11 @@ and open the template in the editor.
     Created on : 24.11.2015, 10:31:02
     Author     : aysulu
 */
+#menu-decortop ul li {
+  display: block;
+  float: left;
+  width: 150px;
+}
 #top-menu {
   width: 100%;
 }
@@ -18,7 +23,7 @@ and open the template in the editor.
 #top-menu ul li {
   display: inline-block;
   margin-left: 0;
-  width: 150px;
+  width: 146px;
   margin-bottom: 10px;
 }
 #top-menu ul li a {

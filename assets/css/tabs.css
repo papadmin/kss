@@ -11,7 +11,7 @@ and open the template in the editor.
   display: inline-block;
   padding: 0 0 26px 0;
   margin-right: 36px;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 .tabs .istab a {
   color: #000000 !important;
@@ -20,14 +20,14 @@ and open the template in the editor.
   border-bottom: 1px dotted #000000;
 }
 .tabs .istab.link-active {
-  border-bottom: 1px solid #3F89BB;
+  border-bottom: 2px solid #3F89BB;
 }
 .tabs .istab.link-active a {
   color: #747B7B !important;
   border-bottom: none;
 }
 .tabs .istab.link-hover {
-  border-bottom: 1px solid #3F89BB;
+  border-bottom: 2px solid #3F89BB;
 }
 .tabs .istab.link-hover a {
   color: #747B7B !important;
@@ -39,7 +39,8 @@ and open the template in the editor.
 }
 .tabs .tab {
   padding: 34px 0 30px 10px;
-  border-top: 1px solid #E2E2E2;
+  border-top: 2px solid #E2E2E2;
+  margin-top: -2px;
   display: none;
   /*        table {
         
