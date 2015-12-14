@@ -26,11 +26,7 @@ and open the template in the editor.
   color: #747B7B !important;
   border-bottom: none;
 }
-.tabs .istab.link-hover {
-  border-bottom: 2px solid #3F89BB;
-}
 .tabs .istab.link-hover a {
-  color: #747B7B !important;
   border-bottom: none;
 }
 .tabs a {

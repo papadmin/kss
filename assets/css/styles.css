@@ -277,7 +277,7 @@ body #site #slider-bottom {
 body #site.basis {
   background-color: #F6F6F6;
   width: 100%;
-  padding-top: 38px;
+  padding-top: 30px;
 }
 body #site.basis h1 {
   font-family: OpenSansRegular;
@@ -314,10 +314,10 @@ body #site.basis .prints .i-prints {
   background: url("/assets/img/design/i-prints.png") no-repeat;
 }
 body #site.basis .content {
-  margin: 40px 0 50px 0;
+  margin: 26px 0 50px 0;
 }
 body #site.basis .content .content-area {
-  padding: 40px 0 40px 0;
+  padding: 30px 0 40px 0;
   background-color: #ffffff;
   width: 706px;
 }
@@ -380,7 +380,7 @@ body #site.basis .content .content-area a.subcategory-stuff p {
   font-family: OpenSansRegular;
   font-size: 13px;
   text-align: center;
-  margin-top: 128px;
+  margin-top: 158px;
   color: #000000;
 }
 body #site.basis .content .content-area p {
@@ -411,7 +411,7 @@ body #site.basis .content .content-area .tab-active .contact-block.adress {
   width: 764px;
 }
 body #site.basis .content .content-area .tab-active .contact-block p {
-  margin: 0 0 2px 0;
+  margin: 0 0 4px 0;
 }
 body #site.basis .content .content-area .tab-active p {
   font-family: OpenSansRegular;
@@ -421,14 +421,20 @@ body #site.basis .content .content-area .tab-active p {
 body #site.basis .content .content-area .tab-active p.info-contact {
   color: #BFBFBF;
 }
+body #site.basis .content .content-area .tab-active p.info-contact i {
+  margin-bottom: 0;
+}
 body #site.basis .content .content-area .tab-active p.nmb-contact {
   font-size: 14px;
+  margin-left: 22px;
 }
 body #site.basis .content .content-area .tab-active p.nmb-contact span {
   color: #BFBFBF;
 }
 body #site.basis .content .content-area .tab-active p.work-hours-contact {
   font-size: 14px;
+  margin-bottom: 2px;
+  margin-left: 22px;
 }
 body #site.basis .content .content-area .tab-active p.work-hours-contact span {
   color: #A09F9F;
@@ -527,6 +533,7 @@ body #site.basis .content .content-blocks .dir-blocks .dir-block p.ph2bloks .i-c
 }
 body #site.basis .content .content-blocks .dir-blocks .dir-block p.date-dir-block {
   color: #989797;
+  margin-bottom: 10px !important;
 }
 body #site.basis .content .content-blocks .dir-blocks .dir-block p.production-object {
   font-size: 14px;
@@ -921,11 +928,7 @@ and open the template in the editor.
   color: #747B7B !important;
   border-bottom: none;
 }
-.tabs .istab.link-hover {
-  border-bottom: 2px solid #3F89BB;
-}
 .tabs .istab.link-hover a {
-  color: #747B7B !important;
   border-bottom: none;
 }
 .tabs a {
