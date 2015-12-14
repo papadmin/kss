@@ -481,6 +481,36 @@ body #site.basis .content .content-area .drawing-product {
 body #site.basis .content .content-area table.intab tr {
   border-bottom: 1px solid #E2E2E2;
 }
+body #site.basis .content .content-area .colors-block {
+  margin-left: 27px;
+  width: 642px;
+}
+body #site.basis .content .content-area .colors-block a {
+  display: block;
+  float: left;
+  width: 130px;
+  height: 130px;
+  padding: 42px;
+}
+body #site.basis .content .content-area .colors-block a div {
+  width: 130px;
+  height: 96px;
+  background-color: #ffffff;
+  padding-top: 34px;
+}
+body #site.basis .content .content-area .colors-block a div p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: OpenSansRegular;
+  font-size: 13px;
+}
+body #site.basis .content .content-area .colors-block a div p.color-name {
+  margin-bottom: 4px ;
+}
+body #site.basis .content .content-area .colors-block a div p.color-ral {
+  color: #989797;
+}
 body #site.basis .content .content-blocks {
   width: 235px;
   margin-left: -15px;
@@ -534,6 +564,7 @@ body #site.basis .content .content-blocks .dir-blocks .dir-block p.ph2bloks .i-c
 body #site.basis .content .content-blocks .dir-blocks .dir-block p.date-dir-block {
   color: #989797;
   margin-bottom: 10px !important;
+  line-height: 15px;
 }
 body #site.basis .content .content-blocks .dir-blocks .dir-block p.production-object {
   font-size: 14px;
@@ -557,7 +588,7 @@ body #site.basis .content .content-blocks .dir-blocks .dir-block p.directory {
   font-size: 14px;
   font-family: OpenSansBold;
   color: #000000;
-  padding: 16px 0;
+  padding: 4px 0;
   padding-top: 0;
   margin-bottom: 0;
 }
@@ -618,9 +649,18 @@ body #site.basis .content .content-blocks .dir-blocks .dir-block a.dir-block-pro
   width: 195px ;
   height: 140px;
 }
+body #site.basis .content .content-blocks .dir-blocks .dir-block a.comments-block {
+  display: block;
+}
+body #site.basis .content .content-blocks .dir-blocks .dir-block a.comments-block p.comment-dir-block {
+  font-family: OpenSansItalic;
+  font-size: 13px;
+}
 body #site.basis .content .content-blocks .dir-blocks .dir-block a.comments-block img {
-  width: 195px ;
-  height: 140px;
+  width: 60px ;
+  height: 60px;
+  float: left;
+  margin-right: 11px;
 }
 body #footer {
   width: 100%;
