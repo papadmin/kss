@@ -540,6 +540,69 @@ body #site.basis .content .content-area p.refresh a {
 body #site.basis .content .content-area p.refresh a i {
   font-size: 24px;
 }
+body #site.basis .content .content-area .objects-block {
+  margin-left: 27px;
+  width: 642px;
+  margin-bottom: 30px;
+}
+body #site.basis .content .content-area .objects-block a.area-object {
+  display: block;
+  float: left;
+  width: 292px;
+  height: 332px;
+  margin-right: 58px;
+}
+body #site.basis .content .content-area .objects-block a.area-object:nth-child(2n+2) {
+  margin-right: 0;
+}
+body #site.basis .content .content-area .objects-block a.area-object img {
+  width: 292px;
+  height: 198px;
+}
+body #site.basis .content .content-area .objects-block a.area-object p {
+  font-family: OpenSansRegular;
+}
+body #site.basis .content .content-area .objects-block a.area-object p.object-name {
+  font-size: 14px;
+  text-align: left;
+}
+body #site.basis .content .content-area .objects-block a.area-object p.color-object {
+  font-size: 13px;
+  color: #989797;
+  margin-top: -41px;
+}
+body #site.basis .content .content-area .pagination {
+  border-top: 1px solid #E2E2E2;
+  padding-top: 14px;
+  text-align: center;
+}
+body #site.basis .content .content-area .pagination ul {
+  margin: 0 auto;
+  font-size: 13px;
+}
+body #site.basis .content .content-area .pagination ul li {
+  display: inline-block;
+  padding-left: 0px;
+  margin-left: 4px;
+  background: none;
+}
+body #site.basis .content .content-area .pagination ul li.disabled {
+  padding: 10px;
+  color: #000000;
+}
+body #site.basis .content .content-area .pagination ul li.active a {
+  color: #ffffff;
+  background-color: #007AC2;
+}
+body #site.basis .content .content-area .pagination ul li a {
+  display: inline-block;
+  padding: 10px;
+  color: #000000;
+}
+body #site.basis .content .content-area .pagination ul li a:hover {
+  background-color: #cccccc;
+  color: #ffffff;
+}
 body #site.basis .content .content-blocks {
   width: 235px;
   margin-left: -15px;

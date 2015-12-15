@@ -814,6 +814,7 @@ body{
                         }
                     }
 
+
                     p{
                         &.refresh{
                             text-align:center;
@@ -833,7 +834,101 @@ body{
 
 
 
+                    .objects-block{
+                        margin-left: 27px;
+                        width: 642px;
+                        margin-bottom:30px;
 
+                        a {
+                            &.area-object {
+                                display:block;
+                                float:left;
+                                width:292px;;
+                                height:332px;
+                                margin-right:58px;
+
+                                &:nth-child(2n+2){
+                                    margin-right: 0;
+                                }
+
+                                img {
+
+                                    width:292px;
+                                    height:198px;
+                                }
+
+                                p {
+                                    font-family:OpenSansRegular;
+                                    &.object-name{
+                                        font-size:14px;
+                                        text-align: left;
+
+                                    }
+                                    &.color-object{
+                                        font-size:13px;
+                                        color:#989797;
+                                        margin-top: -41px;
+
+                                    }
+
+                                }
+
+
+                            }
+                        }
+
+                    }
+
+                    .pagination {
+
+                        border-top: 1px solid #E2E2E2;
+                        padding-top: 14px;
+                        text-align: center;
+
+                        ul {
+                            margin: 0 auto;
+                            font-size: 13px;
+
+                            li {
+                                display: inline-block;
+                                padding-left: 0px;
+                                margin-left: 4px;
+                                background: none;
+
+
+                                &.disabled {
+
+                                    padding: 10px;
+
+                                    color: #000000;
+                                }
+
+                                &.active {
+
+                                    a {
+                                        color: #ffffff;
+
+                                        background-color: #007AC2;
+                                    }
+                                }
+
+                                a {
+                                    display: inline-block;
+                                    padding: 10px;
+                                    color: #000000;
+
+
+                                    &:hover {
+                                        background-color: #cccccc;
+
+                                        color: #ffffff;
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
 
 
                 }
