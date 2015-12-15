@@ -64,4 +64,64 @@ form.search .separator-search {
   margin-left: 5px;
   float: left;
 }
+form.search-color {
+  height: 54px;
+  border: 1px solid #E2E2E2;
+  /* Параметры рамки */
+  background-color: #ffffff;
+  width: 640px;
+  margin-left: 27px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+form.search-color input[type="text"] {
+  border: none;
+  /* Убираем рамку */
+  outline: none;
+  /* Убираем свечение в Chrome и Safari */
+  -webkit-appearance: none;
+  /* Убираем рамку в Chrome и Safari */
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ffffff;
+  margin-top: 17px;
+  float: left;
+}
+form.search-color input::-webkit-input-placeholder {
+  color: #A8A7A7;
+}
+form.search-color input::-moz-placeholder {
+  color: #A8A7A7;
+}
+form.search-color input:-moz-placeholder {
+  color: #A8A7A7;
+}
+form.search-color input:-ms-input-placeholder {
+  color: #A8A7A7;
+}
+form.search-color button {
+  width: 56px;
+  height: 56px;
+  margin-top: -1px;
+  background-color: #007AC2;
+  color: #FFFFFF;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+form.search-color .i-search {
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+  margin-left: 3px;
+  background: url("/assets/img/design/i-search.png") no-repeat;
+}
 /*# sourceMappingURL=forms.css.map */
