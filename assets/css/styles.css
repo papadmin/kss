@@ -600,6 +600,59 @@ body #site.basis .content .content-area .oneobjects-block table.onenoject-intab 
   width: 40%;
   padding-left: 0;
 }
+body #site.basis .content .content-area .price-block {
+  margin-bottom: 30px;
+}
+body #site.basis .content .content-area .price-block .area-price {
+  padding: 24px 40px 24px 32px;
+  border-bottom: 1px solid #E2E2E2;
+}
+body #site.basis .content .content-area .price-block .area-price .price-pic {
+  float: left;
+}
+body #site.basis .content .content-area .price-block .area-price .price-pic img {
+  width: 60px;
+  height: 38px;
+}
+body #site.basis .content .content-area .price-block .area-price p.price-name {
+  float: left;
+  width: 422px;
+  padding: 0;
+  margin: 0;
+  padding-left: 34px;
+  padding-top: 6px;
+}
+body #site.basis .content .content-area .price-block .area-price p.price-name a {
+  font-family: OpenSansRegular;
+  font-size: 13px;
+  color: #000000;
+}
+body #site.basis .content .content-area .price-block .area-price p.price-name a:hover {
+  color: #007AC2;
+}
+body #site.basis .content .content-area .price-block .area-price p.price-icon {
+  float: right;
+  padding: 0;
+  margin: 0;
+  padding-top: 6px;
+}
+body #site.basis .content .content-area .price-block .area-price p.price-icon a i {
+  position: relative;
+  top: 2px;
+}
+body #site.basis .content .content-area .price-block .area-price p.price-icon a i:hover {
+  color: #007AC2;
+}
+body #site.basis .content .content-area a.download-bottom {
+  padding: 0;
+  margin: 0;
+  padding-top: 34px;
+  padding-left: 34px;
+}
+body #site.basis .content .content-area a.download-bottom i {
+  margin-right: 12px;
+  color: #000000;
+}
 body #site.basis .content .content-area .pagination {
   border-top: 1px solid #E2E2E2;
   padding-top: 14px;
