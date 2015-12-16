@@ -571,6 +571,35 @@ body #site.basis .content .content-area .objects-block a.area-object p.color-obj
   color: #989797;
   margin-top: -41px;
 }
+body #site.basis .content .content-area .oneobjects-block {
+  margin-left: 27px;
+  width: 642px;
+  margin-bottom: 30px;
+}
+body #site.basis .content .content-area .oneobjects-block .area-oneobject {
+  display: block;
+  height: 495px;
+  background-color: #A7CAE0;
+}
+body #site.basis .content .content-area .oneobjects-block table.onenoject-intab {
+  font-family: OpenSansRegular;
+  font-size: 13px;
+}
+body #site.basis .content .content-area .oneobjects-block table.onenoject-intab tr {
+  border-bottom: 1px solid #E2E2E2;
+}
+body #site.basis .content .content-area .oneobjects-block table.onenoject-intab tr:last-child {
+  border-bottom: none;
+}
+body #site.basis .content .content-area .oneobjects-block table.onenoject-intab tr td {
+  padding: 14px 1px;
+  width: 75%;
+}
+body #site.basis .content .content-area .oneobjects-block table.onenoject-intab tr td:first-child {
+  color: #989797;
+  width: 40%;
+  padding-left: 0;
+}
 body #site.basis .content .content-area .pagination {
   border-top: 1px solid #E2E2E2;
   padding-top: 14px;
