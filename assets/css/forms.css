@@ -85,7 +85,7 @@ form.search-color input[type="text"] {
   /* Убираем рамку в Chrome и Safari */
   font-family: OpenSansRegular;
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #ffffff;
