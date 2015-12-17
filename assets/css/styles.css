@@ -93,8 +93,8 @@ body #header #header-elements {
 }
 body #header #header-elements a.logo {
   display: inline-block;
-  width: 155px;
-  height: 69px;
+  width: 156px;
+  height: 70px;
   background: url("/assets/img/design/logo.png") no-repeat;
   margin-top: 29px;
 }
@@ -336,14 +336,22 @@ body #site.basis .prints .i-prints {
 body #site.basis .content {
   margin: 26px 0 50px 0;
 }
+body #site.basis .content .content-container {
+  background-color: #ffffff;
+  width: 940px;
+  margin: 0 auto;
+}
 body #site.basis .content .content-area {
   padding: 30px 0 40px 0;
   background-color: #ffffff;
   width: 706px;
 }
-body #site.basis .content .content-area.area-full {
+body #site.basis .content .content-area.area-contacts {
   width: 880px;
   padding: 40px 30px;
+}
+body #site.basis .content .content-area.area-full {
+  padding: 30px 40px 40px 40px;
 }
 body #site.basis .content .content-area.area-no-padding {
   padding-top: 0;
@@ -406,8 +414,8 @@ body #site.basis .content .content-area a.subcategory-stuff p {
 body #site.basis .content .content-area p {
   font-family: OpenSansRegular;
   font-size: 14px;
-  margin-right: 37px;
-  margin-left: 27px;
+  margin-left: 40px;
+  margin-right: 39px;
   margin-bottom: 48px;
   color: #000000;
 }
@@ -501,20 +509,20 @@ body #site.basis .content .content-area table.intab tr {
   border-bottom: 1px solid #E2E2E2;
 }
 body #site.basis .content .content-area .colors-block {
-  margin-left: 27px;
-  width: 642px;
+  margin-left: 40px;
+  width: 627px;
   margin-bottom: 30px;
 }
 body #site.basis .content .content-area .colors-block a {
   display: block;
   float: left;
-  width: 130px;
-  height: 130px;
-  padding: 42px;
+  width: 129px;
+  height: 129px;
+  padding: 40px;
 }
 body #site.basis .content .content-area .colors-block a div {
-  width: 130px;
-  height: 96px;
+  width: 129px;
+  height: 95px;
   background-color: #ffffff;
   padding-top: 34px;
 }
@@ -541,8 +549,8 @@ body #site.basis .content .content-area p.refresh a i {
   font-size: 24px;
 }
 body #site.basis .content .content-area .objects-block {
-  margin-left: 27px;
-  width: 642px;
+  margin-left: 40px;
+  width: 627px;
   margin-bottom: 30px;
 }
 body #site.basis .content .content-area .objects-block a.area-object {
@@ -550,7 +558,25 @@ body #site.basis .content .content-area .objects-block a.area-object {
   float: left;
   width: 292px;
   height: 332px;
-  margin-right: 58px;
+  margin-right: 43px;
+  position: relative;
+}
+body #site.basis .content .content-area .objects-block a.area-object .object-detalis {
+  position: absolute;
+  display: none;
+  left: 96px;
+  top: 68px;
+  width: 140px;
+  height: 114px;
+  background: url("/assets/img/design/detalis.png") no-repeat;
+  background-position: 26px 0;
+}
+body #site.basis .content .content-area .objects-block a.area-object .object-detalis p {
+  color: #ffffff;
+  font-family: OpenSansRegular;
+  font-size: 12px;
+  margin-top: 40px;
+  margin-left: 0;
 }
 body #site.basis .content .content-area .objects-block a.area-object:nth-child(2n+2) {
   margin-right: 0;
@@ -558,6 +584,7 @@ body #site.basis .content .content-area .objects-block a.area-object:nth-child(2
 body #site.basis .content .content-area .objects-block a.area-object img {
   width: 292px;
   height: 198px;
+  margin-bottom: 18px;
 }
 body #site.basis .content .content-area .objects-block a.area-object p {
   font-family: OpenSansRegular;
@@ -565,15 +592,17 @@ body #site.basis .content .content-area .objects-block a.area-object p {
 body #site.basis .content .content-area .objects-block a.area-object p.object-name {
   font-size: 14px;
   text-align: left;
+  margin: 0;
+  margin-bottom: 8px;
 }
 body #site.basis .content .content-area .objects-block a.area-object p.color-object {
   font-size: 13px;
   color: #989797;
-  margin-top: -41px;
+  margin: 0;
 }
 body #site.basis .content .content-area .oneobjects-block {
-  margin-left: 27px;
-  width: 642px;
+  margin-left: 40px;
+  width: 627px;
   margin-bottom: 30px;
 }
 body #site.basis .content .content-area .oneobjects-block .area-oneobject {
@@ -701,9 +730,7 @@ body #site.basis .content .content-blocks a.phblocks {
   display: block;
   width: 235px;
   height: 22px;
-  position: fixed;
   text-align: center;
-  z-index: 1010;
   background-color: #0B4A81;
   font-size: 14px;
   font-family: OpenSansBold;
@@ -711,8 +738,10 @@ body #site.basis .content .content-blocks a.phblocks {
   padding: 16px 0;
   margin-bottom: 0;
 }
-body #site.basis .content .content-blocks .dir-blocks {
-  padding-top: 54px;
+body #site.basis .content .content-blocks a.phblocks.link-fix {
+  position: fixed;
+  top: 0;
+  z-index: 1010;
 }
 body #site.basis .content .content-blocks .dir-blocks .dir-block {
   border-bottom: 1px solid #ffffff;
@@ -824,6 +853,9 @@ body #site.basis .content .content-blocks .dir-blocks .dir-block a.back-call-dir
   float: left;
   line-height: 12px;
   margin-top: 3px;
+}
+body #site.basis .content .content-blocks .dir-blocks .dir-block a.back-call-dir-block:hover {
+  border-bottom: none;
 }
 body #site.basis .content .content-blocks .dir-blocks .dir-block a.dir-block-produstion img {
   width: 195px ;
@@ -1125,8 +1157,8 @@ form.search-color {
   border: 1px solid #E2E2E2;
   /* Параметры рамки */
   background-color: #ffffff;
-  width: 640px;
-  margin-left: 27px;
+  width: 626px;
+  margin-left: 40px;
   margin-bottom: 30px;
   margin-top: 40px;
   /* Firefox 19+ */

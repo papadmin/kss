@@ -5,7 +5,7 @@
  */
 
 $(document).ready(function ( ) {
-    
+
     if ($('#site').length > 0) {
         var PageHeight = $(window).height();
         var HeaderHeight = $('#header').height();
@@ -13,7 +13,7 @@ $(document).ready(function ( ) {
         var SiteHeight = PageHeight - HeaderHeight - FooterHeight;
         $('#site').css('min-height', SiteHeight);
     }
-    
+
     if ($('.request').length > 0) {
         $('.request').hover(function () {
 
@@ -22,31 +22,61 @@ $(document).ready(function ( ) {
             $(this).children('.request-round').css('background-color', '#007AC2');
         });
     }
-    
-    
-     if ($('.content-blocks').length > 0) {
-         
-         
 
 
-            var alphaHeight = $('.content-blocks').height();
+    if ($('.phblocks').length > 0) {
 
-            var omegaHeight = $('.content-area').height();
-
-            if (alphaHeight > omegaHeight) {
-                $('.content-area').height(alphaHeight - 80);
+        var offset = $(".phblocks").offset();
+        //var topPadding = 15;
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > offset.top) {
+                //$(".phblocks").stop().animate({marginTop: $(window).scrollTop() - offset.top + topPadding});
+                $(".phblocks").addClass('link-fix');
             }
             else {
-                $('.content-blocks').height(omegaHeight);
+                //$(".phblocks").stop().animate({marginTop: 0});
+                $(".phblocks").removeClass('link-fix');
             }
+            ;
+        });
+    }
 
 
-      
-         
-     }
+//    if ($('.content-blocks').length > 0) {
+//
+//
+//
+//
+//        var alphaHeight = $('.content-blocks').height();
+//
+//        var omegaHeight = $('.content-area').height();
+//
+//        if (alphaHeight > omegaHeight) {
+//            $('.content-area').height(alphaHeight);
+//        }
+//        else {
+//            $('.content-blocks').height(omegaHeight);
+//        }
+//
+//
+//
+//
+//    }
 
 
-    
-  });
+
+    if ($('.area-object').length > 0) {
+
+        $('.area-object').hover(function () {
+
+            $(this).children('.object-detalis').show();
+        }, function () {
+            $(this).children('.object-detalis').hide();
+        });
+
+    }
+
+
+});
 
 

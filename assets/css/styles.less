@@ -124,8 +124,8 @@ body{
                 &.logo{
 
                     display: inline-block;
-                    width: 155px;
-                    height: 69px;
+                    width: 156px;
+                    height: 70px;
                     background: url("/assets/img/design/logo.png")  no-repeat;
                     margin-top: 29px;
 
@@ -515,6 +515,12 @@ body{
             .content {
 
                 margin: 26px 0 50px 0;
+                
+                .content-container {
+                    background-color: #ffffff;
+                    width: 940px;
+                    margin: 0 auto;
+                }
 
 
 
@@ -523,9 +529,13 @@ body{
                     background-color: #ffffff;
                     width: 706px;
 
-                    &.area-full {
+                    &.area-contacts {
                         width: 880px;
                         padding: 40px 30px;
+                    }
+
+                    &.area-full {
+                        padding: 30px 40px 40px 40px;
                     }
 
                     &.area-no-padding{
@@ -623,10 +633,8 @@ body{
                     p{
                         font-family:OpenSansRegular;
                         font-size:14px;
-
-
-                        margin-right: 37px;
-                        margin-left: 27px;
+                        margin-left: 40px;
+                        margin-right: 39px;
                         margin-bottom: 48px;
                         color:#000000;
                     }
@@ -774,20 +782,20 @@ body{
                     }
 
                     .colors-block{
-                        margin-left: 27px;
-                        width: 642px;
+                        margin-left: 40px;
+                        width: 627px;
                         margin-bottom:30px;
 
                         a{
                             display: block;
                             float:left;
-                            width:130px;
-                            height: 130px;
-                            padding:42px;
+                            width:129px;
+                            height: 129px;
+                            padding:40px;
 
                             div{
-                                width: 130px;
-                                height:96px; 
+                                width: 129px;
+                                height:95px; 
                                 background-color: #ffffff;
                                 padding-top:34px;
 
@@ -835,8 +843,8 @@ body{
 
 
                     .objects-block{
-                        margin-left: 27px;
-                        width: 642px;
+                        margin-left: 40px;
+                        width: 627px;
                         margin-bottom:30px;
 
                         a {
@@ -845,7 +853,29 @@ body{
                                 float:left;
                                 width:292px;;
                                 height:332px;
-                                margin-right:58px;
+                                margin-right:43px;
+                                position: relative;
+                                
+                                .object-detalis {
+                                    position: absolute;
+                                    display: none;
+                                    left: 96px;
+                                    top: 68px;
+                                    width: 140px;
+                                    height: 114px;
+                                    background: url("/assets/img/design/detalis.png") no-repeat;
+                                    background-position: 26px 0;
+                                    
+                                    p {
+                                        color: #ffffff;
+                                        font-family: OpenSansRegular;
+                                        font-size: 12px;
+                                        margin-top: 40px;
+                                        margin-left: 0;
+                                    }
+                                    
+                                }
+                                
 
                                 &:nth-child(2n+2){
                                     margin-right: 0;
@@ -855,6 +885,7 @@ body{
 
                                     width:292px;
                                     height:198px;
+                                    margin-bottom: 18px;
                                 }
 
                                 p {
@@ -862,12 +893,14 @@ body{
                                     &.object-name{
                                         font-size:14px;
                                         text-align: left;
+                                        margin: 0;
+                                        margin-bottom: 8px;
 
                                     }
                                     &.color-object{
                                         font-size:13px;
                                         color:#989797;
-                                        margin-top: -41px;
+                                        margin: 0;
 
                                     }
 
@@ -881,8 +914,8 @@ body{
 
 
                     .oneobjects-block{
-                        margin-left: 27px;
-                        width: 642px;
+                        margin-left: 40px;
+                        width: 627px;
                         margin-bottom:30px;
 
                         .area-oneobject{
@@ -1106,15 +1139,21 @@ body{
                             display: block;
                             width: 235px;
                             height: 22px;
-                            position: fixed;
+                            
                             text-align: center;
-                            z-index: 1010;
+                            
                             background-color: #0B4A81;
                             font-size: 14px;
                             font-family: OpenSansBold;
                             color: #ffffff;
                             padding: 16px 0;
                             margin-bottom: 0;
+                            
+                            &.link-fix {
+                                position: fixed;
+                                top: 0;
+                                z-index: 1010;
+                            }
                         }
 
                     }
@@ -1122,7 +1161,7 @@ body{
 
 
                     .dir-blocks {
-                        padding-top: 54px;
+                        //padding-top: 30px;
 
                         .dir-block {
                             border-bottom: 1px solid #ffffff;
@@ -1284,6 +1323,10 @@ body{
                                     float: left;
                                     line-height: 12px;
                                     margin-top: 3px;
+                                    
+                                    &:hover {
+                                        border-bottom: none;
+                                    }
 
 
 
