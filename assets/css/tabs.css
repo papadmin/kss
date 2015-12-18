@@ -7,6 +7,102 @@ and open the template in the editor.
     Created on : Nov 30, 2015, 9:06:55 AM
     Author     : developer
 */
+.tabs.about-tabs {
+  background-color: #EAEAEA;
+}
+.tabs.about-tabs .istab {
+  display: inline-block;
+  padding: 16px 19px;
+  margin: 0;
+  border-bottom: none;
+  border-left: 1px solid #ffffff;
+  margin-right: -5px;
+}
+.tabs.about-tabs .istab:first-child {
+  border-left: none;
+}
+.tabs.about-tabs .istab a {
+  color: #629DCD !important;
+  font-size: 14px !important;
+  font-family: OpenSansRegular !important;
+  border-bottom: none;
+}
+.tabs.about-tabs .istab.link-active {
+  background-color: #ffffff;
+  border-bottom: none;
+}
+.tabs.about-tabs .istab.link-active a {
+  color: #000000 !important;
+  border-bottom: none;
+}
+.tabs.about-tabs .istab.link-hover {
+  border-bottom: none;
+}
+.tabs.about-tabs .istab.link-hover a {
+  border-bottom: none;
+  color: #000000 !important;
+}
+.tabs.about-tabs a {
+  color: #5c5252;
+  text-decoration: none;
+}
+.tabs.about-tabs .tab {
+  background-color: #ffffff;
+  padding: 50px 40px 80px 40px;
+  border-top: none;
+  margin-top: -2px;
+  display: none;
+}
+.tabs.about-tabs .tab.tab-active {
+  display: block;
+}
+.tabs.about-tabs .tab h3 {
+  font-family: RobotoBold;
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+.tabs.about-tabs .tab p {
+  font-family: RobotoLight;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+.tabs.about-tabs .tab p.ph3 {
+  font-family: RobotoBold;
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+.tabs.about-tabs .tab ul {
+  margin: 0 0 30px 40px;
+  font-family: RobotoLight;
+  font-size: 15px;
+}
+.tabs.about-tabs .tab ul li {
+  margin-bottom: 12px;
+  background: url('/assets/img/design/list-round.png') no-repeat;
+  background-position-y: 9px;
+  padding-left: 14px;
+}
+.tabs.about-tabs .tab table.intab {
+  font-family: OpenSansRegular;
+  font-size: 13px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.tabs.about-tabs .tab table.intab tr {
+  border-bottom: 1px solid #E2E2E2;
+}
+.tabs.about-tabs .tab table.intab tr:last-child {
+  border-bottom: none !important;
+}
+.tabs.about-tabs .tab table.intab tr td {
+  padding: 14px 20px;
+  width: 47%;
+}
+.tabs.about-tabs .tab table.intab tr td:first-child {
+  color: #989797;
+  width: 40%;
+  padding-left: 0;
+}
 .tabs .istab {
   display: inline-block;
   padding: 0 0 26px 0;

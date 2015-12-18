@@ -11,6 +11,176 @@ and open the template in the editor.
 
 .tabs {
 
+    &.about-tabs {
+        
+        background-color: #EAEAEA;
+
+        .istab {
+
+            display: inline-block;
+            padding: 16px 19px;
+            margin: 0;
+            border-bottom: none;
+            border-left: 1px solid #ffffff;
+            margin-right: -5px;
+            
+            &:first-child {
+                border-left: none;
+            }
+            
+            
+            
+
+
+
+            a  {
+                color: #629DCD !important;
+                font-size: 14px !important;
+                font-family: OpenSansRegular !important;
+                border-bottom: none;
+                
+                
+            }
+
+            &.link-active {
+
+                background-color: #ffffff;
+                border-bottom: none;
+
+                
+
+                a  {
+                    color: #000000 !important;
+                    border-bottom: none;
+                    
+                    
+                }
+            }
+
+            &.link-hover {
+
+                //background-color: #ffffff;
+                border-bottom: none;
+
+                a  {
+                    
+                    border-bottom: none;
+                    color: #000000 !important;
+                }
+            }
+
+        }
+
+
+        a {
+
+            color:#5c5252;
+            text-decoration: none;
+
+
+
+
+            &:hover {
+
+            }
+
+
+        }
+
+        .tab {
+
+            background-color: #ffffff;
+            padding: 50px 40px 80px 40px;
+            border-top: none;
+            margin-top: -2px;
+
+
+            display: none;
+            //overflow: auto;
+
+
+
+            &.tab-active {
+                display: block;
+            }
+
+            h3 {
+                font-family: RobotoBold;
+                font-size: 17px;
+                margin-bottom: 18px;
+            }
+
+
+            p {
+
+
+                &.ph3 {
+                    font-family: RobotoBold;
+                    font-size: 17px;
+                    margin-bottom: 18px;
+                }
+
+                font-family: RobotoLight;
+                font-size: 15px;
+                margin-bottom: 14px;
+
+            }
+
+            ul {
+
+                margin: 0 0 30px 40px;
+                font-family: RobotoLight;
+                font-size: 15px;
+
+                li {
+                    margin-bottom: 12px;
+                    background: url('/assets/img/design/list-round.png') no-repeat;
+                    background-position-y: 9px;
+                    padding-left: 14px;
+
+                }
+
+            }
+
+            table{
+
+
+                &.intab {
+                    font-family:OpenSansRegular;
+                    font-size:13px;
+                    margin-bottom:30px;
+                    width:100%;
+
+                    tr{
+                        border-bottom:1px solid #E2E2E2;
+
+                        &:last-child{
+                            border-bottom: none !important;
+                        }
+                        td{
+                            padding: 14px 20px;
+                            width: 47%;
+
+                            &:first-child {
+                                color: #989797;
+                                width: 40%;
+                                padding-left: 0;
+                            }
+                        }
+                    }
+
+                }
+
+
+            }
+
+
+
+
+        }
+
+    }
+
 
 
 
@@ -45,10 +215,10 @@ and open the template in the editor.
 
         &.link-hover {
 
-            
+
 
             a  {
-                
+
                 border-bottom: none;
             }
         }
@@ -127,7 +297,7 @@ and open the template in the editor.
         }
 
         table{
-            
+
 
             &.intab {
                 font-family:OpenSansRegular;
