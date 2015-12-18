@@ -610,11 +610,27 @@ body #site.basis .content .content-area .news-block .area-news-one {
   height: 114px;
   background-color: #A7CAE0;
 }
-body #site.basis .content .content-area .news-block .area-news-two {
+body #site.basis .content .content-area .news-block .area-news-two a {
   display: block;
-  height: 424px;
-  background-color: #808C95;
+  height: 300px;
+  padding-top: 124px;
   margin-bottom: 85px;
+}
+body #site.basis .content .content-area .news-block .area-news-two a p.dconstruction {
+  width: 100px;
+  font-family: OpenSansRegular ;
+  font-size: 15px;
+  background: #007AC2;
+  color: #ffffff;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  padding: 3px 0;
+}
+body #site.basis .content .content-area .news-block .area-news-two a p.tconstruction {
+  font-family: OpenSansSemibold ;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
 }
 body #site.basis .content .content-area .news-block .area-news a {
   position: relative;
