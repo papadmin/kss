@@ -116,7 +116,7 @@ and open the template in the editor.
                         </div>
                     </div>
                     <div class="grid_3">
-                        <a href="/" class="request">
+                        <a href="/" class="request link-feedback">
 
                             <div class="request-round"><i class="i-mail-send"></i></div>
                             <span>ОСТАВЬТЕ ЗАЯВКУ</span>
@@ -294,7 +294,7 @@ and open the template in the editor.
                     </div>
                     <div class="grid_3 omega">
                         <div class="content-blocks">
-                            <a class="phblocks" href="">ЗАКАЗАТЬ ПРОДУКЦИЮ</a>
+                            <a class="phblocks link-order" href="">ЗАКАЗАТЬ ПРОДУКЦИЮ</a>
                             <div class="dir-blocks">
                                 <div class="dir-block">
                                     <p class="ph2bloks"> <i class="i-catalog"></i>RAL-КАТАЛОГ ЦВЕТОВ</p>
@@ -307,7 +307,7 @@ and open the template in the editor.
                                     <a class="icons-dir-block" href="">
                                         <i class="i-call"></i>
                                     </a> 
-                                    <a class="back-call-dir-block" href="">Заказать обратный звонок</a>
+                                    <a class="back-call-dir-block link-callback" href="">Заказать обратный звонок</a>
                                     <div class="clear"></div>
                                 </div>
 
@@ -451,5 +451,187 @@ and open the template in the editor.
             </div>
 
         </footer>
+        
+        <div class="overlay" title="окно"></div>
+        <div class="popup-feedback">
+            <div class="form-close"></div>
+            <form class="feedback">
+
+                <div class="form-area">
+
+                    <h3>Оставить заявку</h3>
+
+                    <div class="block">
+                        <div class="param-value fl-left">
+                            <label for="name">Ваше имя:<sup>*</sup></label>
+                            <input type="text" id="name" name="name" value="" required="required">
+                            <div class="clear"></div>
+                        </div>
+                        <div class="message fl-left"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="block">
+                        <div class="param-value fl-left ierr">
+                            <label for="name">E-mail:<sup>*</sup></label>
+                            <input type="text" id="name" name="name" value="" required="required">
+                        </div>
+                        <div class="message fl-left">
+                            <p class="perr">Это поле заполнено неверно</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="block">
+                        <div class="param-value fl-left">
+                            <label for="name">Телефон:<sup>*</sup></label>
+                            <input type="text" id="name" name="name" value="" required="required">
+                        </div>
+                        <div class="message fl-left"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="block">
+                        <div class="param-value fl-left">
+                            <label for="name">Адрес:<sup>*</sup></label>
+                            <input type="text" id="name" name="name" value="" required="required">
+                        </div>
+                        <div class="message fl-left"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="block">
+                        <div class="param-value fl-left tarea">
+                            <textarea  placeholder="Ваш вопрос" id="question" name="name">
+
+                            </textarea>
+                        </div>
+                        <div class="value fl-left">
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <div class="block">
+                        <div class="param fl-left">
+                            <p></p>
+                            <input type="hidden" name="resource_id" id="resource_id" value="[[*id]]" />
+                        </div>
+                        <div class="value fl-left">
+                            <button>ОТПРАВИТЬ</button>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="popup-order">
+            <div class="form-close"></div>
+            <form class="feedback">
+
+                <div class="form-area">
+
+                    <h3>Заказ продукции</h3>
+
+                    <div class="block">
+                        <div class="param-value fl-left">
+                            <label for="name">Ваше имя:<sup>*</sup></label>
+                            <input type="text" id="name" name="name" value="" required="required">
+                            <div class="clear"></div>
+                        </div>
+                        <div class="message fl-left"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="block">
+                        <div class="param-value fl-left ierr">
+                            <label for="name">E-mail:<sup>*</sup></label>
+                            <input type="text" id="name" name="name" value="" required="required">
+                        </div>
+                        <div class="message fl-left">
+                            <p class="perr">Это поле заполнено неверно</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="block">
+                        <div class="param-value fl-left">
+                            <label for="name">Телефон:<sup>*</sup></label>
+                            <input type="text" id="name" name="name" value="" required="required">
+                        </div>
+                        <div class="message fl-left"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="block">
+                        <div class="param-value fl-left">
+                            <label for="name">Адрес:<sup>*</sup></label>
+                            <input type="text" id="name" name="name" value="" required="required">
+                        </div>
+                        <div class="message fl-left"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="block">
+                        <div class="param-value fl-left tarea">
+                            <textarea  placeholder="Ваш вопрос" id="question" name="name">
+
+                            </textarea>
+                        </div>
+                        <div class="value fl-left">
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <div class="block">
+                        <div class="param fl-left">
+                            <p></p>
+                            <input type="hidden" name="resource_id" id="resource_id" value="[[*id]]" />
+                        </div>
+                        <div class="value fl-left">
+                            <button>ОТПРАВИТЬ</button>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="popup-callback">
+            <div class="form-close"></div>
+            <form class="feedback">
+
+                <div class="form-area">
+
+                    <h3>Обратный звонок</h3>
+
+                    <div class="block">
+                        <div class="param-value fl-left">
+                            <label for="name">Ваше имя:<sup>*</sup></label>
+                            <input type="text" id="name" name="name" value="" required="required">
+                            <div class="clear"></div>
+                        </div>
+                        <div class="message fl-left"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="block">
+                        <div class="param-value fl-left ierr">
+                            <label for="name">Телефон:<sup>*</sup></label>
+                            <input type="text" id="name" name="name" value="" required="required">
+                        </div>
+                        <div class="message fl-left">
+                            <p class="perr">Это поле заполнено неверно</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="block">
+                        <div class="param fl-left">
+                            <p></p>
+                            <input type="hidden" name="resource_id" id="resource_id" value="[[*id]]" />
+                        </div>
+                        <div class="value fl-left">
+                            <button>ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</button>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
     </body>
 </html>

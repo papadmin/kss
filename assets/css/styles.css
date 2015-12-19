@@ -804,7 +804,6 @@ body #site.basis .content .content-blocks {
   width: 235px;
   margin-left: -15px;
   background-color: #EAEAEA;
-  height: 100%;
 }
 body #site.basis .content .content-blocks a.phblocks {
   display: block;
@@ -980,6 +979,57 @@ body #footer .footer-info i {
   color: #BFBFBF;
   font-size: 15px;
   margin-bottom: 14px;
+}
+body .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  cursor: default;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  z-index: 99999;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+body .popup-feedback,
+body .popup-order,
+body .popup-callback {
+  display: inline-block;
+  left: 50%;
+  opacity: 0;
+  position: fixed;
+  text-align: justify;
+  top: 40%;
+  visibility: hidden;
+  z-index: 999999;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: opacity .5s, top .5s;
+  -moz-transition: opacity .5s, top .5s;
+  -ms-transition: opacity .5s, top .5s;
+  -o-transition: opacity .5s, top .5s;
+  transition: opacity .5s, top .5s;
+  border-radius: 11px;
+}
+body .popup-feedback .form-close,
+body .popup-order .form-close,
+body .popup-callback .form-close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  background: url("/assets/img/design/form-close.png") no-repeat;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
 }
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -1291,6 +1341,201 @@ form.search-color .i-search {
   top: 2px;
   margin-left: 3px;
   background: url("/assets/img/design/i-search.png") no-repeat;
+}
+.feedback {
+  width: 600px;
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  border: none;
+}
+.feedback .form-area {
+  background-color: #EAEAEA;
+  padding: 40px 30px 30px 30px;
+}
+.feedback .form-area h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-family: OpenSansRegular;
+  font-weight: normal;
+  margin-top: -10px;
+}
+.feedback p {
+  font-family: OpenSansRegular;
+  font-size: 14px;
+  margin-top: 6px;
+}
+.feedback p.perr {
+  color: #E70D17;
+}
+.feedback img {
+  height: 60px;
+  position: relative;
+  top: -10px;
+}
+.feedback .block {
+  margin-bottom: 14px;
+}
+.feedback .block .param-value {
+  width: 340px;
+  height: 42px;
+  background-color: #ffffff;
+  padding: 6px 0 0 18px;
+  margin-bottom: 10px;
+}
+.feedback .block .param-value.tarea {
+  height: 140px;
+}
+.feedback .block .param-value.ierr {
+  border: 1px solid #E70D17;
+}
+.feedback .block .message {
+  width: 150px;
+  padding-left: 20px;
+}
+.feedback label {
+  color: #B6B6B6;
+  display: block;
+  float: left;
+  margin-top: 7px;
+}
+.feedback input {
+  width: 220px;
+  height: 36px;
+  padding: 0 15px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #000000;
+  line-height: 24px;
+  float: right;
+}
+.feedback input[type="file"] {
+  position: relative;
+  padding-top: 7px;
+  height: 29px;
+}
+.feedback input[type="file"]:before {
+  content: 'ЗАГРУЗИТЬ';
+  position: absolute;
+  width: 152px;
+  height: 30px;
+  padding-top: 2px;
+  right: 0;
+  top: 0;
+  background: #858585;
+  border: 2px solid #858585;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: RobotoBold;
+  text-align: center;
+  line-height: 30px;
+}
+.feedback input::-webkit-file-upload-button {
+  visibility: hidden;
+  width: 0;
+}
+.feedback select {
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border-radius: 8px;
+  padding: 6px 10px;
+  color: #666666;
+  line-height: 30px;
+  margin-bottom: 10px;
+  float: left;
+}
+.feedback textarea {
+  width: 332px;
+  height: 134px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #000000;
+  line-height: 24px;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+.feedback textarea ::-webkit-input-placeholder {
+  color: #B6B6B6;
+}
+.feedback textarea ::-moz-placeholder {
+  color: #B6B6B6;
+}
+.feedback textarea :-moz-placeholder {
+  color: #B6B6B6;
+}
+.feedback textarea :-ms-input-placeholder {
+  color: #B6B6B6;
+}
+.feedback button {
+  width: 358px;
+  height: 56px;
+  background-color: #0B4A80;
+  border: 3px solid #0B4A80;
+  color: #ffffff;
+  font-family: OpenSansBold;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0;
+  cursor: pointer;
+}
+.feedback button:hover {
+  transition: 0.7s ease;
+  -webkit-transition: background-color 0.7 ease;
+  -moz-transition: background-color 0.7s ease;
+  -o-transition: background-color 0.7s ease;
+  background-color: transparent;
+  color: #0B4A80;
+}
+.feedback button:not(:hover) {
+  transition: 0.7s ease;
+  -webkit-transition: 0.7 ease;
+  -moz-transition: 0.7s ease;
+  -o-transition: 0.7s ease;
+  background-color: #0B4A80;
+  color: #ffffff;
+}
+.feedback sup {
+  color: #93C6E4;
+  font-size: 14px;
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+.feedback.order-send .form-area {
+  background-color: #F5F5F5;
+  padding: 40px 30px 0 30px;
+  margin-bottom: 20px;
+}
+.feedback.order-send button {
+  width: 100%;
+  height: 56px;
+  margin-bottom: 50px;
+  background-color: #E6000E;
+  border: 3px solid #E6000E;
+  color: #ffffff;
+  font-family: RobotoBold;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0;
+  cursor: pointer;
+}
+.feedback.order-send button:hover {
+  transition: 0.7s ease;
+  -webkit-transition: background-color 0.7 ease;
+  -moz-transition: background-color 0.7s ease;
+  -o-transition: background-color 0.7s ease;
+  background-color: transparent;
+  color: #E6000E;
+}
+.feedback.order-send button:not(:hover) {
+  transition: 0.7s ease;
+  -webkit-transition: 0.7 ease;
+  -moz-transition: 0.7s ease;
+  -o-transition: 0.7s ease;
+  background-color: #E6000E;
+  color: #ffffff;
 }
 /*
 To change this license header, choose License Headers in Project Properties.

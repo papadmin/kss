@@ -520,6 +520,7 @@ body{
                     background-color: #ffffff;
                     width: 940px;
                     margin: 0 auto;
+
                 }
 
 
@@ -528,6 +529,7 @@ body{
                     padding: 30px 0 40px 0;
                     background-color: #ffffff;
                     width: 706px;
+
 
                     &.area-contacts {
                         width: 880px;
@@ -543,7 +545,7 @@ body{
                     }
 
                     .user-text {
-                        
+
                     }
 
                     //padding: 40px 0;
@@ -929,34 +931,34 @@ body{
                         .area-news-two{
                             a{
                                 display: block;
-                            height: 300px;
-                            padding-top:124px;
-                             
-                            margin-bottom: 85px;
-                            
-                            p{
-                                &.dconstruction{
-                                    width: 100px;
-                                    font-family:OpenSansRegular ;
-                                    font-size:15px;
-                                    background: #007AC2;
-                                    color:#ffffff;
-                                    margin: 0 auto 40px auto;
-                                    text-align: center;
-                                    padding: 3px 0;
-                                    
-                                }
-                                &.tconstruction{
-                                    font-family:OpenSansSemibold ;
-                                    font-size:20px;
-                                    color:#ffffff;
-                                    text-align: center;
-                                    
-                                    
+                                height: 300px;
+                                padding-top:124px;
+
+                                margin-bottom: 85px;
+
+                                p{
+                                    &.dconstruction{
+                                        width: 100px;
+                                        font-family:OpenSansRegular ;
+                                        font-size:15px;
+                                        background: #007AC2;
+                                        color:#ffffff;
+                                        margin: 0 auto 40px auto;
+                                        text-align: center;
+                                        padding: 3px 0;
+
+                                    }
+                                    &.tconstruction{
+                                        font-family:OpenSansSemibold ;
+                                        font-size:20px;
+                                        color:#ffffff;
+                                        text-align: center;
+
+
+                                    }
                                 }
                             }
-                            }
-                            
+
                         }
 
                         .area-news{
@@ -1266,7 +1268,9 @@ body{
                     width: 235px;
                     margin-left: -15px;
                     background-color: #EAEAEA;
-                    height: 100%;
+
+
+                    // height: 100%;
 
                     a {
 
@@ -1564,6 +1568,65 @@ body{
 
 
     }
+
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+        bottom: 0;
+        cursor: default;
+        left: 0;
+        opacity: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        visibility: hidden;
+        z-index: 99999;
+        -webkit-transition: opacity .5s;
+        -moz-transition: opacity .5s;
+        -ms-transition: opacity .5s;
+        -o-transition: opacity .5s;
+        transition: opacity .5s;
+    }
+
+    .popup-feedback,  .popup-order,  .popup-callback {
+        //background-color: #fff;
+        //border: 3px solid #fff;
+        display: inline-block;
+        left: 50%;
+        opacity: 0;
+        //padding: 15px;
+        //width: 300px;
+        //height: 323px;
+        position: fixed;
+        text-align: justify;
+        top: 40%;
+        visibility: hidden;
+        z-index: 999999;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: opacity .5s, top .5s;
+        -moz-transition: opacity .5s, top .5s;
+        -ms-transition: opacity .5s, top .5s;
+        -o-transition: opacity .5s, top .5s;
+        transition: opacity .5s, top .5s;
+        border-radius: 11px;
+
+        .form-close {
+            width: 21px;
+            height: 21px;
+            position: absolute;
+            background: url("/assets/img/design/form-close.png") no-repeat;
+            top: 40px;
+            right: 40px;
+            cursor: pointer;
+            
+            }
+    }
+
+
 
 
 
