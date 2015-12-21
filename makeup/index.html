@@ -44,6 +44,16 @@ and open the template in the editor.
         <script type="text/javascript" src="/assets/sliders/nivo/jquery.nivo.slider.pack.js"></script>
         <!--Nivo-slider-->
 
+        <!--Carousel-slider-->
+        <link rel="stylesheet" href="/assets/sliders/carousel/carousel.css" type="text/css"/>
+        <script type="text/javascript" src="/assets/sliders/carousel/carousel.js"></script>
+        <!--Carousel-slider-->
+
+        <!--Eazy-slider-->
+        <link rel="stylesheet" href="/assets/sliders/eazy/eazy.css" type="text/css"/>
+        <script type="text/javascript" src="/assets/sliders/eazy/eazy.js"></script>
+        <!--Eazy-slider-->
+
     </head>
     <body>
         <header id="header">
@@ -57,22 +67,22 @@ and open the template in the editor.
                         <div id="menu-decortop">
                             <ul>
                                 <li>
-                                     <a href="/"><i class="i-site-map"></i> &nbsp;Карта сайта</a> 
+                                    <a href="/"><i class="i-site-map"></i> &nbsp;Карта сайта</a> 
                                 </li>
                                 <li>
                                     <a href="/"><i class="i-contact"></i> &nbsp;Контакты</a>
                                 </li>
                                 <li>
-                                     <a href="/"><i class="i-job"></i> &nbsp;Вакансии</a> 
+                                    <a href="/"><i class="i-job"></i> &nbsp;Вакансии</a> 
                                 </li>
                             </ul>
                             <div class="clear"></div>
-                            
+
                         </div>
-                   </div>
-                    
-                        
-                    
+                    </div>
+
+
+
                     <div class="grid_3">
 
                         <form class="search">
@@ -164,7 +174,7 @@ and open the template in the editor.
                                     <span class="slider-h">Ангаров и жилых домов из ЛСТК</span><br><br>
                                     компания стального строительства построила на территории Московской области и Москвы
 
-                                   
+
 
                                 </span>
 
@@ -180,7 +190,7 @@ and open the template in the editor.
                                     <span class="slider-h">Ангаров и жилых домов из ЛСТК</span><br><br>
                                     компания стального строительства построила на территории Московской области и Москвы
 
-                                   
+
 
                                 </span>
 
@@ -194,12 +204,12 @@ and open the template in the editor.
                                     <span class="slider-h">Ангаров и жилых домов из ЛСТК</span><br><br>
                                     компания стального строительства построила на территории Московской области и Москвы
 
-                                   
+
 
                                 </span>
 
                             </a>
-                            
+
                             <button>ПОДРОБНЕЕ&nbsp;&nbsp;<i class="fa fa-angle-right"></i></button>
 
                         </div>
@@ -287,9 +297,50 @@ and open the template in the editor.
                 <div class="container_12 ">   
                     <div class="grid_12 "> 
 
+                        <script>
+                            $(document).ready(function () {
+                                $("#slider").easySlider({
+                                    
+                                    continuous: true
+                                });
+                            });
+                        </script>
 
-                       
+                        <div id="forslider">
+                            <div id="slider">
+                            <ul>                
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <p class="ph4">О компании</p>
+                                            <p>Здесь текстовое описание объекта, 15 лет успешной деятельности Компания Стального Строительства 
+                                                построила более 189 объектов, главным материалом которых является металл. </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <p class="ph4">О компании</p>
+                                            <p>Здесь текстовое описание объекта, 15 лет успешной деятельности Компания Стального Строительства 
+                                                построила более 189 объектов, главным материалом которых является металл. </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <p class="ph4">О компании</p>
+                                            <p>Здесь текстовое описание объекта, 15 лет успешной деятельности Компания Стального Строительства 
+                                                построила более 189 объектов, главным материалом которых является металл. </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
 
+                        
 
 
 
@@ -373,7 +424,7 @@ and open the template in the editor.
             </div>
 
         </footer>
-        
+
         <div class="overlay" title="окно"></div>
         <div class="popup-feedback">
             <div class="form-close"></div>
@@ -444,8 +495,8 @@ and open the template in the editor.
                 </div>
             </form>
         </div>
-        
-        
-        
+
+
+
     </body>
 </html>
