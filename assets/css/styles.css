@@ -919,6 +919,7 @@ body #site.basis .content .content-area .pagination ul li a {
   padding: 10px;
   color: #000000;
   font-size: 13px;
+  min-width: 16px;
 }
 body #site.basis .content .content-area .pagination ul li a:hover {
   border-radius: 50%;
