@@ -150,19 +150,12 @@ body #site #site-info {
 body #site #site-info a.stuff {
   display: block;
   float: left;
-  width: 233px;
+  width: 236px;
   height: 190px;
-  background: url("/assets/img/design/external.png");
+  background: url("/assets/img/design/ext_1.png");
   display: inline-block;
-  border-right: 1px solid #F0F0F0;
-  border-left: 1px solid #F0F0F0;
-  border-bottom: 1px solid #F0F0F0;
-}
-body #site #site-info a.stuff:nth-child(1) {
-  border-left: 1px solid #F0F0F0;
-}
-body #site #site-info a.stuff:nth-child(5) {
-  border-left: 1px solid #F0F0F0;
+  margin-top: -2px;
+  margin-left: -1px;
 }
 body #site #site-info a.stuff p {
   font-family: OpenSansRegular;
@@ -483,21 +476,12 @@ body #site.basis .content .content-area .user-text h3 {
 body #site.basis .content .content-area a.area-stuff {
   display: block;
   float: left;
-  width: 234px;
+  width: 235px;
   height: 190px;
-  background: url("/assets/img/design/external.png");
+  background: url("/assets/img/design/ext_1.png");
   display: inline-block;
-  border-right: 1px solid #F0F0F0;
-  border-bottom: 1px solid #F0F0F0;
-}
-body #site.basis .content .content-area a.area-stuff:nth-child(2) {
-  border-top: 1px solid #F0F0F0;
-}
-body #site.basis .content .content-area a.area-stuff:nth-child(3) {
-  border-top: 1px solid #F0F0F0;
-}
-body #site.basis .content .content-area a.area-stuff:nth-child(4) {
-  border-top: 1px solid #F0F0F0;
+  margin-top: -2px;
+  margin-left: -1px;
 }
 body #site.basis .content .content-area a.area-stuff p {
   font-family: OpenSansRegular;
