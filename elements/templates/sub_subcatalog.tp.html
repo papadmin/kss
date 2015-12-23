@@ -1,0 +1,83 @@
+[[$meta]]
+[[$header]]
+
+<main id="site" class="basis">
+    <div class="container_12">
+
+        [[$inner_header]]
+
+        <div class="content">
+            <div class="grid_9">
+                <div class="content-area area-no-padding">
+
+                    [[pdoMenu?
+                    &displayStart=`0`
+                    &level=`1`
+                    &tpl=`sub_subcatalog_menu`
+                    &tplOuter=`sub_subcatalog_menu_outer`
+                    &isfolder=`1`
+                    &includeTVs=`subcatalog_img`
+                    ]]
+
+                </div>
+            </div>
+
+            [[$sidebar]]      
+        </div>     
+        <div class="clear"></div>
+    </div>
+</main>
+
+[[$footer]]
+
+<div class="overlay" title="окно"></div>
+
+<div class="popup-feedback">
+    <div class="form-close"></div>
+    [[!AjaxForm?
+    &snippet=`FormIt`
+    &form=`feedback_form`
+    &submitVar=`feedback_sub`
+    &hooks=`email`
+    &emailSubject=`Сообщение c формы заявки на обслуживание`
+    &emailTo=`[[++contact_emails]]`
+    &emailReplyTo=`[[+email]]`
+    &validate=`name:required:minLength=`2`,phone:required:minLength=`5`,address:required:minLength=`2`,email:email:required`
+    &emailTpl=`feedback_email_tpl`
+    &successMessage=`Заявка успешно отправлена`
+    ]]
+</div>
+
+<div class="popup-order">
+    <div class="form-close"></div>
+    [[!AjaxForm?
+    &snippet=`FormIt`
+    &form=`order_form`
+    &submitVar=`order_sub`
+    &hooks=`email`
+    &emailSubject=`Сообщение c формы заказа продукции`
+    &emailTo=`[[++contact_emails]]`
+    &emailReplyTo=`[[+order_email]]`
+    &validate=`order_name:required:minLength=`2`,order_phone:required:minLength=`5`,order_address:required:minLength=`2`,order_email:email:required`
+    &emailTpl=`order_email_tpl`
+    &successMessage=`Обращение успешно отправлено`
+    ]]
+</div>
+
+<div class="popup-callback">
+    <div class="form-close"></div>
+    [[!AjaxForm?
+    &snippet=`FormIt`
+    &form=`call_form`
+    &submitVar=`callback_sub`
+    &hooks=`email`
+    &emailSubject=`Сообщение c формы обратного звонка`
+    &emailTo=`[[++contact_emails]]`
+    &validate=`call_name:required:minLength=`2`,call_phone:required:minLength=`5` `
+    &emailTpl=`call_email_tpl`
+    &successMessage=`В ближайшее время Вам перезвонит наш менеджер`
+    ]]
+</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+[[$meta]]
+[[$header]]
+
+<main id="site"> 
+
+    [[$slider_top]]
+
+    [[pdoMenu?
+    &parents=`14`
+    &displayStart=`0`
+    &level=`1`
+    &tpl=`catalog_menu_main`
+    &tplOuter=`catalog_menu_main_outer`
+    &isfolder=`1`
+    &includeTVs=`subcatalog_img,subcatalog_img_h`
+    ]]
+
+    <div id="site-news">
+        <div class="container_12 ">   
+            [[!pdoPage?
+            &parents=`3`
+            &tplWrapper=`news_title_wrapper`
+            &tplFirst=`news_ftitle_row`
+            &tplLast=`news_ltitle_row`
+            &limit=`2`
+            &includeTVs=`photo_news`
+            ]]
+            <div class="grid_4">
+                <div class="technology-block-right">
+                    <p class="technology">ТЕХНОЛОГИИ ПРОИЗВОДСТВА</p>
+
+                    <a href="/"><i class="i-download-file"></i>&nbsp;&nbsp; Скачать PDF</a>   
+                    <p class="technology-text">КСС использует передовые технологии для производства продукции высшего качества,равной 
+                        которой нет на рынке.</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    [[$slider_bottom]]
+
+</main>
+
+[[$footer]]
+
+<div class="overlay" title="окно"></div>
+
+<div class="popup-feedback">
+    <div class="form-close"></div>
+    [[!AjaxForm?
+    &snippet=`FormIt`
+    &form=`feedback_form`
+    &submitVar=`feedback_sub`
+    &hooks=`email`
+    &emailSubject=`Сообщение c формы заявки на обслуживание`
+    &emailTo=`[[++contact_emails]]`
+    &emailReplyTo=`[[+email]]`
+    &validate=`name:required:minLength=`2`,phone:required:minLength=`5`,address:required:minLength=`2`,email:email:required`
+    &emailTpl=`feedback_email_tpl`
+    &successMessage=`Заявка успешно отправлена`
+    ]]
+</div>
+
+</body>
+</html>

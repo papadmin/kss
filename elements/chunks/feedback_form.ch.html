@@ -1,0 +1,78 @@
+<form class="ajax_form feedback" action="" method="post">
+
+                <div class="form-area">
+
+                    <h3>Оставить заявку</h3>
+
+                    <div class="block">
+                        <div class="param-value fl-left">
+                            <label for="name">Ваше имя:<sup>*</sup></label>
+                            <input type="text" id="af_name" name="name" value="[[!+fi.name]]" required="required">
+                            <div class="clear"></div>
+                        </div>
+                        <div class="message fl-left">
+                            <p class="error_name">[[!+fi.validation_error_message]]</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    
+                   <div class="block">
+                        <div class="param-value fl-left">
+                            <label for="email">E-mail:<sup>*</sup></label>
+                            <input type="text" id="af_email" name="email" value="[[!+fi.email]]" required="required">
+                            <div class="clear"></div>
+                        </div>
+                        <div class="message fl-left">
+                            <p class="error_email">[[!+fi.validation_error_message]]</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div> 
+                    
+                    <div class="block">
+                        <div class="param-value fl-left">
+                            <label for="phone">Телефон:<sup>*</sup></label>
+                            <input type="text" id="af_phone" name="phone" value="[[!+fi.phone]]" required="required">
+                            <div class="clear"></div>
+                        </div>
+                        <div class="message fl-left">
+                            <p class="error_phone">[[!+fi.validation_error_message]]</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <div class="block">
+                        <div class="param-value fl-left">
+                            <label for="address">Адрес:<sup>*</sup></label>
+                            <input type="text" id="af_address" name="address" value="[[!+fi.address]]" required="required">
+                            <div class="clear"></div>
+                        </div>
+                        <div class="message fl-left">
+                            <p class="error_address">[[!+fi.validation_error_message]]</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <div class="block">
+                        <div class="param-value fl-left tarea">
+                            <textarea  placeholder="Ваш вопрос" id="af_message" name="message">
+                              [[!+fi.message]]
+                            </textarea>
+                        </div>
+                        <div class="value fl-left">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <div class="block">
+                        <div class="param fl-left">
+                            <p></p>
+                        </div>
+                        <div class="value fl-left">
+                            <button type="submit" value="Написать письмо" name="feedback_sub">ОТПРАВИТЬ</button>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    
+                </div>              
+                
+  </form>

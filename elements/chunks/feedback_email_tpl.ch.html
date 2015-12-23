@@ -1,0 +1,182 @@
+<style>
+    body{font-family: Arial, Verdana, Geneva, sans-serif;
+         font-size: 12px;}
+    body h1{font-weight: normal;}
+
+    body a{text-decoration: none;}
+
+    body p{color: #999999;}
+
+    body table {
+        border-collapse: collapse;
+        border: none;
+        width: 50%;
+
+
+    }
+
+    body  table.order {
+        font-size: 14px;
+        margin-bottom: 40px;
+
+    }
+    body table.order tr {
+        border-bottom: 1px solid #cccccc;
+    }
+
+    body table.order tr:last-child {
+        border-bottom: none;
+    }
+    body  table.order tr th {
+        padding: 10px;
+        font-size: 17px;
+        font-weight: normal;
+        color:#858585;
+    }
+
+    body  table.order tr th.name {
+        text-align: left;
+
+    }
+
+    body  table.order tr th.price {
+        text-align: right;
+
+    }
+    body  table.order tr td {
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    body table.order tr td.pic {
+        width: 204px;
+        padding-left: 0px;
+    }
+    body table.order tr td.pic a {
+        display: block;
+        background-color: #ffffff;
+        border: 1px solid #CCCCCC;
+        padding: 5px;
+        overflow: hidden;
+        width:204px;
+        height:140px;
+
+
+
+    }
+
+    body  table.order tr td.pic a img {
+        width: 204px;
+        max-height: 115px;
+    }
+    body  table.order tr td.name {
+        width: 200px;
+        padding-top: 13px;
+        text-align: left;
+
+    }
+    body  table.order tr td.name a {
+        color: #000000;
+
+    }
+    body table.order tr td.name a:hover {
+        color: #999999;
+
+
+    }
+    body table.order tr td.name.sum {
+        padding-top: 10px;
+        font-size: 24px;
+        text-align: left;
+
+
+    }
+    body table.order tr td.price {
+        color: #000000;
+        text-align: right;
+        width: 120px;
+        font-size: 24px;
+    }
+    .current 
+    {
+        color: #000000;
+        text-align: right;
+        width: 120px;
+        font-size: 17px;
+
+    }
+
+    body table.order tr td.quant {
+        width: 90px;
+        text-align: center;
+
+    }
+    body  table.order tr td.quant.sum {
+        padding-top: 13px;
+        font-size: 17px;
+
+    }
+
+
+
+    body  table.order tr td.order-form {
+        padding: 0;
+        padding-top: 60px;
+        text-align: left;
+    }
+</style>   
+
+
+
+<h1>Сообщение с формы заявки на обслуживание</h1>
+
+<table class="order">
+   
+
+    <tr>
+        <td class="name">
+            Отправитель:
+        </td>
+        <td class="name">
+            [[+name]]
+        </td>
+    </tr>
+    <tr>
+        <td class="name">
+            E-mail:
+        </td>
+        <td class="name">
+            [[+email]]
+        </td>
+    </tr>
+    <tr>
+        <td class="name">
+            Телефон:
+        </td>
+        <td class="name">
+            [[+phone]]
+        </td>
+    </tr> 
+    <tr>
+        <td class="name">
+            Адрес:
+        </td>
+        <td class="name">
+            [[+address]]
+        </td>
+    </tr> 
+    <tr>
+        <td class="name">
+            Сообщение:
+        </td>
+        <td class="name">
+            [[+message]]
+        </td>
+    </tr> 
+
+
+
+</table>
+
+<br>
