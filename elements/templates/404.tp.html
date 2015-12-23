@@ -26,21 +26,8 @@
 
 <div class="overlay" title="окно"></div>
 
-<div class="popup-feedback">
-    <div class="form-close"></div>
-    [[!AjaxForm?
-    &snippet=`FormIt`
-    &form=`feedback_form`
-    &submitVar=`feedback_sub`
-    &hooks=`email`
-    &emailSubject=`Сообщение c формы заявки на обслуживание`
-    &emailTo=`[[++contact_emails]]`
-    &emailReplyTo=`[[+email]]`
-    &validate=`name:required:minLength=`2`,phone:required:minLength=`5`,address:required:minLength=`2`,email:email:required`
-    &emailTpl=`feedback_email_tpl`
-    &successMessage=`Заявка успешно отправлена`
-    ]]
-</div>
+<div class="overlay" title="окно"></div>
+[[$popup-feedback]]
 
 
 </body>

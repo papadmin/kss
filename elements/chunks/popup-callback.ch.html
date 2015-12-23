@@ -1,0 +1,14 @@
+<div class="popup-callback">
+    <div class="form-close"></div>
+    [[!AjaxForm?
+    &snippet=`FormIt`
+    &form=`call_form`
+    &submitVar=`callback_sub`
+    &hooks=`email`
+    &emailSubject=`Сообщение c формы обратного звонка`
+    &emailTo=`[[++contact_emails]]`
+    &validate=`call_name:required:minLength=`2`,call_phone:required:minLength=`5` `
+    &emailTpl=`call_email_tpl`
+    &successMessage=`В ближайшее время Вам перезвонит наш менеджер`
+    ]]
+</div>
