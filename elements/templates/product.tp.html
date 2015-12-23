@@ -1,66 +1,99 @@
 [[$meta]]
 [[$header]]
-
-<main id="site" class="basis">
+<main id="site" class="basis"> 
     <div class="container_12">
 
         [[$inner_header]]
 
         <div class="content">
-            <div class="grid_9">
-                <div class="content-area area-product">
 
-                    <div class="banner-product"></div>
+            <div class="content-container">
+                <div class="grid_9 alpha">
+                    <div class="content-area area-product">
 
-                    <div class="drawing-product"></div>
-                    <div class="clear"></div>
+                        <div class="banner-product">
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $('#slider').nivoSlider({controlNav: true,
+                                        prevText: '',
+                                        nextText: '',
+                                    });
+                                });
+                            </script>
+                            [[!msGallery? 
+                            &tplOuter=`product_gallery_outer`
+                            &tplRow=`product_gallery_row`
+                            ]]
+                           
+                        </div>
+
+                        <div class="drawing-product">
+                            <img src="[[*product_drawing]]" alt="">
+                        </div>
+                        <div class="clear"></div>
 
 
-                    <div class="tabs-wrapper">
-                        <div class="tabs">
-                            <div class="istab link-active">
-                                <a  id="t1"  href="">Описание</a>
+                        <div class="tabs-wrapper">
+                            <div class="tabs">
+                                <div class="istab link-active">
+                                    <a  id="t1"  href="">Описание</a>
+                                </div>
+                                <div  class="istab">
+                                    <a id="t2" href="">Технические характеристики</a>
+                                </div>
+                                <div  class="istab">
+                                    <a id="t3" href="">Особенности монтажа</a>
+                                </div>
+
+
+                                <div id="d-t1" class="tab tab-active">
+                                    <div class='user-text'>
+
+                                        [[*product_description]]  
+
+                                    </div>
+                                </div>
+                                <div id="d-t2" class="tab">
+                                    <table class="intab">
+                                        [[getImageList?
+                                        &tvname=`product_technical_information`
+                                        &tpl=`product_technical_information_tpl`
+                                        ]]
+                                    </table>
+                                </div>
+                                <div id="d-t3" class="tab">
+                                    <div class='user-text'>
+
+                                        [[*product_feature_installation]]  
+
+                                    </div>
+                                </div>
+
+
                             </div>
-                            <div  class="istab">
-                                <a id="t2" href="">Технические характеристики</a>
-                            </div>
-                            <div  class="istab">
-                                <a id="t3" href="">Особенности монтажа</a>
-                            </div>
-
-
-                            <div id="d-t1" class="tab tab-active">
-                                <p>[[*product_description]]</p>
-                            </div>
-                            <div id="d-t2" class="tab">
-                                <table class="intab">
-                                    [[getImageList?
-                                    &tvname=`product_technical_information`
-                                    &tpl=`product_technical_information_tpl`
-                                    ]]
-                                </table>
-                            </div>
-                            <div id="d-t3" class="tab">
-                                <p>
-                                    [[*product_feature_installation]]                                      
-                                </p>
-                            </div>
-
 
                         </div>
 
+
+
                     </div>
-
                 </div>
+                <div class="grid_3 omega">
+                    [[$sidebar]]
+                </div>
+                <div class="clear"></div>
             </div>
-
-            [[$sidebar_product]]         
-            <div class="clear"></div>
         </div>
         <div class="clear"></div>
-    </div>
-</main>
 
+
+    </div>
+
+
+
+
+
+</main>
 [[$footer]]
 
 <div class="overlay" title="окно"></div>
@@ -70,3 +103,4 @@
 
 </body>
 </html>
+
