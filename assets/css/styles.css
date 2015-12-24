@@ -802,6 +802,7 @@ body #site.basis .content .content-area .oneobjects-block .area-oneobject {
 body #site.basis .content .content-area .oneobjects-block table.onenoject-intab {
   font-family: OpenSansRegular;
   font-size: 13px;
+  width: 100%;
 }
 body #site.basis .content .content-area .oneobjects-block table.onenoject-intab tr {
   border-bottom: 1px solid #E2E2E2;
