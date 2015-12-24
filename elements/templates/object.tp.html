@@ -62,86 +62,61 @@
 
                             <div id="wrapper">
                                 [[!msGallery? 
-                                    &tplOuter=`object_gallery_big_outer`
-                                    &tplRow=`object_gallery_big_row`
-                                    ]]
-                                
-                                    [[!msGallery? 
-                                    &tplOuter=`object_gallery_min_outer`
-                                    &tplRow=`object_gallery_min_row`
-                                    ]]
-                                
-                                    <a id="prev" href="#"></a>
-                                    <a id="next" href="#"></a>
-                                </div>
+                                &tplOuter=`object_gallery_big_outer`
+                                &tplRow=`object_gallery_big_row`
+                                ]]
+
+                                [[!msGallery? 
+                                &tplOuter=`object_gallery_min_outer`
+                                &tplRow=`object_gallery_min_row`
+                                &tplFirst=`object_gallery_min_row_first`
+                                ]]
+
+                                <a id="prev" href="#"></a>
+                                <a id="next" href="#"></a>
                             </div>
-
-
-
-                            <div class="clear"></div>
-
-                            <table class="onenoject-intab">
-                                <tr>
-                                    <td>Сроки проекта</td>
-                                    <td>Cентябрь 2014 — апрель 2015</td>
-
-                                </tr>
-                                <tr>
-                                    <td>Кол-во стекловолокна</td>
-                                    <td>2 834 кг</td>
-                                </tr>
-
-                                <tr>
-                                    <td>Кол-во стали</td>
-                                    <td>23 841 кг</td>
-                                </tr>
-
-                                <tr>
-                                    <td>Площадь фасада</td>
-                                    <td>990 м<sup>2</sup></td>
-                                </tr>
-
-                                <tr>
-                                    <td>Периметр объекта</td>
-                                    <td>3 880 м</td>
-                                </tr>
-
-                                <tr>
-                                    <td>Используемые материалы</td>
-                                    <td>Сталь, алюминий, кирпич, стекловолокно, пластик, бетон,
-                                        железо, медь, песок</td>
-
-                                </tr>
-                                <tr>
-                                    <td>Типы работ</td>
-                                    <td>Прототипирование, анализ географии местности, расчет кол-ва материалов, 
-                                        возведение фундамента, строительство стен, покрытие кровлей, отделочные работы
-                                    </td>
-                                </tr>
-
-
-
-
-                            </table>
-
-
                         </div>
 
 
 
+                        <div class="clear"></div>
+                        
+                       
+
+
+
+                        <table class="onenoject-intab">
+                            [[getImageList?
+                            &tvname=`object_information`
+                            &tpl=`object_information_tpl`
+                            ]]
+
+
+
+
+                        </table>
+                        
+                        
+                         
+
 
                     </div>
+
+
+
+
                 </div>
-                <div class="grid_3 omega">
-                    [[$sidebar]]
-                </div>
-                <div class="clear"></div>
             </div>
+            <div class="grid_3 omega">
+                [[$sidebar]]
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
-
-
     </div>
+    <div class="clear"></div>
+
+
+</div>
 
 
 
