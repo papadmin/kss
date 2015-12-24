@@ -33,6 +33,7 @@ and open the template in the editor.
 #thumbs a, #thumbs img  {
     display: block;
     float: left;
+    
 }
 #carousel span, #carousel a,
 #thumbs span, #thumbs a {
@@ -65,6 +66,12 @@ and open the template in the editor.
     
     background-color: #F6F6F6;
 }
+
+#thumbs-wrapper img {
+    width: 90px !important;
+    height: 60px !important;
+}
+
 #thumbs a {
     
     border: none;
