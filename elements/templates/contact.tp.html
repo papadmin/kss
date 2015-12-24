@@ -9,24 +9,20 @@
         <div class="content">
 
             <div class="grid_12">                       
-                <div class="content-area area-full">
+                <div class="content-area area-contacts">
 
                     <div class="tabs">
 
-                        [[!pdoPage?
-                        &parents=`8`
+                        [[!pdoResources?
                         &tplWrapper=`contact_header_wrapper`
                         &tpl=`contact_header_row`
                         &tplFirst=`contact_header_first_row`
-                        &sortby=`[[+id]]`
                         ]]
 
-                        [[!pdoPage?
-                        &parents=`8`
+                        [[!pdoResources?
                         &tplWrapper=`contact_body_wrapper`
                         &tpl=`contact_body_row`
                         &tplFirst=`contact_body_first_row`
-                        &sortby=`[[+id]]`
                         &includeTVs=`office_phone,office_map,office_hours_wd,office_hours_hd,office_email,office_address,office_phone2`
                         ]]
 

@@ -1,0 +1,161 @@
+[[$meta]]
+[[$header]]
+<main id="site" class="basis"> 
+    <div class="container_12">
+
+        [[$inner_header]]
+
+        <div class="content">
+
+            <div class="content-container">
+                <div class="grid_9 alpha">
+                    <div class="content-area">
+                        <p>
+                            [[*content]]
+                        </p>
+
+
+                        <div class="oneobjects-block">
+                            <script type="text/javascript">
+                                $(function () {
+                                    $('#carousel').carouFredSel({
+                                        responsive: true,
+                                        circular: false,
+                                        auto: false,
+                                        items: {
+                                            visible: 1,
+                                            width: 200,
+                                            height: '56%'
+                                        },
+                                        scroll: {
+                                            fx: 'directscroll'
+                                        }
+                                    });
+
+                                    $('#thumbs').carouFredSel({
+                                        responsive: true,
+                                        circular: false,
+                                        infinite: false,
+                                        auto: false,
+                                        prev: '#prev',
+                                        next: '#next',
+                                        items: {
+                                            visible: {
+                                                min: 2,
+                                                max: 6
+                                            },
+                                            width: 104,
+                                            height: '66%'
+                                        }
+                                    });
+
+                                    $('#thumbs a').click(function () {
+                                        $('#carousel').trigger('slideTo', '#' + this.href.split('#').pop());
+                                        $('#thumbs a').removeClass('selected');
+                                        $(this).addClass('selected');
+                                        return false;
+                                    });
+
+                                });
+                            </script>
+
+
+                            <div id="wrapper">
+                                [[!msGallery? 
+                                    &tplOuter=`object_gallery_big_outer`
+                                    &tplRow=`object_gallery_big_row`
+                                    ]]
+                                
+                                    [[!msGallery? 
+                                    &tplOuter=`object_gallery_min_outer`
+                                    &tplRow=`object_gallery_min_row`
+                                    ]]
+                                
+                                    <a id="prev" href="#"></a>
+                                    <a id="next" href="#"></a>
+                                </div>
+                            </div>
+
+
+
+                            <div class="clear"></div>
+
+                            <table class="onenoject-intab">
+                                <tr>
+                                    <td>Сроки проекта</td>
+                                    <td>Cентябрь 2014 — апрель 2015</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Кол-во стекловолокна</td>
+                                    <td>2 834 кг</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Кол-во стали</td>
+                                    <td>23 841 кг</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Площадь фасада</td>
+                                    <td>990 м<sup>2</sup></td>
+                                </tr>
+
+                                <tr>
+                                    <td>Периметр объекта</td>
+                                    <td>3 880 м</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Используемые материалы</td>
+                                    <td>Сталь, алюминий, кирпич, стекловолокно, пластик, бетон,
+                                        железо, медь, песок</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Типы работ</td>
+                                    <td>Прототипирование, анализ географии местности, расчет кол-ва материалов, 
+                                        возведение фундамента, строительство стен, покрытие кровлей, отделочные работы
+                                    </td>
+                                </tr>
+
+
+
+
+                            </table>
+
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="grid_3 omega">
+                    [[$sidebar]]
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+
+    </div>
+
+
+
+
+
+</main>
+[[$footer]]
+
+
+
+<div class="overlay" title="окно"></div>
+[[$popup-feedback]]
+[[$popup-order]]
+[[$popup-callback]]
+
+</body>
+</html>
