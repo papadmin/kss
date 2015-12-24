@@ -738,46 +738,46 @@ body #site.basis .content .content-area .news-block .area-news-two a p.tconstruc
   color: #ffffff;
   text-align: center;
 }
-body #site.basis .content .content-area .news-block .area-news a {
+body #site.basis .content .content-area .news-block a.area-new {
   position: relative;
 }
-body #site.basis .content .content-area .news-block .area-news a.news-block-company {
+body #site.basis .content .content-area .news-block a.area-new.news-block-company {
   margin-bottom: 8px;
   margin-top: 10px;
 }
-body #site.basis .content .content-area .news-block .area-news a.news-block-company:hover p.name-news-block {
+body #site.basis .content .content-area .news-block a.area-new.news-block-company:hover p.name-news-block {
   color: #007AC2;
 }
-body #site.basis .content .content-area .news-block .area-news a.news-block-company img {
+body #site.basis .content .content-area .news-block a.area-new.news-block-company img {
   width: 224px;
   height: 150px;
   float: left;
   margin-right: 28px;
   margin-top: 4px;
 }
-body #site.basis .content .content-area .news-block .area-news a.news-block-company .three-block {
+body #site.basis .content .content-area .news-block a.area-new.news-block-company .three-block {
   width: 370px;
   float: left;
 }
-body #site.basis .content .content-area .news-block .area-news a.news-block-company p {
+body #site.basis .content .content-area .news-block a.area-new.news-block-company p {
   font-family: OpenSansRegular;
   margin: 0;
 }
-body #site.basis .content .content-area .news-block .area-news a.news-block-company p.date-news-block {
+body #site.basis .content .content-area .news-block a.area-new.news-block-company p.date-news-block {
   margin-bottom: 8px;
   font-size: 13px;
   color: #989797;
 }
-body #site.basis .content .content-area .news-block .area-news a.news-block-company p.name-news-block {
+body #site.basis .content .content-area .news-block a.area-new.news-block-company p.name-news-block {
   font-size: 20px;
   margin-bottom: 8px;
 }
-body #site.basis .content .content-area .news-block .area-news a.news-block-company p.description-news-block {
+body #site.basis .content .content-area .news-block a.area-new.news-block-company p.description-news-block {
   font-size: 14px;
   margin-bottom: 53px;
   line-height: 24px;
 }
-body #site.basis .content .content-area .news-block .area-news a .hot-news {
+body #site.basis .content .content-area .news-block a.area-new .hot-news {
   position: absolute;
   width: 32px ;
   height: 150px ;
