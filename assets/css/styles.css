@@ -499,18 +499,15 @@ body #site.basis .content .content-area a.area-stuff:hover p {
 body #site.basis .content .content-area a.subcategory-stuff {
   display: block;
   float: left;
-  width: 233px;
+  width: 234px;
   height: 240px;
   display: inline-block;
   border-right: 1px solid #F0F0F0;
   border-left: 1px solid #F0F0F0;
   border-bottom: 1px solid #F0F0F0;
-}
-body #site.basis .content .content-area a.subcategory-stuff:nth-child(1) {
-  border-left: 1px solid #F0F0F0;
-}
-body #site.basis .content .content-area a.subcategory-stuff:nth-child(5) {
-  border-left: 1px solid #F0F0F0;
+  margin-left: -1px;
+  background-position-x: 42px;
+  background-position-y: 30px;
 }
 body #site.basis .content .content-area a.subcategory-stuff p {
   font-family: OpenSansRegular;
