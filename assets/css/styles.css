@@ -346,6 +346,10 @@ body #site.basis .content .content-area.area-contacts {
 body #site.basis .content .content-area.area-full {
   padding: 30px 40px 40px 40px;
 }
+body #site.basis .content .content-area.area-typical {
+  padding: 30px 40px 40px 40px;
+  width: 630px;
+}
 body #site.basis .content .content-area.area-no-padding {
   padding-top: 0;
 }
