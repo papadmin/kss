@@ -21,8 +21,8 @@ $(document).ready(function () {
                     if ($(this).parent().children('ul').attr('status') == 0) {  // Если пункт свернут
                         event.preventDefault();
 
-                        $('#directories ul li a').children('.fa').removeClass('fa-angle-up'); // У всех пунктов меняется изображение стрелки - вниз
-                        $('#directories ul li a').children('.fa').addClass('fa-angle-down');
+                        $('#directories ul li a.angle-link').children('.fa').removeClass('fa-angle-up'); // У всех пунктов меняется изображение стрелки - вниз
+                        $('#directories ul li a.angle-link').children('.fa').addClass('fa-angle-down');
 
                         //$('#directories li.level_1').css('background-color', '#ffffff'); // У всех пунктов меняется цвет фона на изначальный
                         $('#directories li.level_1').css('border-bottom', '1px solid #E2E2E2'); // У всех пунктов добавляется нижняя рамка
