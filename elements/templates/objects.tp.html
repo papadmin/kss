@@ -1,121 +1,63 @@
 [[$meta]]
 [[$header]]
-        <main id="site" class="basis"> 
-            <div class="container_12">
+<main id="site" class="basis"> 
+    <div class="container_12">
 
-                [[$inner_header]]
+        [[$inner_header]]
 
-                <div class="content">
-                    <div class="content-container">
-                    <div class="grid_9 alpha">
-                        
-                        <div class="content-area">
-                            <p>
-                                За 15 лет успешной деятельности Компания Стального Строительства построила более
-                                189 объектов, главным материалом которых является металл. Все объекты строились 
-                                на основе полученных с годами навыков, по забытым многими традициям и с должным качеством.
-                                Посмотрите наше портфолио и убедитесь сами!
-                            </p>
+        <div class="content">
+            <div class="content-container">
+                <div class="grid_9 alpha">
+
+                    <div class="content-area">
+                        <p>
+                            [[*introtext]]
+                        </p>
 
 
-                            <div class="objects-block">
+                        <div class="objects-block">
 
-                                <a href="" class="area-object">
-                                    <div class="object-detalis">
-                                        <p>Детали проекта</p>
-                                    </div>
-                                    <img src="/assets/img/temp/object-bloks.png" alt="один">
+                            [[!pdoPage?
+                            &element=`msProducts`
+                            &tplWrapper=`objects_wrapper`
+                            &tpl=`objects_row`
+                            &limit=`6`
+                            &includeThumbs=`292x198`
 
-                                    <p class='object-name'>Торговый центр "Юбилейный"</p>
-                                    <p class="color-object">Москва, ул Большая Якорная, д.78</p>
+                            &pageLimit=`7`
+                            &tplPageWrapper=`pagination_wrapper`
+                            &tplPageSkip=`@INLINE <li class="disabled"><a>...</a></li>`
+                            &tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]"><i class="fa fa-angle-left"></i></a></li>`
+                            &tplPageNext=`@INLINE <li class="control"><a href="[[+href]]"><i class="fa fa-angle-right"></i></a></li>`
+                            &tplPagePrevEmpty=`@INLINE <li class="disabled"><i class="fa fa-angle-left"></i></li>`
+                            &tplPageNextEmpty=`@INLINE <li class="disabled"><i class="fa fa-angle-right"></i></li>`
+                            ]]
 
-                                </a>
-                                <a href="" class="area-object">
-                                    <div class="object-detalis">
-                                        <p>Детали проекта</p>
-                                    </div>
-
-                                    <img src="/assets/img/temp/object-bloks.png" alt="один">
-                                    <p class='object-name'>Торговый центр "Юбилейный"</p>
-                                    <p class="color-object">Москва, ул Большая Якорная, д.78</p>
-
-                                </a>
-                                <a href="" class="area-object">
-                                    <div class="object-detalis">
-                                        <p>Детали проекта</p>
-                                    </div>
-
-                                    <img src="/assets/img/temp/object-bloks.png" alt="один">
-                                    <p class='object-name'>Магазин оптовой продажи бытовой техники "Юбилейный"</p>
-                                    <p class="color-object">Москва, ул Иванова Ивана Ивановича, д.78</p>
-
-                                </a>
-                                <a href="" class="area-object">
-                                    <div class="object-detalis">
-                                        <p>Детали проекта</p>
-                                    </div>
-
-                                    <img src="/assets/img/temp/object-bloks.png" alt="один">
-                                    <p class='object-name'>Торговый центр "Юбилейный"</p>
-                                    <p class="color-object">Москва, ул Большая Якорная, д.78</p>
-
-                                </a>
-                                <a href="" class="area-object">
-                                    <div class="object-detalis">
-                                        <p>Детали проекта</p>
-                                    </div>
-
-                                    <img src="/assets/img/temp/object-bloks.png" alt="один">
-                                    <p class='object-name'>Торговый центр "Юбилейный"</p>
-                                    <p class="color-object">Москва, ул Большая Якорная, д.78</p>
-
-                                </a>
-
-
-                                <div class="clear"></div>
-
-                                <div class="pagination">
-                                    <ul class="t-center">
-
-                                       <li class="disabled"> <i class="fa fa-angle-left"></i></li>
-                                     
-                                        <li><a href="">1</a></li>
-                                        <li><a href="">...</a></li>
-                                        <li><a href="">9</a></li>
-                                        <li class="active"><a href="">10</a></li>
-                                        <li><a href="">11</a></li>
-                                        <li><a href="">...</a></li>
-                                        <li><a href="">37</a></li>
-
-                                        <li class="control"><i class="fa fa-angle-right"></i></li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-
-
-
-
+                            [[!+page.nav]]
                         </div>
-                    </div>
-                    <div class="grid_3 omega">
-                        [[$sidebar]]
-                    </div>
-                    <div class="clear"></div>
+
+
+
+
                     </div>
                 </div>
+                <div class="grid_3 omega">
+                    [[$sidebar]]
+                </div>
                 <div class="clear"></div>
-
-
             </div>
+        </div>
+        <div class="clear"></div>
+
+
+    </div>
 
 
 
 
 
-        </main>
-        [[$footer]]
+</main>
+[[$footer]]
 
 
 
