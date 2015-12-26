@@ -623,30 +623,30 @@ body #site.basis .content .content-area .colors-block {
   width: 627px;
   margin-bottom: 30px;
 }
-body #site.basis .content .content-area .colors-block a {
+body #site.basis .content .content-area .colors-block .area-color {
   display: block;
   float: left;
   width: 129px;
   height: 129px;
   padding: 40px;
 }
-body #site.basis .content .content-area .colors-block a div {
+body #site.basis .content .content-area .colors-block .area-color div {
   width: 129px;
   height: 95px;
   background-color: #ffffff;
   padding-top: 34px;
 }
-body #site.basis .content .content-area .colors-block a div p {
+body #site.basis .content .content-area .colors-block .area-color div p {
   padding: 0;
   margin: 0;
   text-align: center;
   font-family: OpenSansRegular;
   font-size: 13px;
 }
-body #site.basis .content .content-area .colors-block a div p.color-name {
+body #site.basis .content .content-area .colors-block .area-color div p.color-name {
   margin-bottom: 4px ;
 }
-body #site.basis .content .content-area .colors-block a div p.color-ral {
+body #site.basis .content .content-area .colors-block .area-color div p.color-ral {
   color: #989797;
 }
 body #site.basis .content .content-area p.refresh {
