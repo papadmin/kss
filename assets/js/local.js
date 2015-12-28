@@ -63,12 +63,12 @@ $(document).ready(function ( ) {
 
 
 
-        var alphaHeight = $('.content-area').height();
+        var alphaHeight = $('.content-area').outerHeight();
 
         var omegaHeight = $('.content-blocks').height();
 
         if (alphaHeight > omegaHeight) {
-            $('.content-blocks').height(alphaHeight);
+            $('.content-blocks').height(alphaHeight + 70);
         }
         // else {
         //$('.content-area').height(omegaHeight);
