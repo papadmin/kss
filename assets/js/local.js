@@ -59,45 +59,48 @@ $(document).ready(function ( ) {
 
 
     if ($('.content-container').length > 0) {
+        
+         
+        
 
 
 
 
-        var alphaHeight = $('.content-area').height();
+        var alphaHeight = $('.content-area').outerHeight();
 
         var omegaHeight = $('.content-blocks').height();
 
         if (alphaHeight > omegaHeight) {
-            $('.content-blocks').height(alphaHeight);
+            $('.content-blocks').height(alphaHeight + 70);
         }
-        // else {
-        //$('.content-area').height(omegaHeight);
-        //}
+       // else {
+            //$('.content-area').height(omegaHeight);
+       // }
 
-        
+
 
 
     }
-    
-    
+
+
     $('.form-close, .overlay').click(function () {
-            $('.popup-feedback,  .popup-order, .popup-callback, .overlay').css({'opacity': 0, 'visibility': 'hidden'});
-        });
-        
-        
-        
-        $('a.link-order').click(function (e) {
-            $('.popup-order, .overlay').css({'opacity': 1, 'visibility': 'visible'});
-            e.preventDefault();
-        });
-        $('a.link-feedback').click(function (e) {
-            $('.popup-feedback, .overlay').css({'opacity': 1, 'visibility': 'visible'});
-            e.preventDefault();
-        });
-        $('a.link-callback').click(function (e) {
-            $('.popup-callback, .overlay').css({'opacity': 1, 'visibility': 'visible'});
-            e.preventDefault();
-        });
+        $('.popup-feedback,  .popup-order, .popup-callback, .overlay').css({'opacity': 0, 'visibility': 'hidden'});
+    });
+
+
+
+    $('a.link-order').click(function (e) {
+        $('.popup-order, .overlay').css({'opacity': 1, 'visibility': 'visible'});
+        e.preventDefault();
+    });
+    $('a.link-feedback').click(function (e) {
+        $('.popup-feedback, .overlay').css({'opacity': 1, 'visibility': 'visible'});
+        e.preventDefault();
+    });
+    $('a.link-callback').click(function (e) {
+        $('.popup-callback, .overlay').css({'opacity': 1, 'visibility': 'visible'});
+        e.preventDefault();
+    });
 
 
 });

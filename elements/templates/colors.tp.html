@@ -1,0 +1,95 @@
+[[$meta]]
+[[$header]]
+<main id="site" class="basis"> 
+    <div class="container_12">
+
+        <div class="grid_10"> 
+            <div class="breadcrumbs">
+
+                <a href="">
+                    Главная
+                </a>
+                <span>/</span>
+                <a href="" class="active">
+                    Каталог цветов RAL
+                </a>
+            </div>
+
+            <h1>Каталог цветов RAL</h1>
+
+            <div class="download-catalog">
+                <a href="">
+                    <i class="fa fa-download"></i> Скачать  каталог цветов
+
+                    <span>PDF 32 Мб</span>
+
+                </a>
+
+            </div>
+            <div class="clear"></div>
+
+
+        </div>
+        <div class="grid_2"> 
+            <div class="prints">
+
+                <a href="">Распечатать</a>&nbsp;&nbsp;
+                <i class="i-prints"></i>
+            </div>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="content">
+            <div class="content-container">
+                <div class="grid_9 alpha">
+                    <div class="content-area">
+                        <p>
+                            [[*content]]
+                        </p>
+
+                        [[!pdoResources?
+                        &tplWrapper=`color_list_wrapper`
+                        &tpl=`color_list_row`
+                        &includeTVs=`color`
+                        &processTVs=`1`
+                        &limit=`0`
+
+                        ]]
+                    </div>
+                </div>
+                <div class="grid_3 omega">
+                    [[$sidebar]]  
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+
+    </div>
+
+
+
+
+
+</main>
+[[$footer]]
+
+<div class="overlay" title="окно"></div>
+[[$popup-feedback]]
+[[$popup-order]]
+[[$popup-callback]]
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
