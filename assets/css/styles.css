@@ -610,10 +610,14 @@ body #site.basis .content .content-area .banner-product {
 }
 body #site.basis .content .content-area .drawing-product {
   display: block;
-  width: 350px;
-  height: 355px;
+  width: 310px;
+  height: 315px;
   border-bottom: 1px solid #E2E2E2;
   float: left;
+  padding: 20px;
+}
+body #site.basis .content .content-area .drawing-product img {
+  width: 310px !important;
 }
 body #site.basis .content .content-area table.intab tr {
   border-bottom: 1px solid #E2E2E2;
