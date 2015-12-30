@@ -104,6 +104,8 @@ body #header #header-elements a.logo .header-new-year {
   width: 137px;
   height: 100px;
   background: url("/assets/img/temp/new-year.png") no-repeat;
+  top: -60px;
+  left: 100px;
   z-index: 2000;
 }
 body #header #header-elements a.request {
