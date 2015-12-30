@@ -17,8 +17,8 @@ $config = array(
     'assets/img/products_150x130/' => array(
         'src' => array('w' => 150, 'h' => 130, 'zc' => 1, 'bg' => '#fff', 'q' => 90),
     ),
-     'assets/img/drawings' => array(
-        'src' => array('w' => 330, 'h' => 330, 'zc' => 10, 'bg' => '#fff', 'q' => 90),
+     'assets/img/product/' => array(
+        'src' => array('w' => 330, 'h' => 330, 'zc' => 1, 'bg' => '#fff', 'q' => 90),
     ),
    
 );

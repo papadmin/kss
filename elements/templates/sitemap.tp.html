@@ -6,34 +6,57 @@
 
         [[$inner_header]]
 
+
         <div class="content">
-            <div class="grid_9">
-                <div class="content-area">
+            <div class="content-container">
 
-                    [[sitemapFriend? 
-                    &type=`html`
-                    &onlySearchable=`true`
-                    &includeWebLinks=`true`
-                    &tplOuter=`sitemap_outer`
-                    &tplItem=`sitemap_item`
-                    &tplContainer=`sitemap_container`
-                    ]]
+                <div class="grid_9 alpha">
+                    <div class="content-area">
 
-                    <div class="clear"></div>
+                        [[sitemapFriend? 
+                        &type=`html`
+                        &onlySearchable=`true`
+                        &includeWebLinks=`true`
+                        &tplOuter=`sitemap_outer`
+                        &tplItem=`sitemap_item`
+                        &tplContainer=`sitemap_container`
+                        ]]
 
+                        <div class="clear"></div>
+
+
+
+                    </div>
                 </div>
+                <div class="grid_3 omega">
+                    [[$sidebar]]
+                </div>
+                <div class="clear"></div>
             </div>
-
-        </div>     
+        </div>
         <div class="clear"></div>
-    </div>
-</main>
 
+
+    </div>
+
+
+
+
+
+</main>
 [[$footer]]
+
+
 
 <div class="overlay" title="окно"></div>
 [[$popup-feedback]]
-
+[[$popup-order]]
+[[$popup-callback]]
 
 </body>
 </html>
+
+
+
+
+
