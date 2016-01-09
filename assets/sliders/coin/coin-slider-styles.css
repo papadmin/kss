@@ -12,20 +12,23 @@
 
 }
 
-.coin-slider button {
+.coin-slider a.csl {
 
-    height: 50px;
-    background-color: #0B4A81;
-    border: none;
-    position: absolute;
+    display: block;
     width: 235px;
+    height: 22px;
+    text-align: center;
+    background-color: #0B4A81;
+    font-size: 14px !important;
+    font-family: OpenSansBold !important;
+    color: #ffffff !important;
+    padding: 14px 0;
+    margin-bottom: 0;
+    position: absolute;
     left: 705px;
     top: 431px;
-    font-size: 14px;
-    font-family: OpenSansBold;
-    color: #ffffff;
     z-index: 1002;
-    cursor: pointer;
+
 }
 
 
