@@ -399,6 +399,9 @@ body #site.basis .content .content-area .user-text p.nspecial {
   line-height: 26px;
   color: #CCCCCC;
 }
+body #site.basis .content .content-area .user-text p img {
+  width: 646px !important;
+}
 body #site.basis .content .content-area .user-text .lot {
   width: 64px ;
   height: 4px ;
@@ -1132,7 +1135,7 @@ body .popup-callback {
   opacity: 0;
   position: fixed;
   text-align: justify;
-  top: 40%;
+  top: 50%;
   visibility: hidden;
   z-index: 999999;
   -webkit-transform: translate(-50%, -50%);
