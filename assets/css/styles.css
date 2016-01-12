@@ -451,29 +451,27 @@ body #site.basis .content .content-area .user-text iframe {
   margin-bottom: 16px;
 }
 body #site.basis .content .content-area .user-text table {
-  width: 544px;
-  height: 375px;
+  width: 544px !important;
+  height: 375px !important;
   margin-top: 60px;
   margin-bottom: 47px;
-}
-body #site.basis .content .content-area .user-text table.babout {
   font-family: OpenSansRegular;
   font-size: 13px;
   margin-bottom: 41px;
 }
-body #site.basis .content .content-area .user-text table.babout tr {
+body #site.basis .content .content-area .user-text table tr {
   border-bottom: 1px solid #E2E2E2;
 }
-body #site.basis .content .content-area .user-text table.babout tr:last-child {
+body #site.basis .content .content-area .user-text table tr:last-child {
   border-bottom: none;
 }
-body #site.basis .content .content-area .user-text table.babout tr:first-child {
+body #site.basis .content .content-area .user-text table tr:first-child {
   color: #989797;
   width: 40%;
   padding-left: 0;
   border-bottom: 2px solid #BDBDBD;
 }
-body #site.basis .content .content-area .user-text table.babout tr td {
+body #site.basis .content .content-area .user-text table tr td {
   padding: 24px 8px;
 }
 body #site.basis .content .content-area .user-text h2 {
