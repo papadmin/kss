@@ -1108,6 +1108,36 @@ body #footer .footer-info i {
   font-size: 15px;
   margin-bottom: 14px;
 }
+body #footer .footer-info i.i-footer-phone {
+  display: block;
+  width: 15px;
+  height: 16px;
+  position: relative;
+  background: url("/assets/img/design/i-footer-phone.png") no-repeat;
+}
+body #footer .footer-info i.i-footer-email {
+  display: block;
+  width: 16px;
+  height: 11px;
+  position: relative;
+  background: url("/assets/img/design/i-footer-email.png") no-repeat;
+  margin-bottom: 19px;
+}
+body #footer .footer-info i.i-footer-address {
+  display: block;
+  width: 11px;
+  height: 16px;
+  position: relative;
+  background: url("/assets/img/design/i-footer-address.png") no-repeat;
+}
+body #footer .footer-sep {
+  width: 1px;
+  height: 40px;
+  background-color: #E2E2E2;
+  float: left;
+  margin-left: -26px;
+  margin-top: 42px;
+}
 body .overlay {
   background-color: rgba(0, 0, 0, 0.7);
   bottom: 0;
@@ -1164,7 +1194,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 24.11.2015, 10:31:02
     Author     : aysulu
 */
@@ -1195,6 +1225,7 @@ and open the template in the editor.
 }
 #footer-menu {
   width: 100%;
+  float: left;
 }
 #footer-menu ul {
   margin-top: 37px;
