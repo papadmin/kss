@@ -98,7 +98,7 @@
   position: absolute;
   top: 0;
   right: 140px;
-  z-index: 2;
+  z-index: 5;
   margin-top: 1em;
   /* Pagination */
   /* Bullets */
@@ -193,8 +193,8 @@
   height: 481px;
   padding: 20px;
   line-height: 1.5;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   color: white;
   background: #007AC2;
   -webkit-transition: all 0.3s ease-in-out;
@@ -225,9 +225,22 @@
   color: #ffffff;
   margin-bottom: 40px;
 }
+.tiles-description p a {
+  display: block;
+  width: 235px;
+  height: 22px;
+  text-align: center;
+  background-color: #0B4A81;
+  font-size: 14px !important;
+  font-family: OpenSansBold !important;
+  color: #ffffff !important;
+  padding: 14px 0;
+  margin-bottom: 0;
+}
 .tiles-description-active {
   opacity: 1;
   visibility: visible;
+  z-index: 3;
 }
 .tiles-description-active p {
   left: 0;

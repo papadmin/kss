@@ -103,7 +103,7 @@
     position: absolute;
     top: 0;
     right: 140px;
-    z-index: 2;
+    z-index: 5;
     margin-top: 1em;
     .tiles-nav-item {
         position: relative;
@@ -185,8 +185,8 @@
     height: 481px;
     padding: 20px;
     line-height: 1.5;
-    visibility: hidden;
-    opacity: 0;
+    visibility: visible;
+    opacity: 1;
     color: white;
     background: #007AC2;
     //box-shadow: 0 -1px 2px rgba(0,0,0,.3);
@@ -222,11 +222,29 @@
         }
 
         // .transition(all .3s ease-in-out);
+
+        a {
+
+            display: block;
+            width: 235px;
+            height: 22px;
+            text-align: center;
+            background-color: #0B4A81;
+            font-size: 14px !important;
+            font-family: OpenSansBold !important;
+            color: #ffffff !important;
+            padding: 14px 0;
+            margin-bottom: 0;
+
+
+
+        }
     }
 }
 .tiles-description-active {
     opacity: 1;
     visibility: visible;
+    z-index: 3;
     p { left: 0; visibility: visible;}
 }
 .tiles-description-empty { display: none; }
