@@ -179,39 +179,48 @@ and open the template in the editor.
                           margin-bottom: 30px;
                           border-bottom: none;
 
-                          .pic-directory {
-                              width: 39px;
-                              height: 52px;
-                              background: url("/assets/img/design/i-file.png") no-repeat;
-                              float: left;
+                          a {
 
-                              p {
+                              &.pic-directory {
+                                  display: block;
+                                  width: 39px;
+                                  padding: 0;
+                                  height: 52px;
+                                  background: url("/assets/img/design/i-file.png") no-repeat;
+                                  float: left;
 
-                                  margin: 24px 0 0 0 !important;
-                                  &.doc{
-                                      color:#3F89BB !important;
-                                      text-align: center;
-                                      margin-top: 27px !important;
-                                      font-size: 12px !important;
-                                      font-family: OpenSansRegular !important;
+                                  p {
 
-                                  }
-                                  &.xls{
-                                      color: #3FBB45 !important;
-                                      text-align: center;
-                                      margin-top: 27px !important;
-                                      font-size: 12px !important;
-                                      font-family: OpenSansRegular !important;
-                                  }
-                                  &.pdf{
-                                      color:#DA5353 !important;
-                                      text-align: center;
-                                      margin-top: 27px !important;
-                                      font-size: 12px !important;
-                                      font-family: OpenSansRegular !important;
+                                      margin: 24px 0 0 0 !important;
+                                      line-height: 12px;
+                                      &.doc{
+                                          color:#3F89BB !important;
+                                          text-align: center;
+                                          margin-top: 27px !important;
+                                          font-size: 12px !important;
+                                          font-family: OpenSansRegular !important;
+
+                                      }
+                                      &.xls{
+                                          color: #3FBB45 !important;
+                                          text-align: center;
+                                          margin-top: 27px !important;
+                                          font-size: 12px !important;
+                                          font-family: OpenSansRegular !important;
+                                      }
+                                      &.pdf{
+                                          color:#DA5353 !important;
+                                          text-align: center;
+                                          margin-top: 27px !important;
+                                          font-size: 12px !important;
+                                          font-family: OpenSansRegular !important;
+                                      }
                                   }
                               }
+
                           }
+
+
 
 
                           .block-directory{
