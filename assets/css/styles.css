@@ -228,6 +228,9 @@ body #site a.new-link {
 body #site a.new-link img {
   margin-bottom: 23px;
 }
+body #site a.new-link.fl-right {
+  margin-right: -20px;
+}
 body #site a img {
   width: 224px ;
   height: 152px;
@@ -269,7 +272,7 @@ body #site p.technology {
 body #site .technology-block-right {
   width: 190px;
   background-color: #FFFFFF;
-  padding: 42px 30px 42px 30px;
+  padding: 42px 24px 42px 24px;
   float: right;
 }
 body #site #slider-bottom {
@@ -331,6 +334,9 @@ body #site.basis .prints {
 body #site.basis .prints a {
   font-size: 11px;
   color: #989797;
+}
+body #site.basis .prints a:hover {
+  color: #000000;
 }
 body #site.basis .prints .i-prints {
   display: inline-block;
@@ -401,10 +407,10 @@ body #site.basis .content .content-area .user-text p.nspecial {
   margin-left: 60px;
   font-size: 17px  !important;
   line-height: 26px;
-  color: #CCCCCC;
+  color: #A09F9F;
 }
 body #site.basis .content .content-area .user-text p img {
-  width: 646px !important;
+  width: 626px !important;
 }
 body #site.basis .content .content-area .user-text .lot {
   width: 64px ;
@@ -693,19 +699,16 @@ body #site.basis .content .content-area .objects-block a.area-object {
 body #site.basis .content .content-area .objects-block a.area-object .object-detalis {
   position: absolute;
   display: none;
-  left: 96px;
-  top: 68px;
-  width: 140px;
-  height: 114px;
+  width: 292px;
+  height: 198px;
   background: url("/assets/img/design/detalis.png") no-repeat;
-  background-position: 26px 0;
 }
 body #site.basis .content .content-area .objects-block a.area-object .object-detalis p {
   color: #ffffff;
   font-family: OpenSansRegular;
   font-size: 12px;
-  margin-top: 40px;
-  margin-left: 0;
+  margin-top: 100px;
+  margin-left: 100px;
 }
 body #site.basis .content .content-area .objects-block a.area-object:nth-child(2n+2) {
   margin-right: 0;
