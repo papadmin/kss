@@ -112,6 +112,16 @@ and open the template in the editor.
   margin-bottom: 30px;
   border-bottom: none;
 }
+#directories ul li ul li a.txt-directory {
+  font-family: OpenSansRegular !important;
+  font-size: 12px !important;
+  margin-bottom: 5px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-transform: none;
+  padding: 0;
+  line-height: 14px;
+}
 #directories ul li ul li a.pic-directory {
   display: block;
   width: 39px;
@@ -123,6 +133,7 @@ and open the template in the editor.
 #directories ul li ul li a.pic-directory p {
   margin: 24px 0 0 0 !important;
   line-height: 12px;
+  text-transform: none;
 }
 #directories ul li ul li a.pic-directory p.doc {
   color: #3F89BB !important;
