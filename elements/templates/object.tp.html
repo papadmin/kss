@@ -1,6 +1,6 @@
 [[$meta]]
 [[$header]]
-<main id="site" class="basis"> 
+<main id="site" class="basis">
     <div class="container_12">
 
         [[$inner_header]]
@@ -19,8 +19,10 @@
                             <script type="text/javascript">
                                 $(function () {
                                     $('#carousel').carouFredSel({
+                                        prev: '#cl_left',
+                                        next: '#cl_right',
                                         responsive: true,
-                                        circular: false,
+                                        circular: true,
                                         auto: false,
                                         items: {
                                             visible: 1,
@@ -31,6 +33,7 @@
                                             fx: 'directscroll'
                                         }
                                     });
+
 
                                     $('#thumbs').carouFredSel({
                                         responsive: true,
@@ -61,12 +64,12 @@
 
 
                             <div id="wrapper">
-                                [[!msGallery? 
+                                [[!msGallery?
                                 &tplOuter=`object_gallery_big_outer`
                                 &tplRow=`object_gallery_big_row`
                                 ]]
 
-                                [[!msGallery? 
+                                [[!msGallery?
                                 &tplOuter=`object_gallery_min_outer`
                                 &tplRow=`object_gallery_min_row`
                                 &tplFirst=`object_gallery_min_row_first`
@@ -80,8 +83,8 @@
 
 
                         <div class="clear"></div>
-                        
-                       
+
+
 
 
 
@@ -95,9 +98,9 @@
 
 
                         </table>
-                        
-                        
-                         
+
+
+
 
 
                     </div>

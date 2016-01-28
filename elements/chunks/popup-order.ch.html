@@ -10,6 +10,6 @@
     &emailReplyTo=`[[+order_email]]`
     &validate=`order_name:required:minLength=`2`,order_phone:required:minLength=`5`,order_address:required:minLength=`2`,order_email:email:required`
     &emailTpl=`order_email_tpl`
-    &successMessage=`Обращение успешно отправлено`
+    &successMessage=`[[++order_sucess]]`
     ]]
 </div>

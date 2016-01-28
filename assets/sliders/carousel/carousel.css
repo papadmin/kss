@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : Dec 21, 2015, 8:11:41 AM
     Author     : developer
 */
@@ -16,7 +16,7 @@ and open the template in the editor.
     //position: absolute;
     width: 627px;
     margin-bottom: 20px;
-    
+
 }
 #carousel-wrapper {
     padding-bottom: 10px;
@@ -41,8 +41,8 @@ and open the template in the editor.
 #carousel img,
 #thumbs img {
     border: none;
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -62,20 +62,20 @@ and open the template in the editor.
     padding: 1px 40px 0 40px;
     position: relative;
     margin-top: -20px;
-    
+
     background-color: #F6F6F6;
 }
 #thumbs a {
-    
+
     border: none;
-    
+
     width: 104px;
     height: 90px;
     margin: 0 1px 0 0;
     overflow: hidden;
-    
 
-    
+
+
 }
 #thumbs a:hover, #thumbs a.selected {
     //border-color: #566;
@@ -104,13 +104,13 @@ and open the template in the editor.
 #next {
     background: url('/assets/img/design/carright.png') no-repeat;
     right: 16px;
-     top: 34px;
-}			
-#prev:hover { 
-    background: url('/assets/img/design/carleft-active.png') no-repeat;				
+    top: 34px;
+}
+#prev:hover {
+    background: url('/assets/img/design/carleft-active.png') no-repeat;
 }
 #next:hover {
-    background: url('/assets/img/design/carright-active.png') no-repeat;				
+    background: url('/assets/img/design/carright-active.png') no-repeat;
 }
 #prev.disabled, #next.disabled {
     display: block;
@@ -136,4 +136,40 @@ and open the template in the editor.
 #donate form {
     width: 100px;
 }
+
+
+
+#cl_left,
+#cl_right {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 10;
+    top: 150px;
+    opacity: .5;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#cl_left:hover,
+#cl_right:hover {
+    opacity: 1;
+}
+
+#cl_left {
+    left: 10px;
+    background-image: url(https://www.gentec-eo.com/Content/images/home/slider/left-arrow.png);
+}
+
+#cl_right {
+    right: 10px;
+    background-image: url(https://www.gentec-eo.com/Content/images/home/slider/right-arrow.png);
+}
+
+.buttons {
+    position: relative;
+}
+
+
 
