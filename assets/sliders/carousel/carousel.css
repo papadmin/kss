@@ -141,12 +141,12 @@ and open the template in the editor.
 
 #cl_left,
 #cl_right {
-    width: 50px;
-    height: 50px;
+    width: 41px;
+    height: 41px;
     position: absolute;
     z-index: 10;
     top: 150px;
-    opacity: .5;
+    opacity: .8;
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -158,13 +158,14 @@ and open the template in the editor.
 }
 
 #cl_left {
-    left: 10px;
-    background-image: url(https://www.gentec-eo.com/Content/images/home/slider/left-arrow.png);
+    left: 0;
+    background-image: url(/assets/img/design/obj-arrow-left.png);
+
 }
 
 #cl_right {
-    right: 10px;
-    background-image: url(https://www.gentec-eo.com/Content/images/home/slider/right-arrow.png);
+    right: 0;
+    background-image: url(/assets/img/design/obj-arrow-right.png);
 }
 
 .buttons {
