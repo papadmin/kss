@@ -3,15 +3,14 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : Dec 21, 2015, 9:54:46 AM
     Author     : developer
 */
 
 #slider {
     margin: 0 auto;
-    //padding-left: 40px;
-    //padding-right: 40px;
+
 }
 
 
@@ -28,7 +27,7 @@ and open the template in the editor.
 #forslider {
     position: relative;
     width: 100%;
-}  
+}
 
 #forslider a.slider-lmore {
     display: block;
@@ -57,16 +56,16 @@ and open the template in the editor.
     list-style:none;
 }
 #slider2{margin-top:1em;}
-#slider li, #slider2 li{ 
-    /* 
+#slider li, #slider2 li{
+    /*
         define width and height of list item (slide)
         entire slider area will adjust according to the parameters provided here
-    */ 
+    */
     width:780px;
     height:400px;
     overflow:hidden;
 
-}  
+}
 
 #slider li div, #slider2 li div{
     padding-top: 70px;
@@ -89,11 +88,11 @@ and open the template in the editor.
     font-size: 20px;
     margin-bottom: 40px;
 
-}     
+}
 
 
 #prevBtn, #nextBtn,
-#slider1next, #slider1prev{ 
+#slider1next, #slider1prev{
     display:block;
     width:42px;
     height:43px;
@@ -101,42 +100,42 @@ and open the template in the editor.
     left:0;
     top:233px;
     z-index:1000;
-}    
-#nextBtn, #slider1next{ 
+}
+#nextBtn, #slider1next{
     left:898px;
-}                                                        
+}
 #prevBtn a, #nextBtn a,
-#slider1next a, #slider1prev a{  
+#slider1next a, #slider1prev a{
     display:block;
     position:relative;
     width:42px;
     height:42px;
-    background:url('/assets/img/design/sl-left.png') no-repeat;    
-}    
-
-#prevBtn  a:hover {
-    background:url('/assets/img/design/sl-left-active.png') no-repeat;    
+    background:url('/assets/img/design/sl-left.png') no-repeat;
 }
 
-#nextBtn a, #slider1next a{ 
-    background:url('/assets/img/design/sl-right.png') no-repeat;    
-} 
+#prevBtn  a:hover {
+    background:url('/assets/img/design/sl-left-active.png') no-repeat;
+}
 
-#nextBtn a:hover{ 
-    background:url('/assets/img/design/sl-right-active.png') no-repeat;    
-} 
+#nextBtn a, #slider1next a{
+    background:url('/assets/img/design/sl-right.png') no-repeat;
+}
+
+#nextBtn a:hover{
+    background:url('/assets/img/design/sl-right-active.png') no-repeat;
+}
 
 
 
-/* numeric controls */    
+/* numeric controls */
 
 ol#controls{
     margin:1em 0;
     padding:0;
-    height:28px;    
+    height:28px;
 }
 ol#controls li{
-    margin:0 10px 0 0; 
+    margin:0 10px 0 0;
     padding:0;
     float:left;
     list-style:none;
