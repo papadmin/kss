@@ -1091,6 +1091,20 @@ body #site.basis .content .content-blocks .dir-blocks .dir-block a.comments-bloc
 body #footer {
   width: 100%;
   height: 126px;
+  margin-top: 0 !important;
+}
+body #footer .footer-top {
+  border-bottom: 1px solid #E2E2E2;
+  padding-bottom: 30px;
+}
+body #footer .footer-bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body #footer .footer-bottom p {
+  color: #989797;
+  font-size: 13px;
+  font-family: OpenSansRegular;
 }
 body #footer .footer-info {
   display: block;
