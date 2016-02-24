@@ -1,61 +1,66 @@
 <footer id="footer">
     <div class="container_12 ">
-        <div class="grid_5">
+        <div class="grid_12 footer-top">
+            <div class="grid_5 alpha">
 
-            <div id="footer-menu">
-                [[pdoMenu?
-                &parents=`0`
-                &level=`1`
-                &tpl=`menu_tpl`
-                &tplOuter=`menu_outer`
-                ]]
+                <div id="footer-menu">
+                    [[pdoMenu?
+                    &parents=`0`
+                    &level=`1`
+                    &tpl=`menu_tpl`
+                    &tplOuter=`menu_outer`
+                    ]]
+
+                </div>
+
+                <div class="footer-sep"></div>
+
+                <div class="clear"></div>
 
             </div>
 
-            <div class="footer-sep"></div>
+
+            <div class="grid_7 al-right omega">
+
+                <div class="footer-info">
+
+                    <i class="i-footer-phone"></i>
+
+                    <p>  [[++contact_phone]]</p>
+
+                </div>
+
+                <div class="footer-info">
+
+
+                    <i class="i-footer-email"></i>
+
+                    <p> <a href='mailto:[[++contact_email]]'>[[++contact_email]]</a> </p>
+                </div>
+
+
+                <div class="footer-info">
+
+                    <i class="i-footer-address"></i>
+
+                    <p>[[++adress]]</p>
+
+                </div>
+
+                [[$yandex_metrika]]
+                [[$redconnect]]
+
+            </div>
+
+
 
             <div class="clear"></div>
-
         </div>
 
-
-        <div class="grid_7 al-right">
-
-            <div class="footer-info">
-
-                <i class="i-footer-phone"></i>
-
-                <p>  [[++contact_phone]]</p>
-
-            </div>
-
-            <div class="footer-info">
-
-
-                <i class="i-footer-email"></i>
-
-                <p> <a href='mailto:[[++contact_email]]'>[[++contact_email]]</a> </p>
-            </div>
-
-
-            <div class="footer-info">
-
-                <i class="i-footer-address"></i>
-
-                <p>[[++adress]]</p>
-
-            </div>
-
-            [[$yandex_metrika]]
-            [[$redconnect]]
-
-
-
+        <div class="footer-bottom grid_12">
+            <p>[[++copy]]</p>
         </div>
-
-        <div class="clear"></div>
     </div>
-
 </footer>
 
 
