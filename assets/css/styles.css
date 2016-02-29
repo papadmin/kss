@@ -650,15 +650,15 @@ body #site.basis .content .content-area .colors-block {
 body #site.basis .content .content-area .colors-block .area-color {
   display: block;
   float: left;
-  width: 129px;
-  height: 129px;
-  padding: 40px;
+  width: 109px;
+  height: 69px;
+  padding: 70px 50px;
 }
 body #site.basis .content .content-area .colors-block .area-color div {
-  width: 129px;
-  height: 95px;
+  width: 109px;
+  height: 44px;
   background-color: #ffffff;
-  padding-top: 34px;
+  padding-top: 26px;
 }
 body #site.basis .content .content-area .colors-block .area-color div p {
   padding: 0;
