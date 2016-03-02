@@ -682,6 +682,55 @@ body #site.basis .content .content-area p.refresh a {
 body #site.basis .content .content-area p.refresh a i {
   font-size: 24px;
 }
+body #site.basis .content .content-area .commentslist-block {
+  margin-left: 40px;
+  width: 627px;
+  margin-bottom: 30px;
+}
+body #site.basis .content .content-area .commentslist-block a.area-object {
+  display: block;
+  float: left;
+  width: 292px;
+  height: 532px;
+  margin-right: 43px;
+  position: relative;
+}
+body #site.basis .content .content-area .commentslist-block a.area-object .object-detalis {
+  position: absolute;
+  display: none;
+  width: 292px;
+  height: 398px;
+  background: url("/assets/img/design/comments-detalis.png") no-repeat;
+}
+body #site.basis .content .content-area .commentslist-block a.area-object .object-detalis p {
+  color: #ffffff;
+  font-family: OpenSansRegular;
+  font-size: 12px;
+  margin-top: 210px;
+  margin-left: 100px;
+}
+body #site.basis .content .content-area .commentslist-block a.area-object:nth-child(2n+2) {
+  margin-right: 0;
+}
+body #site.basis .content .content-area .commentslist-block a.area-object img {
+  width: 292px;
+  height: 398px;
+  margin-bottom: 18px;
+}
+body #site.basis .content .content-area .commentslist-block a.area-object p {
+  font-family: OpenSansRegular;
+}
+body #site.basis .content .content-area .commentslist-block a.area-object p.object-name {
+  font-size: 14px;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 8px;
+}
+body #site.basis .content .content-area .commentslist-block a.area-object p.color-object {
+  font-size: 13px;
+  color: #989797;
+  margin: 0;
+}
 body #site.basis .content .content-area .objects-block {
   margin-left: 40px;
   width: 627px;
