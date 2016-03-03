@@ -691,7 +691,7 @@ body #site.basis .content .content-area .commentslist-block a.area-object {
   display: block;
   float: left;
   width: 292px;
-  height: 532px;
+  height: 600px;
   margin-right: 43px;
   position: relative;
 }
@@ -730,6 +730,13 @@ body #site.basis .content .content-area .commentslist-block a.area-object p.colo
   font-size: 13px;
   color: #989797;
   margin: 0;
+  margin-bottom: 8px;
+}
+body #site.basis .content .content-area .commentslist-block a.area-object p.descr-object {
+  font-size: 13px;
+  font-family: OpenSansItalic;
+  margin: 0;
+  margin-bottom: 8px;
 }
 body #site.basis .content .content-area .objects-block {
   margin-left: 40px;
@@ -1055,6 +1062,16 @@ body #site.basis .content .content-blocks .dir-blocks .dir-block p.production-ob
   top: 2px;
   margin-right: 8px;
   background: url("/assets/img/design/i-objects.png") no-repeat;
+}
+body #site.basis .content .content-blocks .dir-blocks .dir-block p.production-object .i-comment {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  float: left;
+  top: 2px;
+  margin-right: 8px;
+  background: url("/assets/img/design/i-comment.png") no-repeat;
 }
 body #site.basis .content .content-blocks .dir-blocks .dir-block p.directory {
   font-size: 14px;
