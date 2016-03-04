@@ -1,0 +1,67 @@
+[[$meta]]
+[[$header]]
+<main id="site" class="basis">
+    <div class="container_12">
+
+        [[$inner_header]]
+
+        <div class="content">
+            <div class="content-container">
+
+                <div class="grid_9 alpha">
+                    <div class="content-area">
+                        <div class="news-block">
+                            [[!pdoPage?
+                            &parents=`3`
+                            &tplWrapper=`newslist_wrapper`
+                            &tpl=`newslist_row`
+                            &tplFirst=`newslist_first_row`
+                            &sortby=`publishedon`
+                            &limit=`6`
+                            &includeTVs=`photo_news,hot_news,color_news`
+                            &pageLimit=`7`
+                            &tplPageWrapper=`pagination_wrapper`
+                            &tplPageSkip=`@INLINE <li class="disabled"><a>...</a></li>`
+                            &tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]"><i class="fa fa-angle-left"></i></a></li>`
+                            &tplPageNext=`@INLINE <li class="control"><a href="[[+href]]"><i class="fa fa-angle-right"></i></a></li>`
+                            &tplPagePrevEmpty=`@INLINE <li class="disabled"><i class="fa fa-angle-left"></i></li>`
+                            &tplPageNextEmpty=`@INLINE <li class="disabled"><i class="fa fa-angle-right"></i></li>`
+                            ]]
+
+                            [[!+page.nav]]
+
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_3 omega">
+                    [[$sidebar]]
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+
+    </div>
+
+
+
+
+
+</main>
+[[$footer]]
+
+
+
+<div class="overlay" title="окно"></div>
+[[$popup-feedback]]
+[[$popup-order]]
+[[$popup-callback]]
+
+</body>
+</html>
+
+
+
+
+
