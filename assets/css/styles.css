@@ -991,10 +991,59 @@ body #site.basis .content .content-area .pagination ul li a:hover {
   border-radius: 50%;
   color: #007AC2;
 }
-body #site.basis .content .content-area .accessor-slider-block ul li a {
+body #site.basis .content .content-area .accessor-slider-block {
+  margin-bottom: 66px;
+}
+body #site.basis .content .content-area .accessor-slider-block .navig-block {
+  float: left;
+  width: 86px;
+}
+body #site.basis .content .content-area .accessor-slider-block a.navig-left {
   display: inline-block;
-  width: 234px;
-  height: 240px;
+  width: 42px;
+  height: 42px;
+  background: url("/assets/img/design/navig-left.png") no-repeat;
+  margin-right: 2px;
+}
+body #site.basis .content .content-area .accessor-slider-block a.navig-left:hover {
+  background: url("/assets/img/design/navig-active-left.png") no-repeat;
+}
+body #site.basis .content .content-area .accessor-slider-block a.navig-right {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background: url("/assets/img/design/navig-right.png") no-repeat;
+}
+body #site.basis .content .content-area .accessor-slider-block a.navig-right:hover {
+  background: url("/assets/img/design/navig-active-right.png") no-repeat;
+}
+body #site.basis .content .content-area .accessor-slider-block h3 {
+  font-size: 25px;
+  font-family: OpenSansRegular;
+  margin-left: 40px;
+  margin-bottom: 46px;
+  font-weight: normal;
+  width: 540px;
+  float: left;
+}
+body #site.basis .content .content-area .accessor-slider-block ul li a {
+  display: block;
+  float: left;
+  width: 144px;
+  height: 224px;
+  padding: 36px 45px 0 45px;
+  border: 1px solid #f0f0f0;
+  border-left: none;
+}
+body #site.basis .content .content-area .accessor-slider-block ul li a img {
+  width: 150px;
+  height: 130px;
+  margin-bottom: 30px;
+}
+body #site.basis .content .content-area .accessor-slider-block ul li a p {
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
 }
 body #site.basis .content .content-blocks {
   width: 235px;
