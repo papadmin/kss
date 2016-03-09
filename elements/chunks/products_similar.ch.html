@@ -1,0 +1,76 @@
+<div class="accessor-slider-block">
+
+    <h3>Похожие товары</h3>
+    <div class="navig-block">
+        <a href="#" class="navig-left" id="slide2_prev"></a><a href="#" class="navig-right" id="slide2_next"></a>
+    </div>
+    <div class="clear"></div>
+
+
+
+    <ul id="slide2">
+
+        <a href=" /linearnyie-paneli/">
+            <img src="/assets/img/products_150x130/h75_znak.jpg" alt="" />
+            <p>Первый товар самый большой</p>
+        </a>
+        <a href=" /linearnyie-paneli/">
+            <img src="/assets/img/products_150x130/linearnaya_zig_logo1_znak.jpg" alt="" />
+            <p>Второй товар</p>
+        </a>
+        <a href=" /linearnyie-paneli/">
+            <img src="/assets/img/products_150x130/ch15_1_znak.jpg" alt="" />
+            <p>Третий товар самого высокого класса</p>
+        </a>
+
+
+        <a href=" /linearnyie-paneli/">
+            <img src="/assets/img/products_150x130/h75_znak.jpg" alt="" />
+            <p>Первый товар самый большой</p>
+        </a>
+        <a href=" /linearnyie-paneli/">
+            <img src="/assets/img/products_150x130/linearnaya_zig_logo1_znak.jpg" alt="" />
+            <p>Второй товар</p>
+        </a>
+        <a href=" /linearnyie-paneli/">
+            <img src="/assets/img/products_150x130/ch15_1_znak.jpg" alt="" />
+            <p>Третий товар самого высокого класса</p>
+        </a>
+
+
+
+
+    </ul>
+
+</div>
+
+<script type="text/javascript">
+    $(function () {
+
+        var allHref2 = $('#slide2 a'),
+                k2 = 0,
+                hrefGroup2 = 3; // по сколько элементов в группе
+
+        allHref2.each(function (i2) {
+            if (i2 % hrefGroup2 == 0) {
+                k2++;
+            }
+            $(this).addClass('tmp' + k2);
+        });
+        for (i2 = 1; i2 <= allHref2.length + 1 / hrefGroup2; i2++) {
+            $('.tmp' + i2).wrapAll('<li></li>');
+        }
+
+        $('#slide2').ulslide({
+            statusbar: true,
+            width: 716,
+            height: 300,
+            bnext: '#slide2_next',
+            bprev: '#slide2_prev',
+            axis: 'x',
+            mousewheel: true,
+            duration: 500,
+            autoslide: 0
+        });
+    });
+</script>

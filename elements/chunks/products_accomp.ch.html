@@ -1,0 +1,51 @@
+<div class="accessor-slider-block">
+
+    <h3>Сопутствующие товары</h3>
+
+    <div class="navig-block">
+        <a href="#" class="navig-left" id="slide1_prev"></a><a href="#" class="navig-right" id="slide1_next"></a>
+    </div>
+    <div class="clear"></div>
+
+    <ul id="slide1">
+
+        [[!getAccomp]]
+
+
+
+
+    </ul>
+
+</div>
+
+<script type="text/javascript">
+    $(function () {
+
+        var allHref = $('#slide1 a'),
+                k = 0,
+                hrefGroup = 3; // по сколько элементов в группе
+
+        allHref.each(function (i) {
+            if (i % hrefGroup == 0) {
+                k++;
+            }
+            $(this).addClass('tmp' + k);
+        });
+        for (i = 1; i <= allHref.length + 1 / hrefGroup; i++) {
+            $('.tmp' + i).wrapAll('<li></li>');
+        }
+
+
+        $('#slide1').ulslide({
+            statusbar: true,
+            width: 716,
+            height: 262,
+            bnext: '#slide1_next',
+            bprev: '#slide1_prev',
+            axis: 'x',
+            mousewheel: true,
+            duration: 500,
+            autoslide: 0
+        });
+    });
+</script>

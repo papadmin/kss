@@ -1,6 +1,6 @@
 [[$meta]]
 [[$header]]
-<main id="site" class="basis"> 
+<main id="site" class="basis">
     <div class="container_12">
 
         [[$inner_header]]
@@ -20,11 +20,11 @@
                                     });
                                 });
                             </script>
-                            [[!msGallery? 
+                            [[!msGallery?
                             &tplOuter=`product_gallery_outer`
                             &tplRow=`product_gallery_row`
                             ]]
-                           
+
                         </div>
 
                         <div class="drawing-product">
@@ -49,7 +49,7 @@
                                 <div id="d-t1" class="tab tab-active">
                                     <div class='user-text'>
 
-                                        [[*product_description]]  
+                                        [[*product_description]]
 
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@
                                 <div id="d-t3" class="tab">
                                     <div class='user-text'>
 
-                                        [[*product_feature_installation]]  
+                                        [[*product_feature_installation]]
 
                                     </div>
                                 </div>
@@ -73,6 +73,13 @@
                             </div>
 
                         </div>
+
+
+                        [[*yes_accomp:is=`да`:then=`[[$products_accomp]]`]]
+                        [[*yes_similar:is=`да`:then=`[[$products_similar]]`]]
+
+
+
 
 
 
