@@ -497,6 +497,13 @@ body #site.basis .content .content-area .user-text h3 {
   margin-bottom: 40px;
   font-weight: normal;
 }
+body #site.basis .content .content-area .user-text .news-block {
+  margin-left: 0;
+}
+body #site.basis .content .content-area .user-text .news-block p.name-news-block {
+  font-size: 20px !important;
+  margin-bottom: 8px;
+}
 body #site.basis .content .content-area a.area-stuff {
   display: block;
   float: left;
