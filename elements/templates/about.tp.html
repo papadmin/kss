@@ -1,0 +1,73 @@
+[[$meta]]
+[[$header]]
+
+<main id="site" class="basis">
+    <div class="container_12">
+
+        [[$inner_header]]
+
+
+        <div class="content">
+            <div class="content-container">
+                <div class="grid_9 alpha">
+                    <div class="content-area area-no-padding">
+
+                        <div class="tabs about-tabs">
+
+                            <div class="istab link-active">
+                                <a  id="t1"  href="">О компании</a>
+                            </div>
+                            <div  class="istab">
+                                <a id="t4" href="">Партнеры</a>
+                            </div>
+                            <div id="d-t1" class="tab tab-active">
+                                <div class='user-text'>
+                                    [[*about]]
+                                </div>
+                            </div>
+
+                            <div id="d-t4" class="tab">
+
+                                [[*partners]]
+
+                                <div class="news-block">
+                                    [[!pdoResources?
+                                    &parents=`371`
+                                    &tplWrapper=`newslist_wrapper`
+                                    &tpl=`partners_row`
+                                    &sortby=`publishedon`
+                                    &includeTVs=`photo_news`
+                                    ]]
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="grid_3 omega">
+                    [[$sidebar]]
+                </div>
+                <div class="clear"></div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="clear"></div>
+    </div>
+</main>
+
+[[$footer]]
+
+<div class="overlay" title="окно"></div>
+[[$popup-feedback]]
+[[$popup-order]]
+[[$popup-callback]]
+
+</body>
+</html>
