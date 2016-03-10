@@ -10,32 +10,7 @@
 
     <ul id="slide2">
 
-        <a href=" /linearnyie-paneli/">
-            <img src="/assets/img/products_150x130/h75_znak.jpg" alt="" />
-            <p>Первый товар самый большой</p>
-        </a>
-        <a href=" /linearnyie-paneli/">
-            <img src="/assets/img/products_150x130/linearnaya_zig_logo1_znak.jpg" alt="" />
-            <p>Второй товар</p>
-        </a>
-        <a href=" /linearnyie-paneli/">
-            <img src="/assets/img/products_150x130/ch15_1_znak.jpg" alt="" />
-            <p>Третий товар самого высокого класса</p>
-        </a>
-
-
-        <a href=" /linearnyie-paneli/">
-            <img src="/assets/img/products_150x130/h75_znak.jpg" alt="" />
-            <p>Первый товар самый большой</p>
-        </a>
-        <a href=" /linearnyie-paneli/">
-            <img src="/assets/img/products_150x130/linearnaya_zig_logo1_znak.jpg" alt="" />
-            <p>Второй товар</p>
-        </a>
-        <a href=" /linearnyie-paneli/">
-            <img src="/assets/img/products_150x130/ch15_1_znak.jpg" alt="" />
-            <p>Третий товар самого высокого класса</p>
-        </a>
+        [[!getSimilar]]
 
 
 
@@ -55,10 +30,10 @@
             if (i2 % hrefGroup2 == 0) {
                 k2++;
             }
-            $(this).addClass('tmp' + k2);
+            $(this).addClass('tmp1' + k2);
         });
         for (i2 = 1; i2 <= allHref2.length + 1 / hrefGroup2; i2++) {
-            $('.tmp' + i2).wrapAll('<li></li>');
+            $('.tmp1' + i2).wrapAll('<li></li>');
         }
 
         $('#slide2').ulslide({

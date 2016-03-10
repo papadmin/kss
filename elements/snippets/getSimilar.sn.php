@@ -8,7 +8,7 @@
 
 $id = $modx->resource->get('id');
 
-$q = $modx->newQuery('msProductLink', array('link' => 3, 'master' => $id));
+$q = $modx->newQuery('msProductLink', array('link' => 2, 'master' => $id));
 $q->select('slave');
 $resources = array();
 $output = '';
@@ -32,4 +32,5 @@ if ($q->prepare() && $q->stmt->execute()) {
 //}
 
 echo $output;
+
 
