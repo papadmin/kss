@@ -41,9 +41,12 @@
                                 <div  class="istab">
                                     <a id="t2" href="">Технические характеристики</a>
                                 </div>
+                                [[*product_feature_installation:!empty=`
                                 <div  class="istab">
                                     <a id="t3" href="">Особенности монтажа</a>
                                 </div>
+                                `]]
+
 
 
                                 <div id="d-t1" class="tab tab-active">
@@ -60,7 +63,13 @@
                                         &tpl=`product_technical_information_tpl`
                                         ]]
                                     </table>
+                                    [[*charact:!empty=`
+                                    <div class='user-text'>
+                                        [[*charact]]
+                                    </div>
+                                    `]]
                                 </div>
+                                [[*product_feature_installation:!empty=`
                                 <div id="d-t3" class="tab">
                                     <div class='user-text'>
 
@@ -68,6 +77,8 @@
 
                                     </div>
                                 </div>
+                                `]]
+
 
 
                             </div>
