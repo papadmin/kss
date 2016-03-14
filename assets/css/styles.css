@@ -483,6 +483,31 @@ body #site.basis .content .content-area .user-text table tr:first-child {
 body #site.basis .content .content-area .user-text table tr td {
   padding: 24px 8px;
 }
+body #site.basis .content .content-area .user-text table.intab {
+  font-family: OpenSansRegular;
+  font-size: 13px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+body #site.basis .content .content-area .user-text table.intab tr {
+  border-bottom: 1px solid #E2E2E2;
+  height: 30px;
+}
+body #site.basis .content .content-area .user-text table.intab tr:first-child {
+  border-bottom: 1px solid #E2E2E2;
+  color: #000000;
+}
+body #site.basis .content .content-area .user-text table.intab tr:last-child {
+  border-bottom: none !important;
+}
+body #site.basis .content .content-area .user-text table.intab tr td {
+  padding: 14px 20px;
+  width: 47%;
+}
+body #site.basis .content .content-area .user-text table.intab tr td:first-child {
+  width: 40%;
+  padding-left: 0;
+}
 body #site.basis .content .content-area .user-text h2 {
   font-size: 30px;
   font-family: OpenSansRegular;
