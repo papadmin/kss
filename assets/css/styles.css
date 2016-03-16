@@ -370,8 +370,18 @@ body #site.basis .content .content-area.area-typical {
   padding: 30px 40px 40px 40px;
   width: 630px;
 }
+body #site.basis .content .content-area.area-typical .oneobjects-block {
+  margin-left: 0;
+  margin-top: -60px;
+}
 body #site.basis .content .content-area.area-no-padding {
   padding-top: 0;
+}
+body #site.basis .content .content-area .user-text span.omaking {
+  font-size: 12px !important;
+  line-height: 18px;
+  color: #C5C5C5;
+  width: 270px;
 }
 body #site.basis .content .content-area .user-text p {
   padding: 0;
@@ -380,17 +390,25 @@ body #site.basis .content .content-area .user-text p {
   font-size: 14px !important;
   margin-bottom: 30px;
   line-height: 24px;
+  /*                            &.omaking{
+                                                            font-size: 12px !important;
+                                                            line-height: 18px;
+                                                            color:#C5C5C5;
+                                                            width: 270px;
+                                                            //margin-top: -39px;
+                                                        }*/
 }
 body #site.basis .content .content-area .user-text p.ospecial {
   font-size: 17px !important;
   line-height: 26px;
 }
-body #site.basis .content .content-area .user-text p.omaking {
+body #site.basis .content .content-area .user-text p.omaking-2 {
   font-size: 12px !important;
   line-height: 18px;
   color: #C5C5C5;
+  margin-right: 37px;
   width: 270px;
-  margin-top: -39px;
+  float: left;
 }
 body #site.basis .content .content-area .user-text p.tmaking {
   font-size: 12px !important;
@@ -420,6 +438,14 @@ body #site.basis .content .content-area .user-text .lot {
   margin-bottom: 56px;
 }
 body #site.basis .content .content-area .user-text img.oimg {
+  width: 270px;
+  height: 188px;
+  float: left;
+  margin-right: 37px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+body #site.basis .content .content-area .user-text img.oimg-2 {
   width: 270px;
   height: 188px;
   float: left;
