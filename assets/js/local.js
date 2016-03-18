@@ -1,10 +1,12 @@
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
 $(document).ready(function ( ) {
+
+
 
     if ($('#site').length > 0) {
         var PageHeight = $(window).height();
@@ -32,8 +34,7 @@ $(document).ready(function ( ) {
             if ($(window).scrollTop() > offset.top) {
                 //$(".phblocks").stop().animate({marginTop: $(window).scrollTop() - offset.top + topPadding});
                 $(".phblocks").addClass('link-fix');
-            }
-            else {
+            } else {
                 //$(".phblocks").stop().animate({marginTop: 0});
                 $(".phblocks").removeClass('link-fix');
             }
@@ -63,6 +64,9 @@ $(document).ready(function ( ) {
 
 
 
+
+
+
         var alphaHeight = $('.content-area').outerHeight();
 
         var omegaHeight = $('.content-blocks').height();
@@ -72,35 +76,38 @@ $(document).ready(function ( ) {
         }
         // else {
         //$('.content-area').height(omegaHeight);
-        //}
+        // }
 
-        
+
 
 
     }
-    
-    
+
+
     $('.form-close, .overlay').click(function () {
-            $('.popup-feedback,  .popup-order, .popup-callback, .overlay').css({'opacity': 0, 'visibility': 'hidden'});
-        });
-        
-        
-        
-        $('a.link-order').click(function (e) {
-            $('.popup-order, .overlay').css({'opacity': 1, 'visibility': 'visible'});
-            e.preventDefault();
-        });
-        $('a.link-feedback').click(function (e) {
-            $('.popup-feedback, .overlay').css({'opacity': 1, 'visibility': 'visible'});
-            e.preventDefault();
-        });
-        $('a.link-callback').click(function (e) {
-            $('.popup-callback, .overlay').css({'opacity': 1, 'visibility': 'visible'});
-            e.preventDefault();
-        });
+        $('.popup-feedback,  .popup-order, .popup-callback, .overlay').css({'opacity': 0, 'visibility': 'hidden'});
+    });
+
+
+
+    $('a.link-order').click(function (e) {
+        $('.popup-order, .overlay').css({'opacity': 1, 'visibility': 'visible'});
+        e.preventDefault();
+    });
+    $('a.link-feedback').click(function (e) {
+        $('.popup-feedback, .overlay').css({'opacity': 1, 'visibility': 'visible'});
+        e.preventDefault();
+    });
+    $('a.link-callback').click(function (e) {
+        $('.popup-callback, .overlay').css({'opacity': 1, 'visibility': 'visible'});
+        e.preventDefault();
+    });
 
 
 });
+
+
+
 
 
 
