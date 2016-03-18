@@ -20,6 +20,9 @@
                             <div  class="istab">
                                 <a id="t4" href="">Партнеры</a>
                             </div>
+                            <div  class="istab">
+                                <a id="t5" href="">Отзывы</a>
+                            </div>
                             <div id="d-t1" class="tab tab-active">
                                 <div class='user-text'>
                                     [[*about]]
@@ -29,19 +32,40 @@
                             <div id="d-t4" class="tab">
 
                                 <div class='user-text'>
-                                [[*partners]]
+                                    [[*partners]]
 
-                                <div class="news-block">
-                                    [[!pdoResources?
-                                    &parents=`371`
-                                    &tplWrapper=`newslist_wrapper`
-                                    &tpl=`partners_row`
-                                    &sortby=`publishedon`
-                                    &includeTVs=`photo_news`
-                                    ]]
+                                    <div class="news-block">
+                                        [[!pdoResources?
+                                        &parents=`371`
+                                        &tplWrapper=`newslist_wrapper`
+                                        &tpl=`partners_row`
+                                        &sortby=`menuindex`
+                                        &sortdir=`ASC`
+                                        &includeTVs=`photo_news`
+                                        &limit=`100`
+                                        ]]
+                                    </div>
+
                                 </div>
+                            </div>
+                            <div id="d-t5" class="tab">
 
-                              </div>
+                                <div class='user-text'>
+                                    [[*comments]]
+
+                                    <div class="news-block">
+                                        [[!pdoResources?
+
+                                        &parents=`352`
+                                        &tplWrapper=`comment_wrapper`
+                                        &tpl=`comment_row`
+
+                                        &limit=`100`
+                                        &includeTVs=`comment_img`
+                                        ]]
+                                    </div>
+
+                                </div>
                             </div>
 
                         </div>
