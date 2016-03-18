@@ -19,7 +19,7 @@ if ($q->prepare() && $q->stmt->execute()) {
         $res = $modx->getObject('modResource', $value);
         $resname = $res->get('pagetitle');
         $reslink = $res->get('alias') . '.html';
-        $resimage = $res->get('image');
+        $resimage = $res->get('thumb');
         $output .= "<a href=\" $reslink\">
             <img src=\"$resimage\"/>
             <p>" . $resname . "</p>
