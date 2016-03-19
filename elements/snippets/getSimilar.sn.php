@@ -19,7 +19,16 @@ if ($q->prepare() && $q->stmt->execute()) {
         $res = $modx->getObject('modResource', $value);
         $resname = $res->get('pagetitle');
         $reslink = $res->get('alias') . '.html';
-        $resimage = $res->get('thumb');
+
+
+        $id = $res->get('id');
+        $where = array(
+            'contentid' => $id
+            , 'tmplvarid' => 4
+        );
+        $tv = $modx->getObject('modTemplateVarResource', $where);
+        $resimage = $tv->get('value');
+
         $output .= "<a href=\" $reslink\">
             <img src=\"$resimage\"/>
             <p>" . $resname . "</p>
