@@ -588,12 +588,17 @@ body{
 
                     .user-text {
 
-                        span {
+                        .minimg {
+                            float: left;
+                        }
+
+                        p {
                             &.omaking{
                                 font-size: 12px !important;
                                 line-height: 18px;
                                 color:#C5C5C5;
                                 width: 270px;
+                                margin-bottom: 10px;
                                 //margin-top: -39px;
                             }
                         }
@@ -637,7 +642,7 @@ body{
                                 line-height: 18px;
                                 color:#C5C5C5;
                                 width: 544px;
-                                margin-top: -54px;
+                                margin-top: -14px;
                             }
 
                             &.nspecial{
@@ -678,11 +683,23 @@ body{
                             &.oimg{
                                 width: 270px;
                                 height: 188px;
-                                float: left;
+
                                 // margin-left: 40px;
                                 margin-right: 37px;
                                 margin-top: 28px;
                                 margin-bottom: 10px
+
+                            }
+
+                            &.oimgn{
+                                width: 270px;
+                                height: 188px;
+
+                                // margin-left: 40px;
+                                margin-right: 37px;
+                                margin-top: 28px;
+                                margin-bottom: 10px;
+                                float: left;
 
                             }
 
@@ -755,9 +772,9 @@ body{
 
                         table{
                             width: 544px !important;
-                            height: 375px !important;
+                            // height: 375px !important;
                             //margin-left: 40px;
-                            margin-top: 60px;
+                            //margin-top: 60px;
                             margin-bottom: 47px;
 
 
@@ -790,6 +807,35 @@ body{
 
 
                                 }
+                            }
+
+                            &.usertable {
+                                border: 1px solid #BDBDBD;
+                                color: #000000;
+
+
+                                tr {
+                                    border: none !important;
+
+                                    &:first-child{
+                                        border-bottom: none !important;
+                                        color: #000000;
+                                    }
+
+                                    &:last-child{
+                                        border-bottom: none !important;
+                                    }
+
+                                    td {
+
+                                        border: 1px solid #BDBDBD;
+                                        vertical-align: middle;
+                                        text-align: center;
+
+                                    }
+
+                                }
+
                             }
 
 
@@ -1133,6 +1179,13 @@ body{
                                 position: relative;
                                 top: 2px;
                                 margin-right:9px;
+                            }
+
+                            &.howtoget {
+                                font-size: 14px;
+                                margin-left: 0px;
+                                margin-right: 0px;
+                                margin-bottom: 0px;
                             }
 
                         }

@@ -1,12 +1,13 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*
-    Created on : Jan 29, 2016, 7:52:21 AM
-    Author     : developer
-*/
+.user-text .minimg {
+  float: left;
+}
+.user-text p.omaking {
+  font-size: 12px !important;
+  line-height: 18px;
+  color: #C5C5C5;
+  width: 270px;
+  margin-bottom: 10px;
+}
 .user-text p {
   padding: 0;
   margin: 0;
@@ -14,24 +15,32 @@ and open the template in the editor.
   font-size: 14px !important;
   margin-bottom: 30px;
   line-height: 24px;
+  /*                            &.omaking{
+                                        font-size: 12px !important;
+                                        line-height: 18px;
+                                        color:#C5C5C5;
+                                        width: 270px;
+                                        //margin-top: -39px;
+                                    }*/
 }
 .user-text p.ospecial {
   font-size: 17px !important;
   line-height: 26px;
 }
-.user-text p.omaking {
+.user-text p.omaking-2 {
   font-size: 12px !important;
   line-height: 18px;
   color: #C5C5C5;
+  margin-right: 37px;
   width: 270px;
-  margin-top: -39px;
+  float: left;
 }
 .user-text p.tmaking {
   font-size: 12px !important;
   line-height: 18px;
   color: #C5C5C5;
   width: 544px;
-  margin-top: -54px;
+  margin-top: -14px;
 }
 .user-text p.nspecial {
   border-left: 3px solid #007AC2;
@@ -41,7 +50,10 @@ and open the template in the editor.
   margin-left: 60px;
   font-size: 17px  !important;
   line-height: 26px;
-  color: #CCCCCC;
+  color: #A09F9F;
+}
+.user-text p img {
+  width: 626px !important;
 }
 .user-text .lot {
   width: 64px ;
@@ -52,6 +64,14 @@ and open the template in the editor.
 }
 .user-text img.oimg {
   width: 270px;
+  height: 188px;
+  margin-right: 37px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+.user-text img.oimg-2 {
+  width: 270px;
+  height: 188px;
   float: left;
   margin-right: 37px;
   margin-top: 28px;
@@ -90,30 +110,38 @@ and open the template in the editor.
   margin-bottom: 16px;
 }
 .user-text table {
-  width: 544px;
-  height: 375px;
-  margin-top: 60px;
+  width: 544px !important;
   margin-bottom: 47px;
-}
-.user-text table.babout {
   font-family: OpenSansRegular;
   font-size: 13px;
   margin-bottom: 41px;
 }
-.user-text table.babout tr {
+.user-text table tr {
   border-bottom: 1px solid #E2E2E2;
 }
-.user-text table.babout tr:last-child {
+.user-text table tr:last-child {
   border-bottom: none;
 }
-.user-text table.babout tr:first-child {
+.user-text table tr:first-child {
   color: #989797;
   width: 40%;
   padding-left: 0;
   border-bottom: 2px solid #BDBDBD;
 }
-.user-text table.babout tr td {
+.user-text table tr td {
   padding: 24px 8px;
+}
+.user-text table.usertable {
+  border: 1px solid #000000;
+}
+.user-text table.usertable tr {
+  border: none !important;
+}
+.user-text table.usertable tr:first-child {
+  border-bottom: none !important;
+}
+.user-text table.usertable tr:last-child {
+  border-bottom: none !important;
 }
 .user-text table.intab {
   font-family: OpenSansRegular;
@@ -123,9 +151,11 @@ and open the template in the editor.
 }
 .user-text table.intab tr {
   border-bottom: 1px solid #E2E2E2;
+  height: 30px;
 }
 .user-text table.intab tr:first-child {
   border-bottom: 1px solid #E2E2E2;
+  color: #000000;
 }
 .user-text table.intab tr:last-child {
   border-bottom: none !important;
@@ -135,7 +165,6 @@ and open the template in the editor.
   width: 47%;
 }
 .user-text table.intab tr td:first-child {
-  color: #989797;
   width: 40%;
   padding-left: 0;
 }
@@ -152,5 +181,68 @@ and open the template in the editor.
   margin-top: 90px;
   margin-bottom: 40px;
   font-weight: normal;
+}
+.user-text .commentslist-block {
+  margin-left: 0px;
+  width: 627px;
+  margin-bottom: 30px;
+}
+.user-text .commentslist-block a.area-object {
+  display: block;
+  float: left;
+  width: 292px;
+  height: 600px;
+  margin-right: 43px;
+  position: relative;
+}
+.user-text .commentslist-block a.area-object .object-detalis {
+  position: absolute;
+  display: none;
+  width: 292px;
+  height: 398px;
+  background: url("/assets/img/design/comments-detalis.png") no-repeat;
+}
+.user-text .commentslist-block a.area-object .object-detalis p {
+  color: #ffffff;
+  font-family: OpenSansRegular;
+  font-size: 12px;
+  margin-top: 210px;
+  margin-left: 100px;
+}
+.user-text .commentslist-block a.area-object:nth-child(2n+2) {
+  margin-right: 0;
+}
+.user-text .commentslist-block a.area-object img {
+  width: 292px;
+  height: 398px;
+  margin-bottom: 18px;
+}
+.user-text .commentslist-block a.area-object p {
+  font-family: OpenSansRegular;
+}
+.user-text .commentslist-block a.area-object p.object-name {
+  font-size: 14px;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.user-text .commentslist-block a.area-object p.color-object {
+  font-size: 13px;
+  color: #989797;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.user-text .commentslist-block a.area-object p.descr-object {
+  font-size: 13px;
+  font-family: OpenSansItalic;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.user-text .news-block {
+  margin-left: 0;
+}
+.user-text .news-block p.name-news-block {
+  font-size: 20px !important;
+  margin-bottom: 8px;
 }
 /*# sourceMappingURL=usertext.css.map */

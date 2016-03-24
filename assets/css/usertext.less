@@ -1,14 +1,19 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/*
-    Created on : Jan 29, 2016, 7:52:21 AM
-    Author     : developer
-*/
-
 .user-text {
+
+    .minimg {
+        float: left;
+    }
+
+    p {
+        &.omaking{
+            font-size: 12px !important;
+            line-height: 18px;
+            color:#C5C5C5;
+            width: 270px;
+            margin-bottom: 10px;
+            //margin-top: -39px;
+        }
+    }
 
     p{
         padding: 0;
@@ -25,12 +30,23 @@ and open the template in the editor.
             line-height: 26px;
         }
 
-        &.omaking{
+        /*                            &.omaking{
+                                        font-size: 12px !important;
+                                        line-height: 18px;
+                                        color:#C5C5C5;
+                                        width: 270px;
+                                        //margin-top: -39px;
+                                    }*/
+
+        &.omaking-2{
             font-size: 12px !important;
             line-height: 18px;
             color:#C5C5C5;
             width: 270px;
-            margin-top: -39px;
+            //margin-top: -39px;
+            margin-right: 37px;
+            width: 270px;
+            float: left;
         }
 
         &.tmaking{
@@ -38,7 +54,7 @@ and open the template in the editor.
             line-height: 18px;
             color:#C5C5C5;
             width: 544px;
-            margin-top: -54px;
+            margin-top: -14px;
         }
 
         &.nspecial{
@@ -49,8 +65,13 @@ and open the template in the editor.
             margin-left: 60px;
             font-size: 17px  !important;
             line-height: 26px;
-            color:#CCCCCC;
+            color:#A09F9F;
 
+        }
+
+
+        img {
+            width: 626px !important;
         }
 
 
@@ -73,7 +94,18 @@ and open the template in the editor.
 
         &.oimg{
             width: 270px;
-            // height: 188px;
+            height: 188px;
+
+            // margin-left: 40px;
+            margin-right: 37px;
+            margin-top: 28px;
+            margin-bottom: 10px
+
+        }
+
+        &.oimg-2{
+            width: 270px;
+            height: 188px;
             float: left;
             // margin-left: 40px;
             margin-right: 37px;
@@ -81,6 +113,8 @@ and open the template in the editor.
             margin-bottom: 10px
 
         }
+
+
         &.timg{
 
             width: 544px;
@@ -137,46 +171,60 @@ and open the template in the editor.
 
 
     table{
-        width: 544px;
-        height: 375px;
+        width: 544px !important;
+        //height: 375px !important;
         //margin-left: 40px;
-        margin-top: 60px;
+        //margin-top: 60px;
         margin-bottom: 47px;
 
-        &.babout{
-
-            font-family: OpenSansRegular;
-            font-size: 13px;
-            margin-bottom: 41px;
-
-            tr{
-                border-bottom:1px solid #E2E2E2;
-
-                &:last-child {
-                    border-bottom: none;
-
-                }
-
-                &:first-child {
-                    color: #989797;
-                    width: 40%;
-                    padding-left: 0;
-                    border-bottom: 2px solid #BDBDBD;
-                }
-
-                td{
-                    padding: 24px 8px;
 
 
+        font-family: OpenSansRegular;
+        font-size: 13px;
+        margin-bottom: 41px;
 
+        tr{
+            border-bottom:1px solid #E2E2E2;
 
+            &:last-child {
+                border-bottom: none;
 
-
-                }
             }
 
+            &:first-child {
+                color: #989797;
+                width: 40%;
+                padding-left: 0;
+                border-bottom: 2px solid #BDBDBD;
+            }
+
+            td{
+                padding: 24px 8px;
+
+
+
+
+
+
+            }
         }
 
+        &.usertable {
+            border: 1px solid #000000;
+
+            tr {
+                border: none !important;
+
+                &:first-child{
+                    border-bottom: none !important;
+                }
+
+                &:last-child{
+                    border-bottom: none !important;
+                }
+
+            }
+        }
 
         &.intab {
             font-family:OpenSansRegular;
@@ -186,9 +234,11 @@ and open the template in the editor.
 
             tr{
                 border-bottom:1px solid #E2E2E2;
+                height: 30px;
 
                 &:first-child{
                     border-bottom:1px solid #E2E2E2;
+                    color: #000000;
                 }
 
                 &:last-child{
@@ -198,8 +248,9 @@ and open the template in the editor.
                     padding: 14px 20px;
                     width: 47%;
 
+
                     &:first-child {
-                        color: #989797;
+
                         width: 40%;
                         padding-left: 0;
                     }
@@ -232,10 +283,108 @@ and open the template in the editor.
 
 
 
+    .commentslist-block{
+        margin-left: 0px;
+        width: 627px;
+        margin-bottom:30px;
+
+        a {
+            &.area-object {
+                display:block;
+                float:left;
+                width:292px;;
+                height:600px;
+                margin-right:43px;
+                position: relative;
+
+
+
+                .object-detalis {
+                    position: absolute;
+                    display: none;
+
+                    width: 292px;
+                    height: 398px;
+                    background: url("/assets/img/design/comments-detalis.png") no-repeat;
+
+
+                    p {
+                        color: #ffffff;
+                        font-family: OpenSansRegular;
+                        font-size: 12px;
+                        margin-top: 210px;
+                        margin-left: 100px;
+                    }
 
 
 
 
+
+                }
+
+
+                &:nth-child(2n+2){
+                    margin-right: 0;
+                }
+
+                img {
+
+                    width:292px;
+                    height:398px;
+                    margin-bottom: 18px;
+                }
+
+                p {
+                    font-family:OpenSansRegular;
+                    &.object-name{
+                        font-size:14px;
+                        text-align: left;
+                        margin: 0;
+                        margin-bottom: 8px;
+
+                    }
+                    &.color-object{
+                        font-size:13px;
+                        color:#989797;
+                        margin: 0;
+                        margin-bottom: 8px;
+
+                    }
+
+                    &.descr-object{
+                        font-size:13px;
+                        font-family: OpenSansItalic;
+                        //color:#989797;
+                        margin: 0;
+                        margin-bottom: 8px;
+
+                    }
+
+                }
+
+
+            }
+        }
+
+    }
+
+
+
+
+
+
+    .news-block {
+        margin-left:  0;
+
+        p {
+            &.name-news-block {
+                font-size: 20px !important;
+                margin-bottom: 8px;
+            }
+
+        }
+
+    }
 
 
 

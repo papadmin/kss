@@ -377,11 +377,15 @@ body #site.basis .content .content-area.area-typical .oneobjects-block {
 body #site.basis .content .content-area.area-no-padding {
   padding-top: 0;
 }
-body #site.basis .content .content-area .user-text span.omaking {
+body #site.basis .content .content-area .user-text .minimg {
+  float: left;
+}
+body #site.basis .content .content-area .user-text p.omaking {
   font-size: 12px !important;
   line-height: 18px;
   color: #C5C5C5;
   width: 270px;
+  margin-bottom: 10px;
 }
 body #site.basis .content .content-area .user-text p {
   padding: 0;
@@ -415,7 +419,7 @@ body #site.basis .content .content-area .user-text p.tmaking {
   line-height: 18px;
   color: #C5C5C5;
   width: 544px;
-  margin-top: -54px;
+  margin-top: -14px;
 }
 body #site.basis .content .content-area .user-text p.nspecial {
   border-left: 3px solid #007AC2;
@@ -440,10 +444,17 @@ body #site.basis .content .content-area .user-text .lot {
 body #site.basis .content .content-area .user-text img.oimg {
   width: 270px;
   height: 188px;
-  float: left;
   margin-right: 37px;
   margin-top: 28px;
   margin-bottom: 10px;
+}
+body #site.basis .content .content-area .user-text img.oimgn {
+  width: 270px;
+  height: 188px;
+  margin-right: 37px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  float: left;
 }
 body #site.basis .content .content-area .user-text img.oimg-2 {
   width: 270px;
@@ -487,8 +498,6 @@ body #site.basis .content .content-area .user-text iframe {
 }
 body #site.basis .content .content-area .user-text table {
   width: 544px !important;
-  height: 375px !important;
-  margin-top: 60px;
   margin-bottom: 47px;
   font-family: OpenSansRegular;
   font-size: 13px;
@@ -508,6 +517,25 @@ body #site.basis .content .content-area .user-text table tr:first-child {
 }
 body #site.basis .content .content-area .user-text table tr td {
   padding: 24px 8px;
+}
+body #site.basis .content .content-area .user-text table.usertable {
+  border: 1px solid #BDBDBD;
+  color: #000000;
+}
+body #site.basis .content .content-area .user-text table.usertable tr {
+  border: none !important;
+}
+body #site.basis .content .content-area .user-text table.usertable tr:first-child {
+  border-bottom: none !important;
+  color: #000000;
+}
+body #site.basis .content .content-area .user-text table.usertable tr:last-child {
+  border-bottom: none !important;
+}
+body #site.basis .content .content-area .user-text table.usertable tr td {
+  border: 1px solid #BDBDBD;
+  vertical-align: middle;
+  text-align: center;
 }
 body #site.basis .content .content-area .user-text table.intab {
   font-family: OpenSansRegular;
@@ -717,6 +745,12 @@ body #site.basis .content .content-area .tab-active p i {
   position: relative;
   top: 2px;
   margin-right: 9px;
+}
+body #site.basis .content .content-area .tab-active p.howtoget {
+  font-size: 14px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
 }
 body #site.basis .content .content-area .tab-active a {
   font-family: OpenSansRegular;
