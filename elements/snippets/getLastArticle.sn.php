@@ -6,6 +6,8 @@
  * and open the template in the editor.
  */
 
+$output = '';
+
 $id = $modx->resource->get('id');
 
 $linkId = array();
@@ -37,20 +39,47 @@ $criteria->limit(1);
 $res = $modx->getObject('modResource', $criteria);
 
 if (!$res) {
-    return false;
+    $criteria = $modx->newQuery('modResource');
+    $criteria->where(array(
+        'parent' => 334
+    ));
+    $criteria->sortby('publishedon', 'DESC');
+    $criteria->limit(1);
+
+    $res = $modx->getObject('modResource', $criteria);
+
+    $resname = $res->get('longtitle');
+    $reslink = $res->get('alias') . '.html';
+
+    $id = $res->get('id');
+    $where = array(
+        'contentid' => $id
+        , 'tmplvarid' => 3
+    );
+    $tv = $modx->getObject('modTemplateVarResource', $where);
+    $resimage = $tv->get('value');
+
+    $output .= "<a class='dir-block-produstion' href=\" $reslink\">
+    <img src=\"$resimage\"/>
+    <p class='text-dir-block'>" . $resname . "</p>
+</a>";
 } else {
     $resname = $res->get('longtitle');
     $reslink = $res->get('alias') . '.html';
 
+    $id = $res->get('id');
+    $where = array(
+        'contentid' => $id
+        , 'tmplvarid' => 3
+    );
+    $tv = $modx->getObject('modTemplateVarResource', $where);
+    $resimage = $tv->get('value');
+
     $output .= "<a class='dir-block-produstion' href=\" $reslink\">
-    <img src='[[+tv.photo_news]]' alt=''>
+    <img src=\"$resimage\"/>
     <p class='text-dir-block'>" . $resname . "</p>
 </a>";
-
-
-
-
-    return $output;
 }
 
 
+return $output;
